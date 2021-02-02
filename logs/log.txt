@@ -104,3 +104,963 @@
 2021-02-02 08:51:01 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicines
 2021-02-02 08:51:01 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- build set medicines
 2021-02-02 08:51:01 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- return list medicines
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicines
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicine
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- new medicine created
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted group: antibiotics
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted id: M-0123
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: name
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Флемоклав
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted name: Флемоклав
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: name
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: pharm
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted pharm: Astellas Pharma
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: pharm
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: versions
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: version
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: manufacturer
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma Europe
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted manufacturer: Astellas Pharma Europe
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: manufacturer
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: certificate
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: number
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: a-32214
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted certificate number: a-32214
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: number
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: date-of-issue
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2021-01-30
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted date of issue: 2021-01-30
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: date-of-issue
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: expiry-date
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2025-01-30
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted expiry date: 2025-01-30
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: expiry-date
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: registration-organisation
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Minzdrav RB
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted registration organisation: Minzdrav RB
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: registration-organisation
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: certificate
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package-type
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: blister
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted package type: blister
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package-type
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: amount-in-package
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 10
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted amount in package: 10
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: amount-in-package
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: price
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 100
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted price: 100
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: price
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dosage
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted frequency of medication : by doctor's prescription
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dose
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 500
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dose
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dosage
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: version
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: versions
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analogs
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоксиклав
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоксиклав
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Хиконцил
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Хиконцил
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоклав
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоклав
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analogs
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicine
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicines
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- build set medicines
+2021-02-02 14:35:33 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- return list medicines
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicines
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicine
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- new medicine created
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted group: antibiotics
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted id: -0123
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: name
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Флемоклав
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted name: Флемоклав
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: name
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: pharm
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted pharm: Astellas Pharma
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: pharm
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: versions
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: version
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: manufacturer
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma Europe
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted manufacturer: Astellas Pharma Europe
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: manufacturer
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: certificate
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: number
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: a-32214
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted certificate number: a-32214
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: number
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: date-of-issue
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2021-01-30
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted date of issue: 2021-01-30
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: date-of-issue
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: expiry-date
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2025-01-30
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted expiry date: 2025-01-30
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: expiry-date
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: registration-organisation
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Minzdrav RB
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted registration organisation: Minzdrav RB
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: registration-organisation
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: certificate
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package-type
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: blister
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted package type: blister
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package-type
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: amount-in-package
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 10
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted amount in package: 10
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: amount-in-package
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: price
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 100
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted price: 100
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: price
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dosage
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted frequency of medication : by doctor's prescription
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dose
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 500
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dose
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dosage
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: version
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: versions
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analogs
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоксиклав
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоксиклав
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Хиконцил
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Хиконцил
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоклав
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоклав
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analogs
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicine
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicines
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- build set medicines
+2021-02-02 14:36:16 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- return list medicines
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicines
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicine
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- new medicine created
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted group: antibiotics
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted id: M-0123
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: name
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Флемоклав
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted name: Флемоклав
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: name
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: pharm
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted pharm: Astellas Pharma
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: pharm
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: versions
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: version
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: manufacturer
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma Europe
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted manufacturer: Astellas Pharma Europe
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: manufacturer
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: certificate
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: number
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: a-32214
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted certificate number: a-32214
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: number
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: date-of-issue
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2021-01-30
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted date of issue: 2021-01-30
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: date-of-issue
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: expiry-date
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2025-01-30
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted expiry date: 2025-01-30
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: expiry-date
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: registration-organisation
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Minzdrav RB
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted registration organisation: Minzdrav RB
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: registration-organisation
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: certificate
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package-type
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: blister
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted package type: blister
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package-type
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: amount-in-package
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 10
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted amount in package: 10
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: amount-in-package
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: price
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 100
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted price: 100
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: price
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dosage
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted frequency of medication : by doctor's prescription
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dose
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 500
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dose
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dosage
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: version
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: versions
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analogs
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоксиклав
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоксиклав
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Хиконцил
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Хиконцил
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоклав
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоклав
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analogs
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicine
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicines
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- build set medicines
+2021-02-02 14:36:48 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- return list medicines
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicines
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicine
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- new medicine created
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted group: antibiotics
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted id: M-0123
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: name
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Флемоклав
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted name: Флемоклав
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: name
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: pharm
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted pharm: Astellas Pharma
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: pharm
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: versions
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: version
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: manufacturer
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma Europe
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted manufacturer: Astellas Pharma Europe
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: manufacturer
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: certificate
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: number
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: a-32214
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted certificate number: a-32214
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: number
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: date-of-issue
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2021-01-30
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted date of issue: 2021-01-30
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: date-of-issue
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: expiry-date
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2025-01-30
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted expiry date: 2025-01-30
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: expiry-date
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: registration-organisation
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Minzdrav RB
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted registration organisation: Minzdrav RB
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: registration-organisation
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: certificate
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package-type
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: blister
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted package type: blister
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package-type
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: amount-in-package
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 10
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted amount in package: 10
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: amount-in-package
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: price
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 100
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted price: 100
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: price
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dosage
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted frequency of medication : by doctor's prescription
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dose
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 500
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dose
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dosage
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: version
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: versions
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analogs
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоксиклав
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоксиклав
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Хиконцил
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Хиконцил
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоклав
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоклав
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analogs
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicine
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicines
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- build set medicines
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- return list medicines
+2021-02-02 14:44:15 [main] INFO  by.metelski.xmltask.validation.CustomXMLValidator- XML document testData/testmed.xml is valid, schema testdata/testmed.xsd
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicines
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicine
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- new medicine created
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: name
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Флемоклав
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted name: Флемоклав
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: name
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: pharm
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted pharm: Astellas Pharma
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: pharm
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: versions
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: version
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: manufacturer
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma Europe
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted manufacturer: Astellas Pharma Europe
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: manufacturer
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: certificate
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: number
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: a-32214
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted certificate number: a-32214
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: number
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: date-of-issue
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2021-01-30
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted date of issue: 2021-01-30
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: date-of-issue
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: expiry-date
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2025-01-30
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted expiry date: 2025-01-30
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: expiry-date
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: registration-organisation
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Minzdrav RB
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted registration organisation: Minzdrav RB
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: registration-organisation
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: certificate
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package-type
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: blister
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted package type: blister
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package-type
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: amount-in-package
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 10
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted amount in package: 10
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: amount-in-package
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: price
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 100
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted price: 100
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: price
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dosage
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted frequency of medication : by doctor's prescription
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dose
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 500
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dose
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dosage
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: version
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: versions
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analogs
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоксиклав
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоксиклав
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Хиконцил
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Хиконцил
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоклав
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоклав
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analogs
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicine
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicines
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- build set medicines
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- return list medicines
+2021-02-02 15:05:22 [main] INFO  by.metelski.xmltask.validation.CustomXMLValidator- XML document: testData/testmed.xml-is valid, schema: testdata/testmed.xsd
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicines
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicine
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- new medicine created
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted group: antibiotics
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted id: M-0123
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: name
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Флемоклав
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted name: Флемоклав
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: name
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: pharm
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted pharm: Astellas Pharma
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: pharm
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: versions
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: version
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: manufacturer
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma Europe
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted manufacturer: Astellas Pharma Europe
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: manufacturer
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: certificate
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: number
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: a-32214
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted certificate number: a-32214
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: number
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: date-of-issue
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2021-01-30
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted date of issue: 2021-01-30
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: date-of-issue
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: expiry-date
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2025-01-30
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted expiry date: 2025-01-30
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: expiry-date
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: registration-organisation
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Minzdrav RB
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted registration organisation: Minzdrav RB
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: registration-organisation
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: certificate
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package-type
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: blister
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted package type: blister
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package-type
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: amount-in-package
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 10
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted amount in package: 10
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: amount-in-package
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: price
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 100
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted price: 100
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: price
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dosage
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted frequency of medication : by doctor's prescription
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dose
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 500
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dose
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dosage
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: version
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: versions
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analogs
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоксиклав
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоксиклав
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Хиконцил
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Хиконцил
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоклав
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоклав
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analogs
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicine
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicines
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- build set medicines
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- return list medicines
+2021-02-02 15:06:39 [main] INFO  by.metelski.xmltask.validation.CustomXMLValidator- XML document: testData/testmed.xml-is valid, schema: testdata/testmed.xsd
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicines
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicine
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- new medicine created
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- attribute name: group
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- attribute Localname: group
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted group: antibiotics
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted id: M-0123
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: name
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Флемоклав
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted name: Флемоклав
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: name
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: pharm
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted pharm: Astellas Pharma
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: pharm
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: versions
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: version
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: manufacturer
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma Europe
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted manufacturer: Astellas Pharma Europe
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: manufacturer
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: certificate
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: number
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: a-32214
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted certificate number: a-32214
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: number
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: date-of-issue
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2021-01-30
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted date of issue: 2021-01-30
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: date-of-issue
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: expiry-date
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2025-01-30
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted expiry date: 2025-01-30
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: expiry-date
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: registration-organisation
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Minzdrav RB
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted registration organisation: Minzdrav RB
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: registration-organisation
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: certificate
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package-type
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: blister
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted package type: blister
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package-type
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: amount-in-package
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 10
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted amount in package: 10
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: amount-in-package
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: price
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 100
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted price: 100
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: price
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dosage
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted frequency of medication : by doctor's prescription
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dose
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 500
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dose
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dosage
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: version
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: versions
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analogs
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоксиклав
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоксиклав
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Хиконцил
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Хиконцил
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоклав
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоклав
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analogs
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicine
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicines
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- build set medicines
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- return list medicines
+2021-02-02 15:08:02 [main] INFO  by.metelski.xmltask.validation.CustomXMLValidator- XML document: testData/testmed.xml-is valid, schema: testdata/testmed.xsd
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicines
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicine
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- new medicine created
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted group: antibiotics
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted id: M-0123
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: name
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Флемоклав
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted name: Флемоклав
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: name
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: pharm
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted pharm: Astellas Pharma
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: pharm
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: versions
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: version
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: manufacturer
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma Europe
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted manufacturer: Astellas Pharma Europe
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: manufacturer
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: certificate
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: number
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: a-32214
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted certificate number: a-32214
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: number
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: date-of-issue
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2021-01-30
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted date of issue: 2021-01-30
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: date-of-issue
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: expiry-date
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2025-01-30
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted expiry date: 2025-01-30
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: expiry-date
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: registration-organisation
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Minzdrav RB
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted registration organisation: Minzdrav RB
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: registration-organisation
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: certificate
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package-type
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: blister
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted package type: blister
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package-type
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: amount-in-package
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 10
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted amount in package: 10
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: amount-in-package
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: price
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 100
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted price: 100
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: price
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dosage
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted frequency of medication : by doctor's prescription
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dose
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 500
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dose
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dosage
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: version
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: versions
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analogs
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоксиклав
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоксиклав
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Хиконцил
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Хиконцил
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоклав
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоклав
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analogs
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicine
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicines
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- build set medicines
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- return list medicines
+2021-02-02 15:09:09 [main] INFO  by.metelski.xmltask.validation.CustomXMLValidator- XML document: testData/testmed.xml-is valid, schema: testdata/testmed.xsd
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicines
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: medicine
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- new medicine created
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted group: antibiotics
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted id: M-0123
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: name
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Флемоклав
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted name: Флемоклав
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: name
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: pharm
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted pharm: Astellas Pharma
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: pharm
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: versions
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: version
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: manufacturer
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Astellas Pharma Europe
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted manufacturer: Astellas Pharma Europe
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: manufacturer
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: certificate
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: number
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: a-32214
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted certificate number: a-32214
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: number
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: date-of-issue
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2021-01-30
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted date of issue: 2021-01-30
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: date-of-issue
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: expiry-date
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 2025-01-30
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted expiry date: 2025-01-30
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: expiry-date
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: registration-organisation
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Minzdrav RB
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted registration organisation: Minzdrav RB
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: registration-organisation
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: certificate
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: package-type
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: blister
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted package type: blister
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package-type
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: amount-in-package
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 10
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted amount in package: 10
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: amount-in-package
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: price
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 100
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted price: 100
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: price
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: package
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dosage
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- setted frequency of medication : by doctor's prescription
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: dose
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 500
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dose
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: dosage
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: version
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: versions
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analogs
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоксиклав
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоксиклав
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Хиконцил
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Хиконцил
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- start element: analog
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: Амоклав
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- added analog: Амоклав
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analog
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: analogs
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicine
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- readed data: 
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.handler.MedicineHandler- end element: medicines
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- build set medicines
+2021-02-02 15:13:34 [main] INFO  by.metelski.xmltask.builder.MedicinesSAXBuilder- return list medicines
+2021-02-02 15:13:35 [main] INFO  by.metelski.xmltask.validation.CustomXMLValidator- XML document: testData/testmed.xml-is valid, schema: testdata/testmed.xsd

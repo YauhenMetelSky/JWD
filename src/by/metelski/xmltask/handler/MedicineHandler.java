@@ -33,17 +33,23 @@ public class MedicineHandler extends DefaultHandler {
         if(ELEMENT_MEDICINE.equals(qName)){
             current = new Medicine();
             logger.log(Level.INFO,"new medicine created");
-            current.setGroup(attributes.getValue(0));
-            logger.log(Level.INFO,"setted group: "+ attributes.getValue(0));
-            if(attributes.getLength()==2){
-                current.setId(attributes.getValue(1));
-                logger.log(Level.INFO,"setted id: "+ attributes.getValue(1));
+            for (int i = 0; i <attributes.getLength() ; i++) {
+                switch (attributes.getQName(i)){
+                    case "group":
+                        current.setGroup(attributes.getValue(i));
+                        logger.log(Level.INFO,"setted group: "+ attributes.getValue(i));
+                        break;
+                    case "id":
+                        current.setId(attributes.getValue(i));
+                        logger.log(Level.INFO,"setted id: "+ attributes.getValue(i));
+                        break;
+                }
             }
+
         } if(ELEMENT_DOSAGE.equals(qName)){
-            if(attributes.getLength()==1) {
                 current.getVersion().getDosage().setFrequencyOfMedication(attributes.getValue(0));
                 logger.log(Level.INFO,"setted frequency of medication : "+ attributes.getValue(0));
-            }
+
         }else {
             MedicineXmlTag temp = MedicineXmlTag.valueOf(qName.toUpperCase().replaceAll("-","_"));
             if(withText.contains(temp)){
@@ -52,7 +58,7 @@ public class MedicineHandler extends DefaultHandler {
         }
     }
     public void characters(char[] ch, int start, int length) {
-    String data = new String(ch,start,length).trim();
+    String data = new String(ch,start,length).strip();
     logger.log(Level.INFO,"readed data: "+ data);
     if(currentXmlTag!=null){
             switch (currentXmlTag){

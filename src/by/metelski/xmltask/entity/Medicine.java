@@ -129,12 +129,13 @@ public class Medicine {
 
         @Override
         public String toString() {
-            return "Version{" +
-                    "manufacturer='" + manufacturer + '\'' +
-                    ", certificate=" + certificate +
-                    ", medicinePackage=" + medicinePackage +
-                    ", dosage=" + dosage +
-                    '}';
+            final StringBuilder sb = new StringBuilder("Version{");
+            sb.append("manufacturer='").append(manufacturer).append('\'');
+            sb.append(", certificate=").append(certificate);
+            sb.append(", medicinePackage=").append(medicinePackage);
+            sb.append(", dosage=").append(dosage);
+            sb.append('}');
+            return sb.toString();
         }
     }
 
@@ -179,12 +180,13 @@ public class Medicine {
 
         @Override
         public String toString() {
-            return "Certificate{" +
-                    "number='" + number + '\'' +
-                    ", dateOfIssue='" + dateOfIssue + '\'' +
-                    ", expiryDate='" + expiryDate + '\'' +
-                    ", registrationOrganisation='" + registrationOrganisation + '\'' +
-                    '}';
+            final StringBuilder sb = new StringBuilder("Certificate{");
+            sb.append("number='").append(number).append('\'');
+            sb.append(", dateOfIssue='").append(dateOfIssue).append('\'');
+            sb.append(", expiryDate='").append(expiryDate).append('\'');
+            sb.append(", registrationOrganisation='").append(registrationOrganisation).append('\'');
+            sb.append('}');
+            return sb.toString();
         }
 
         @Override
@@ -250,11 +252,12 @@ public class Medicine {
 
         @Override
         public String toString() {
-            return "MedicinePackage{" +
-                    "packageType='" + packageType + '\'' +
-                    ", amountInPackage=" + amountInPackage +
-                    ", price=" + price +
-                    '}';
+            final StringBuilder sb = new StringBuilder("MedicinePackage{");
+            sb.append("packageType='").append(packageType).append('\'');
+            sb.append(", amountInPackage=").append(amountInPackage);
+            sb.append(", price=").append(price);
+            sb.append('}');
+            return sb.toString();
         }
     }
 
@@ -294,10 +297,11 @@ public class Medicine {
 
         @Override
         public String toString() {
-            return "Dosage{" +
-                    "dosage=" + dosage +
-                    ", frequencyOfMedication='" + frequencyOfMedication + '\'' +
-                    '}';
+            final StringBuilder sb = new StringBuilder("Dosage{");
+            sb.append("dosage=").append(dosage);
+            sb.append(", frequencyOfMedication='").append(frequencyOfMedication).append('\'');
+            sb.append('}');
+            return sb.toString();
         }
     }
 
@@ -322,14 +326,15 @@ public class Medicine {
 
     @Override
     public String toString() {
-        return "Medicine{" +
-                "id='" + id + '\'' +
-                ", group='" + group + '\'' +
-                ", name='" + name + '\'' +
-                ", pharm='" + pharm + '\'' +
-                ", analogs=" + analogs +
-                ", versions=" + versions +
-                ", version=" + version +
-                '}';
+        final StringBuilder sb = new StringBuilder("Medicine{");
+        sb.append("id='").append(id).append('\'');
+        sb.append(", group='").append(group).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", pharm='").append(pharm).append('\'');
+        sb.append(", analogs=").append(analogs);
+        sb.append(", versions=").append(versions);
+        sb.append(", version=").append(version);
+        sb.append('}');
+        return sb.toString();
     }
 }
