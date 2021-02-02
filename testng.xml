@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test" verbose="1">
+    <test name="ArrayParameterCalculatorStreamTest">
+        <classes>
+            <class name="test.metelski.learn.action.ArrayParameterCalculatorStreamTest"/>
+        </classes>
+    </test>
+    <test name="ArrayParameterCalculatorTest">
+        <classes>
+            <class name="test.metelski.learn.action.ArrayParameterCalculatorTest"/>
+        </classes>
+    </test>
+    <test name="ArrayActionTest">
+        <classes>
+            <class name="test.metelski.learn.action.ArrayActionTest"/>
+        </classes>
+    </test>
+    <test name="ArrayActionStreamTest">
+        <classes>
+            <class name="test.metelski.learn.action.ArrayActionStreamTest"/>
+        </classes>
+    </test>
+    <test name="ArraySortTest">
+        <classes>
+            <class name="test.metelski.learn.action.ArraySortTest"/>
+        </classes>
+    </test>
+    <test name="ArraySortStreamTest">
+        <classes>
+            <class name="test.metelski.learn.action.ArraySortStreamTest"/>
+        </classes>
+    </test>
+    <test name="ValidationStringTest">
+        <classes>
+            <class name="test.metelski.learn.validation.CheckStringFromFileTest"/>
+        </classes>
+    </test>
+    <test name="ValidationCustomArrayTest">
+        <classes>
+            <class name="test.metelski.learn.validation.CheckArrayTest"/>
+        </classes>
+    </test>
+    <test name="ReaderTest">
+        <classes>
+            <class name="test.metelski.learn.reader.StringFromTextFileReaderTest"/>
+        </classes>
+    </test>
+    <test name="ParserTest">
+        <classes>
+            <class name="test.metelski.learn.parser.CustomParserTest"/>
+        </classes>
+    </test>
+    <test name="CreatorTest">
+        <classes>
+            <class name="test.metelski.learn.creator.CustomArrayCreatorTest"/>
+        </classes>
+    </test>
+</suite>
