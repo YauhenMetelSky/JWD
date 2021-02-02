@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medicines xmlns="http://www.example.com/testMeds">
+    <medicine group="antibiotics" id="M-0123">
+        <name>Флемоклав</name>
+        <pharm>Astellas Pharma</pharm>
+        <versions>
+            <version>
+                <manufacturer>Astellas Pharma Europe</manufacturer>
+                <certificate>
+                    <number>a-32214</number>
+                    <date-of-issue>2021-01-30</date-of-issue>
+                    <expiry-date>2025-01-30</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>blister</package-type>
+                    <amount-in-package>10</amount-in-package>
+                    <price>100</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>500</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Амоксиклав</analog>
+            <analog>Хиконцил</analog>
+            <analog>Амоклав</analog>
+        </analogs>
+    </medicine>
+ </medicines>

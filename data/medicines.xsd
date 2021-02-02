@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/medicines"
+        xmlns:tns="http://www.example.com/medicines"
+        elementFormDefault="qualified">
+    <element name="medicines">
+        <complexType>
+            <sequence>
+                <element name="medicine" type="tns:Medicine" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="Medicine">
+        <sequence>
+            <element name="name" type="string"/>
+            <element name="pharm" type="string"/>
+            <element name="versions">
+                <complexType>
+                    <sequence>
+                        <element name="version" type="tns:Version" minOccurs="1" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="analogs" type="tns:Analogs"/>
+        </sequence>
+        <attribute name="group" use="required">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="antibiotics"/>
+                    <enumeration value="pain killer"/>
+                    <enumeration value="vitamins"/>
+                    <enumeration value="antiviral"/>
+                    <enumeration value="anti-allergic"/>
+                    <enumeration value="ointment"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+        <attribute name="id" use="required">
+            <simpleType>
+                <restriction base="ID">
+                    <pattern value="M-\d{4,10}"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+    <complexType name="Analogs">
+        <sequence>
+            <element name="analog" type="string" maxOccurs="4"/>
+        </sequence>
+    </complexType>
+    <complexType name="Version">
+        <sequence>
+            <element name="manufacturer" type="string"/>
+            <element name="certificate" type="tns:Certificate"/>
+            <element name="package" type="tns:Package"/>
+            <element name="dosage" type="tns:Dosage"/>
+        </sequence>
+         </complexType>
+    <complexType name="Certificate">
+        <sequence>
+            <element name="number" type="string"/>
+            <element name="date-of-issue" type="date"/>
+            <element name="expiry-date" type="date"/>
+            <element name="registration-organisation" type="string"/>
+        </sequence>
+    </complexType>
+    <complexType name="Package">
+        <sequence>
+            <element name="package-type">
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="blister"/>
+                        <enumeration value="tube"/>
+                        <enumeration value="spray"/>
+                        <enumeration value="jar"/>
+                        <enumeration value="ampule"/>
+                        <enumeration value="syringe"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="amount-in-package" type="positiveInteger"/>
+            <element name="price" type="double"/>
+        </sequence>
+    </complexType>
+    <complexType name="Dosage">
+        <sequence>
+            <element name="dose" type="positiveInteger"/>
+        </sequence>
+        <attribute name="frequency-of-medication" use="optional" default="by doctor's prescription">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="by doctor's prescription"/>
+                    <enumeration value="One time a day"/>
+                    <enumeration value="Two time a day"/>
+                    <enumeration value="Three time a day"/>
+                    <enumeration value="One time a week"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+</schema>

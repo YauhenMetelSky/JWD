@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medicines xmlns="http://www.example.com/medicines">
+    <medicine group="antibiotics" id="M-0123">
+        <name>Флемоклав</name>
+        <pharm>Astellas Pharma</pharm>
+        <versions>
+            <version>
+                <manufacturer>Astellas Pharma Europe</manufacturer>
+                <certificate>
+                    <number>a-32214</number>
+                    <date-of-issue>2021-01-30</date-of-issue>
+                    <expiry-date>2025-01-30</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>blister</package-type>
+                    <amount-in-package>10</amount-in-package>
+                    <price>100</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>500</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Амоксиклав</analog>
+            <analog>Хиконцил</analog>
+            <analog>Амоклав</analog>
+        </analogs>
+    </medicine>
+    <medicine group="antibiotics" id="M-0124">
+        <name>Амоксиклав</name>
+        <pharm>Sandoz</pharm>
+        <versions>
+            <version>
+                <manufacturer>Lekk d.d.</manufacturer>
+                <certificate>
+                    <number>a-322414</number>
+                    <date-of-issue>2020-12-14</date-of-issue>
+                    <expiry-date>2024-12-14</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>blister</package-type>
+                    <amount-in-package>20</amount-in-package>
+                    <price>30</price>
+                </package>
+                <dosage>
+                    <dose>875</dose>
+                </dosage>
+            </version>
+            <version>
+                <manufacturer>Lekk d.d.</manufacturer>
+                <certificate>
+                    <number>a-322414</number>
+                    <date-of-issue>2020-12-14</date-of-issue>
+                    <expiry-date>2024-12-14</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>blister</package-type>
+                    <amount-in-package>15</amount-in-package>
+                    <price>120</price>
+                </package>
+                <dosage frequency-of-medication="One time a day">
+                    <dose>500</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Флемоклав</analog>
+            <analog>Хиконцил</analog>
+            <analog>Амоклав</analog>
+        </analogs>
+    </medicine>
+    <medicine group="antibiotics" id="M-0125">
+        <name>Хиконцил</name>
+        <pharm>KRKA d.d.</pharm>
+        <versions>
+            <version>
+                <manufacturer>KRKA</manufacturer>
+                <certificate>
+                    <number>a-14328</number>
+                    <date-of-issue>2013-01-31</date-of-issue>
+                    <expiry-date>2030-01-31</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>jar</package-type>
+                    <amount-in-package>16</amount-in-package>
+                    <price>15</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>500</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Амоксиклав</analog>
+            <analog>Флемоклав</analog>
+            <analog>Амоклав</analog>
+        </analogs>
+    </medicine>
+    <medicine group="antibiotics" id="M-0126">
+        <name>Амоклав</name>
+        <pharm>Фармлэнд СП ООО</pharm>
+        <versions>
+            <version>
+                <manufacturer>Фармлэнд СП ООО</manufacturer>
+                <certificate>
+                    <number>a-14328</number>
+                    <date-of-issue>2017-05-22</date-of-issue>
+                    <expiry-date>2022-01-31</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>blister</package-type>
+                    <amount-in-package>14</amount-in-package>
+                    <price>150</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>1000</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Амоксиклав</analog>
+            <analog>Флемоклав</analog>
+            <analog>Хиконцил</analog>
+        </analogs>
+    </medicine>
+    <medicine group="ointment" id="M-0127">
+        <name>Элоком</name>
+        <pharm>SCHERING-PLOUGH LABO, N.V.</pharm>
+        <versions>
+            <version>
+                <manufacturer>МСД Фармасьютикалс ООО</manufacturer>
+                <certificate>
+                    <number>a-14328</number>
+                    <date-of-issue>2017-05-22</date-of-issue>
+                    <expiry-date>2022-01-31</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>tube</package-type>
+                    <amount-in-package>1</amount-in-package>
+                    <price>28.2</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>1</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Локоид</analog>
+            <analog>Адвантан</analog>
+        </analogs>
+    </medicine>
+    <medicine group="ointment" id="M-0128">
+        <name>Элоком</name>
+        <pharm>LEO Pharma, A/S</pharm>
+        <versions>
+            <version>
+                <manufacturer>TEMMLER ITALIA, S.r.L.</manufacturer>
+                <certificate>
+                    <number>a-125894</number>
+                    <date-of-issue>2016-08-22</date-of-issue>
+                    <expiry-date>2021-02-12</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>tube</package-type>
+                    <amount-in-package>1</amount-in-package>
+                    <price>30.99</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>1</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Элком</analog>
+            <analog>Адвантан</analog>
+        </analogs>
+    </medicine>
+    <medicine group="ointment" id="M-0129">
+        <name>Адвантан</name>
+        <pharm>БАЙЕР, АО</pharm>
+        <versions>
+            <version>
+                <manufacturer>BAYER HealthCare Manufacturing, S.r.L.</manufacturer>
+                <certificate>
+                    <number>a-1524894</number>
+                    <date-of-issue>2020-08-01</date-of-issue>
+                    <expiry-date>2028-04-13</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>tube</package-type>
+                    <amount-in-package>1</amount-in-package>
+                    <price>35.05</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>1</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Элком</analog>
+            <analog>Локоид</analog>
+        </analogs>
+    </medicine>
+    <medicine group="vitamins" id="M-0130">
+        <name>Витрум</name>
+        <pharm>UNIPHARM, Inc.</pharm>
+        <versions>
+            <version>
+                <manufacturer>UNIPHARM, Inc.</manufacturer>
+                <certificate>
+                    <number>a-75082</number>
+                    <date-of-issue>2010-01-01</date-of-issue>
+                    <expiry-date>2040-12-31</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>jar</package-type>
+                    <amount-in-package>30</amount-in-package>
+                    <price>12</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>1</dose>
+                </dosage>
+            </version>
+            <version>
+                <manufacturer>UNIPHARM, Inc.</manufacturer>
+                <certificate>
+                    <number>a-75082</number>
+                    <date-of-issue>2010-01-01</date-of-issue>
+                    <expiry-date>2040-12-31</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>jar</package-type>
+                    <amount-in-package>60</amount-in-package>
+                    <price>20</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>1</dose>
+                </dosage>
+            </version>
+            <version>
+                <manufacturer>UNIPHARM, Inc.</manufacturer>
+                <certificate>
+                    <number>a-75082</number>
+                    <date-of-issue>2010-01-01</date-of-issue>
+                    <expiry-date>2040-12-31</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>jar</package-type>
+                    <amount-in-package>100</amount-in-package>
+                    <price>37</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>1</dose>
+                </dosage>
+            </version>
+            <version>
+                <manufacturer>UNIPHARM, Inc.</manufacturer>
+                <certificate>
+                    <number>a-75082</number>
+                    <date-of-issue>2010-01-01</date-of-issue>
+                    <expiry-date>2040-12-31</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>jar</package-type>
+                    <amount-in-package>120</amount-in-package>
+                    <price>39</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>1</dose>
+                </dosage>
+            </version>
+            <version>
+                <manufacturer>UNIPHARM, Inc.</manufacturer>
+                <certificate>
+                    <number>a-75082</number>
+                    <date-of-issue>2010-01-01</date-of-issue>
+                    <expiry-date>2040-12-31</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>jar</package-type>
+                    <amount-in-package>130</amount-in-package>
+                    <price>40.5</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>1</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Супрадин</analog>
+            <analog>Мерц</analog>
+        </analogs>
+    </medicine>
+    <medicine group="vitamins" id="M-0131">
+        <name>Супрадин</name>
+        <pharm>БАЙЕР, АО</pharm>
+        <versions>
+            <version>
+                <manufacturer>DELPHARM GAILLARD</manufacturer>
+                <certificate>
+                    <number>a-12543</number>
+                    <date-of-issue>2010-01-01</date-of-issue>
+                    <expiry-date>2040-12-31</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>jar</package-type>
+                    <amount-in-package>20</amount-in-package>
+                    <price>12</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>250</dose>
+                </dosage>
+            </version>
+            <version>
+                <manufacturer>DRAGENOPHARM APOTHEKER PUSCHL, GmbH &amp; Co. KG</manufacturer>
+                <certificate>
+                    <number>a-12543</number>
+                    <date-of-issue>2010-01-01</date-of-issue>
+                    <expiry-date>2040-12-31</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>jar</package-type>
+                    <amount-in-package>20</amount-in-package>
+                    <price>20</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>250</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Витрум</analog>
+            <analog>Мерц</analog>
+        </analogs>
+    </medicine>
+    <medicine group="vitamins" id="M-0132">
+        <name>Супрадин</name>
+        <pharm>MERZ PHARMA, GmbH &amp; Co.KGaA</pharm>
+        <versions>
+            <version>
+                <manufacturer>MERZ PHARMA, GmbH &amp; Co.KGaA</manufacturer>
+                <certificate>
+                    <number>a-243913</number>
+                    <date-of-issue>2012-03-01</date-of-issue>
+                    <expiry-date>2029-12-31</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>jar</package-type>
+                    <amount-in-package>60</amount-in-package>
+                    <price>42.9</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>1500</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Витрум</analog>
+            <analog>Супрадин</analog>
+        </analogs>
+    </medicine>
+    <medicine group="antiviral" id="M-0133">
+        <name>Гроприносин</name>
+        <pharm>GEDEON RICHTER, Plc.</pharm>
+        <versions>
+            <version>
+                <manufacturer>GEDEON RICHTER POLAND, Co. Ltd.</manufacturer>
+                <certificate>
+                    <number>a-243</number>
+                    <date-of-issue>2015-07-01</date-of-issue>
+                    <expiry-date>2025-07-01</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>blister</package-type>
+                    <amount-in-package>10</amount-in-package>
+                    <price>29.5</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>500</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Иммунозин</analog>
+            <analog>Арпетол</analog>
+            <analog>Арбидол</analog>
+        </analogs>
+    </medicine>
+    <medicine group="antiviral" id="M-0134">
+        <name>Иммунозин</name>
+        <pharm>ФАРМТЕХНОЛОГИЯ, ООО</pharm>
+        <versions>
+            <version>
+                <manufacturer>ФАРМТЕХНОЛОГИЯ, ООО</manufacturer>
+                <certificate>
+                    <number>a-984385</number>
+                    <date-of-issue>2014-07-01</date-of-issue>
+                    <expiry-date>2025-07-01</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>jar</package-type>
+                    <amount-in-package>50</amount-in-package>
+                    <price>34.5</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>500</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Гроприносин</analog>
+            <analog>Арпетол</analog>
+            <analog>Арбидол</analog>
+        </analogs>
+    </medicine>
+    <medicine group="antiviral" id="M-0135">
+        <name>Арпетол</name>
+        <pharm>ЛЕКФАРМ, СООО</pharm>
+        <versions>
+            <version>
+                <manufacturer>ЛЕКФАРМ, СООО</manufacturer>
+                <certificate>
+                    <number>a-243854</number>
+                    <date-of-issue>2015-07-01</date-of-issue>
+                    <expiry-date>2025-07-01</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>blister</package-type>
+                    <amount-in-package>20</amount-in-package>
+                    <price>50</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>500</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Иммунозин</analog>
+            <analog>Гроприносин</analog>
+            <analog>Арбидол</analog>
+        </analogs>
+    </medicine>
+    <medicine group="antiviral" id="M-0136">
+        <name>Арбидол</name>
+        <pharm>ОТИСИФАРМ, АО</pharm>
+        <versions>
+            <version>
+                <manufacturer>ФАРМСТАНДАРТ-ЛЕКСРЕДСТВА, ОАО</manufacturer>
+                <certificate>
+                    <number>a-2443243</number>
+                    <date-of-issue>2017-07-01</date-of-issue>
+                    <expiry-date>2025-07-01</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>blister</package-type>
+                    <amount-in-package>40</amount-in-package>
+                    <price>63</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>500</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Иммунозин</analog>
+            <analog>Арпетол</analog>
+            <analog>Гроприносин</analog>
+        </analogs>
+    </medicine>
+    <medicine group="anti-allergic" id="M-0137">
+        <name>Лоратадин</name>
+        <pharm>СИНТЕЗ, ОАО</pharm>
+        <versions>
+            <version>
+                <manufacturer>СИНТЕЗ, ОАО</manufacturer>
+                <certificate>
+                    <number>a-4324643</number>
+                    <date-of-issue>2016-06-01</date-of-issue>
+                    <expiry-date>2026-06-01</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>blister</package-type>
+                    <amount-in-package>10</amount-in-package>
+                    <price>22.9</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>10</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Зодак</analog>
+            <analog>Эриус</analog>
+        </analogs>
+    </medicine>
+    <medicine group="antiviral" id="M-0138">
+        <name>Зодак</name>
+        <pharm>САНОФИ РОССИЯ, АО</pharm>
+        <versions>
+            <version>
+                <manufacturer>ZENTIVA, k.s.</manufacturer>
+                <certificate>
+                    <number>a-459684</number>
+                    <date-of-issue>2019-07-01</date-of-issue>
+                    <expiry-date>2025-07-01</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>blister</package-type>
+                    <amount-in-package>30</amount-in-package>
+                    <price>20.28</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>10</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Лоратадин</analog>
+            <analog>Эриус</analog>
+        </analogs>
+    </medicine>
+    <medicine group="antiviral" id="M-0139">
+        <name>Эриус</name>
+        <pharm>БАЙЕР, АО</pharm>
+        <versions>
+            <version>
+                <manufacturer>SCHERING-PLOUGH LABO, N.V.</manufacturer>
+                <certificate>
+                    <number>a-85483545</number>
+                    <date-of-issue>2019-01-15</date-of-issue>
+                    <expiry-date>2029-01-15</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>blister</package-type>
+                    <amount-in-package>10</amount-in-package>
+                    <price>33.69</price>
+                </package>
+                <dosage frequency-of-medication="by doctor's prescription">
+                    <dose>5</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Лоратадин</analog>
+            <analog>Зодак</analog>
+        </analogs>
+    </medicine>
+</medicines>
