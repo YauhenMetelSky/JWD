@@ -21,6 +21,7 @@ public enum MedicineXmlTag {
     AMOUNT_IN_PACKAGE("amount-in-package"),
     PRICE("price"),
     DOSE("dose"),
+    DOSAGE("dosage"),
     ANALOGS("analogs");
     private String value;
 

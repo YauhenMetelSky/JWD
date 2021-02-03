@@ -28,4 +28,49 @@
             <analog>Амоклав</analog>
         </analogs>
     </medicine>
+    <medicine group="antibiotics" id="M-0124">
+        <name>Амоксиклав</name>
+        <pharm>Sandoz</pharm>
+        <versions>
+            <version>
+                <manufacturer>Lekk d.d.</manufacturer>
+                <certificate>
+                    <number>a-322414</number>
+                    <date-of-issue>2020-12-14</date-of-issue>
+                    <expiry-date>2024-12-14</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>blister</package-type>
+                    <amount-in-package>20</amount-in-package>
+                    <price>30</price>
+                </package>
+                <dosage>
+                    <dose>875</dose>
+                </dosage>
+            </version>
+            <version>
+                <manufacturer>Lekk d.d.</manufacturer>
+                <certificate>
+                    <number>a-322414</number>
+                    <date-of-issue>2020-12-14</date-of-issue>
+                    <expiry-date>2024-12-14</expiry-date>
+                    <registration-organisation>Minzdrav RB</registration-organisation>
+                </certificate>
+                <package>
+                    <package-type>blister</package-type>
+                    <amount-in-package>15</amount-in-package>
+                    <price>120</price>
+                </package>
+                <dosage frequency-of-medication="One time a day">
+                    <dose>500</dose>
+                </dosage>
+            </version>
+        </versions>
+        <analogs>
+            <analog>Флемоклав</analog>
+            <analog>Хиконцил</analog>
+            <analog>Амоклав</analog>
+        </analogs>
+    </medicine>
  </medicines>

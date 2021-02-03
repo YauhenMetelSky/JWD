@@ -11,7 +11,6 @@ public class Medicine {
     private String pharm;
     private List<String> analogs = new ArrayList<>();
     private List<Version> versions = new ArrayList<>();
-    private Version version = new Version();
 
     public String getId() {
         return id;
@@ -19,14 +18,6 @@ public class Medicine {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public Version getVersion() {
-        return version;
-    }
-
-    public void setVersion(Version version) {
-        this.version = version;
     }
 
     public String getGroup() {
@@ -71,6 +62,10 @@ public class Medicine {
 
     public void setVersions(List<Version> versions) {
         this.versions = versions;
+    }
+
+    public void addVersion(Version version){
+        this.versions.add(version);
     }
 
     public class Version {
@@ -130,10 +125,10 @@ public class Medicine {
         @Override
         public String toString() {
             final StringBuilder sb = new StringBuilder("Version{");
-            sb.append("manufacturer='").append(manufacturer).append('\'');
-            sb.append(", certificate=").append(certificate);
-            sb.append(", medicinePackage=").append(medicinePackage);
-            sb.append(", dosage=").append(dosage);
+            sb.append("\nmanufacturer='").append(manufacturer).append('\'');
+            sb.append(", \ncertificate=").append(certificate);
+            sb.append(", \nmedicinePackage=").append(medicinePackage);
+            sb.append(", \ndosage=").append(dosage);
             sb.append('}');
             return sb.toString();
         }
@@ -181,10 +176,10 @@ public class Medicine {
         @Override
         public String toString() {
             final StringBuilder sb = new StringBuilder("Certificate{");
-            sb.append("number='").append(number).append('\'');
-            sb.append(", dateOfIssue='").append(dateOfIssue).append('\'');
-            sb.append(", expiryDate='").append(expiryDate).append('\'');
-            sb.append(", registrationOrganisation='").append(registrationOrganisation).append('\'');
+            sb.append("\nnumber='").append(number).append('\'');
+            sb.append(",\ndateOfIssue='").append(dateOfIssue).append('\'');
+            sb.append(",\nexpiryDate='").append(expiryDate).append('\'');
+            sb.append(",\nregistrationOrganisation='").append(registrationOrganisation).append('\'');
             sb.append('}');
             return sb.toString();
         }
@@ -253,24 +248,24 @@ public class Medicine {
         @Override
         public String toString() {
             final StringBuilder sb = new StringBuilder("MedicinePackage{");
-            sb.append("packageType='").append(packageType).append('\'');
-            sb.append(", amountInPackage=").append(amountInPackage);
-            sb.append(", price=").append(price);
+            sb.append("\npackageType='").append(packageType).append('\'');
+            sb.append(",\namountInPackage=").append(amountInPackage);
+            sb.append(",\nprice=").append(price);
             sb.append('}');
             return sb.toString();
         }
     }
 
     public class Dosage {
-        private int dosage;
         private String frequencyOfMedication;
+        private int dose;
 
-        public int getDosage() {
-            return dosage;
+        public int getDose() {
+            return dose;
         }
 
-        public void setDosage(int dosage) {
-            this.dosage = dosage;
+        public void setDose(int dose) {
+            this.dose = dose;
         }
 
         public String getFrequencyOfMedication() {
@@ -285,25 +280,26 @@ public class Medicine {
         public boolean equals(Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
-            Dosage dosage1 = (Dosage) o;
-            return dosage == dosage1.dosage &&
-                    Objects.equals(frequencyOfMedication, dosage1.frequencyOfMedication);
+            Dosage dosage = (Dosage) o;
+            return dose == dosage.dose &&
+                    Objects.equals(frequencyOfMedication, dosage.frequencyOfMedication);
         }
 
         @Override
         public int hashCode() {
-            return Objects.hash(dosage, frequencyOfMedication);
+            return Objects.hash(frequencyOfMedication, dose);
         }
 
         @Override
         public String toString() {
             final StringBuilder sb = new StringBuilder("Dosage{");
-            sb.append("dosage=").append(dosage);
-            sb.append(", frequencyOfMedication='").append(frequencyOfMedication).append('\'');
-            sb.append('}');
+            sb.append("frequencyOfMedication='").append(frequencyOfMedication).append('\'');
+            sb.append(", dose=").append(dose);
+            sb.append("}");
             return sb.toString();
         }
     }
+
 
     @Override
     public boolean equals(Object o) {
@@ -315,25 +311,23 @@ public class Medicine {
                 Objects.equals(name, medicine.name) &&
                 Objects.equals(pharm, medicine.pharm) &&
                 Objects.equals(analogs, medicine.analogs) &&
-                Objects.equals(versions, medicine.versions) &&
-                Objects.equals(version, medicine.version);
+                Objects.equals(versions, medicine.versions);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, group, name, pharm, analogs, versions, version);
+        return Objects.hash(id, group, name, pharm, analogs, versions);
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Medicine{");
-        sb.append("id='").append(id).append('\'');
-        sb.append(", group='").append(group).append('\'');
-        sb.append(", name='").append(name).append('\'');
-        sb.append(", pharm='").append(pharm).append('\'');
-        sb.append(", analogs=").append(analogs);
-        sb.append(", versions=").append(versions);
-        sb.append(", version=").append(version);
+        sb.append("\nid='").append(id).append('\'');
+        sb.append(",\ngroup='").append(group).append('\'');
+        sb.append(",\nname='").append(name).append('\'');
+        sb.append(",\npharm='").append(pharm).append('\'');
+        sb.append(",\nanalogs=").append(analogs);
+        sb.append(",\nversions=").append(versions);
         sb.append('}');
         return sb.toString();
     }
