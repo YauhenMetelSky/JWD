@@ -16,5 +16,10 @@
             <class name="test.metelski.xmltask.builder.MedicinesDomBuilderTest"/>
         </classes>
     </test>
+    <test name="MedicinesStaxBuilderTest">
+        <classes>
+            <class name="test.metelski.xmltask.builder.MedicinesStaxBuilderTest"/>
+        </classes>
+    </test>
 
 </suite>

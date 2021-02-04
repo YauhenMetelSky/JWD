@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.Set;
 import org.apache.logging.log4j.Level;
 
-public class MedicinesSaxBuilder {
+public class MedicinesSaxBuilder extends AbstractMedicinesBuilder {
     public static final Logger logger = LogManager.getLogger();
     private Set<Medicine> medicines;
     private MedicineSaxHandler handler=new MedicineSaxHandler();
@@ -28,13 +28,17 @@ public class MedicinesSaxBuilder {
         }
         reader.setContentHandler(handler);
     }
+    public MedicinesSaxBuilder(Set<Medicine> medicines){
+        super(medicines);
+    }
     public Set<Medicine> getMedicines(){
         logger.log(Level.INFO,"return list medicines" );
         return medicines;
     }
-    public void buildSetMedicines(String fileName){
+    @Override
+    public void buildSetMedicines(String filename){
         try {
-            reader.parse(fileName);
+            reader.parse(filename);
         }catch (IOException|SAXException e){
             e.printStackTrace();
         }

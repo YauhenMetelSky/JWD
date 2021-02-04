@@ -3,6 +3,7 @@ package by.metelski.xmltask.handler;
 public enum MedicineXmlTag {
     MEDICINES("medicines"),
     VERSIONS("versions"),
+    FREQUENCE_OF_MEDICATION("frequency-of-medication"),
     VERSION("version"),
     MEDICINE("medicine"),
     CERTIFICATE("certificate"),

@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
-public class MedicinesDomBuilder {
+public class MedicinesDomBuilder extends AbstractMedicinesBuilder{
     private Set<Medicine> medicines;
     private DocumentBuilder docBuilder;
 
@@ -27,9 +27,14 @@ public class MedicinesDomBuilder {
             //log
         }
     }
+    public MedicinesDomBuilder(Set<Medicine> medicines){
+        super(medicines);
+    }
     public Set<Medicine> getMedicines(){
+
         return medicines;
     }
+    @Override
     public void buildSetMedicines(String filename){
         Document doc;
         try{
