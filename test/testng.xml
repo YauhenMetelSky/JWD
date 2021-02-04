@@ -11,5 +11,10 @@
             <class name="test.metelski.xmltask.validation.CustomXMLValidatorTest"/>
         </classes>
     </test>
+    <test name="MedicinesDomBuilderTest">
+        <classes>
+            <class name="test.metelski.xmltask.builder.MedicinesDomBuilderTest"/>
+        </classes>
+    </test>
 
 </suite>

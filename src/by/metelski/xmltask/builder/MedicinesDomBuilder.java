@@ -48,7 +48,6 @@ public class MedicinesDomBuilder {
     private Medicine buildMedicine(Element medicineElement){
         Medicine medicine = new Medicine();
         if(null!=medicineElement) {
-           // Medicine.Version version = medicine.new Version();
             Medicine.Version version;
             medicine.setGroup(medicineElement.getAttribute("group"));
             medicine.setId(medicineElement.getAttribute("id"));
@@ -64,6 +63,11 @@ public class MedicinesDomBuilder {
                 version.setMedicinePackage(buildPackage(versionElement,version));
                 version.setDosage(buildDosage(versionElement,version));
                 medicine.addVersion(version);
+            }
+            NodeList nListAnalogs = medicineElement.getElementsByTagName("analog");
+            for (int i = 0; i <nListAnalogs.getLength() ; i++) {
+                medicine.addAnalog(nListAnalogs.item(i).getTextContent());
+
             }
         }
            return medicine;// change for sure!!!!!
@@ -87,8 +91,9 @@ public class MedicinesDomBuilder {
     private Medicine.Dosage buildDosage(Element element,Medicine.Version version){
         Medicine.Dosage dosage = version.getDosage();
         dosage.setDose(Integer.parseInt(getElementTextContext(element,"dose")));
-        System.out.println(element.getAttribute("frequency-of-medication")+ "!!!!!!!!!!!!!!!!!!!!!!!!");
-        dosage.setFrequencyOfMedication(element.getAttribute("frequency-of-medication"));
+        NodeList tagDosage = element.getElementsByTagName("dosage");
+        Element tag = (Element) tagDosage.item(0);
+        dosage.setFrequencyOfMedication(tag.getAttribute("frequency-of-medication"));
         return dosage;
     }
     private String getElementTextContext(Element element, String elementName){
