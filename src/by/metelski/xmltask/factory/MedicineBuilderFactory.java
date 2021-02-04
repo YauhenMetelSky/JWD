@@ -1,4 +1,4 @@
-package by.metelski.xmltask.parser;
+package by.metelski.xmltask.factory;
 
 
 import by.metelski.xmltask.builder.AbstractMedicinesBuilder;
