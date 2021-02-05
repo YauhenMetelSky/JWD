@@ -14,18 +14,21 @@ import java.util.List;
 
 public class CustomArrayCreator {
     public final static Logger logger = LogManager.getLogger();
+    List<CustomArray> customArrayList;
+    CustomParser customParser;
+    StringFromTextFileReader reader;
 
     public List<CustomArray> createCustomArraysFromFile(String filePath) throws CustomArrayException {
-        List<CustomArray> customArrayList = new ArrayList<>();
-        CustomParser customParser = new CustomParser();
-        StringFromTextFileReader reader = new StringFromTextFileReader();
+        customArrayList = new ArrayList<>();
+        customParser = new CustomParser();
+        reader = new StringFromTextFileReader();
         List<String> stringsFromFile = reader.readStringsFromFile(filePath);
         for (String string : stringsFromFile) {
             if (CheckStringFromFile.isStringValid(string)) {
                 int[] tmpArray = customParser.parseArrayFromString(string);
                 CustomArray customArray = new CustomArray(tmpArray);
                 customArrayList.add(customArray);
-                logger.log(Level.INFO, "created CustomArray object, " + customArray.toString()+" and added to CustomArrayList");
+                logger.log(Level.INFO, "created CustomArray object, " + customArray.toString() + " and added to CustomArrayList");
             }
         }
         logger.log(Level.INFO, "return CustomArrayList");
