@@ -2,7 +2,9 @@ package by.metelski.xmltask.builder;
 
 import by.metelski.xmltask.entity.Medicine;
 import by.metelski.xmltask.handler.MedicineXmlTag;
-
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
@@ -15,11 +17,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
+    public static final Logger logger = LogManager.getLogger();
     private Set<Medicine> medicines;
     private XMLInputFactory inputFactory;
     public MedicinesStaxBuilder(){
         inputFactory=XMLInputFactory.newInstance();
         medicines=new HashSet<Medicine>();
+        logger.log(Level.INFO,"medicines empty set created");
     }
     public MedicinesStaxBuilder(Set<Medicine> medicines){
     super(medicines);
@@ -43,13 +47,11 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
                     }
                 }
             }
-
         }catch (XMLStreamException| FileNotFoundException e){
 
         }catch (IOException e){
 
         }
-
     }
     private Medicine buildMedicine(XMLStreamReader reader) throws XMLStreamException{
         Medicine medicine = new Medicine();

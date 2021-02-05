@@ -1,6 +1,5 @@
 package test.metelski.xmltask.builder;
 
-import by.metelski.xmltask.builder.MedicinesSaxBuilder;
 import by.metelski.xmltask.builder.MedicinesStaxBuilder;
 import by.metelski.xmltask.entity.Medicine;
 import org.testng.Assert;

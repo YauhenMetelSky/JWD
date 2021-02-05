@@ -16,9 +16,6 @@ public class MedicineSaxHandler extends DefaultHandler {
     private Medicine.Version currentVersion;
     private MedicineXmlTag currentXmlTag;
     private EnumSet<MedicineXmlTag> withText;
-    private static final String ELEMENT_MEDICINE="medicine";
-    private static final String ELEMENT_DOSAGE="dosage";
-    private static final String ELEMENT_VERSION="version";
     public static final Logger logger = LogManager.getLogger();
 
     public MedicineSaxHandler(){
@@ -31,26 +28,24 @@ public class MedicineSaxHandler extends DefaultHandler {
     }
     public void startElement(String uri, String localName, String qName, Attributes attributes){
         logger.log(Level.INFO,"start element: " + qName);
-        //replace constant for enum constant
-        if(ELEMENT_MEDICINE.equals(qName)){
+        if(MedicineXmlTag.MEDICINE.getValue().equals(qName)) {
             current = new Medicine();
-            logger.log(Level.INFO,"new medicine created");
-            for (int i = 0; i <attributes.getLength() ; i++) {
-                switch (attributes.getQName(i)){
+            logger.log(Level.INFO, "new medicine created");
+            for (int i = 0; i < attributes.getLength(); i++) {
+                switch (attributes.getQName(i)) {
                     case "group":
                         current.setGroup(attributes.getValue(i));
-                        logger.log(Level.INFO,"setted group: "+ attributes.getValue(i));
+                        logger.log(Level.INFO, "setted group: " + attributes.getValue(i));
                         break;
                     case "id":
                         current.setId(attributes.getValue(i));
-                        logger.log(Level.INFO,"setted id: "+ attributes.getValue(i));
+                        logger.log(Level.INFO, "setted id: " + attributes.getValue(i));
                         break;
                 }
             }
-
-        }  if(ELEMENT_VERSION.equals(qName)) {
+        }if(MedicineXmlTag.VERSION.getValue().equals(qName)) {
             currentVersion = current.new Version();
-        }  if(ELEMENT_DOSAGE.equals(qName)){
+        }if(MedicineXmlTag.DOSAGE.getValue().equals(qName)){
             for (int i = 0; i <attributes.getLength() ; i++) {
                 currentVersion.getDosage().setFrequencyOfMedication(attributes.getValue(0));
                 logger.log(Level.INFO, current.getName()+": setted frequency of medication : " + attributes.getValue(0));
@@ -125,10 +120,10 @@ public class MedicineSaxHandler extends DefaultHandler {
     }
     public void endElement(String uri, String localName, String qName) {
         logger.log(Level.INFO,current.getName()+": end element: " + qName);
-       if(ELEMENT_MEDICINE.equals(qName)){
+        if(MedicineXmlTag.MEDICINE.getValue().equals(qName)){
            medicines.add(current);
        }
-       if(ELEMENT_VERSION.equals(qName)){
+             if(MedicineXmlTag.VERSION.getValue().equals(qName)){
            current.addVersion(currentVersion);
        }
     }

@@ -1,6 +1,8 @@
 package by.metelski.xmltask.entity;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -45,7 +47,7 @@ public class Medicine {
     }
 
     public List<String> getAnalogs() {
-        return analogs;
+        return Collections.unmodifiableList(analogs);
     }
 
     public void setAnalogs(List<String> analogs) {
@@ -57,7 +59,7 @@ public class Medicine {
     }
 
     public List<Version> getVersions() {
-        return versions;
+       return Collections.unmodifiableList(versions);
     }
 
     public void setVersions(List<Version> versions) {
@@ -136,6 +138,7 @@ public class Medicine {
 
     public class Certificate {
         private String number;
+        //private LocalDate;
         private String dateOfIssue;
         private String expiryDate;
         private String registrationOrganisation;
