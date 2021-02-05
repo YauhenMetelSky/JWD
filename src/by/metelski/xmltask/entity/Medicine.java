@@ -59,14 +59,14 @@ public class Medicine {
     }
 
     public List<Version> getVersions() {
-       return Collections.unmodifiableList(versions);
+        return Collections.unmodifiableList(versions);
     }
 
     public void setVersions(List<Version> versions) {
         this.versions = versions;
     }
 
-    public void addVersion(Version version){
+    public void addVersion(Version version) {
         this.versions.add(version);
     }
 
@@ -138,9 +138,8 @@ public class Medicine {
 
     public class Certificate {
         private String number;
-        //private LocalDate;
-        private String dateOfIssue;
-        private String expiryDate;
+        private LocalDate dateOfIssue;
+        private LocalDate expiryDate;
         private String registrationOrganisation;
 
         public String getNumber() {
@@ -151,20 +150,20 @@ public class Medicine {
             this.number = number;
         }
 
-        public String getDateOfIssue() {
+        public LocalDate getDateOfIssue() {
             return dateOfIssue;
         }
 
-        public void setDateOfIssue(String dateOfIssue) {
+        public void setDateOfIssue(LocalDate dateOfIssue) {
 
             this.dateOfIssue = dateOfIssue;
         }
 
-        public String getExpiryDate() {
+        public LocalDate getExpiryDate() {
             return expiryDate;
         }
 
-        public void setExpiryDate(String expiryDate) {
+        public void setExpiryDate(LocalDate expiryDate) {
             this.expiryDate = expiryDate;
         }
 

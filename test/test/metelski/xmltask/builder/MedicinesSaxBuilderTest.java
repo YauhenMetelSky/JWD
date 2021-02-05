@@ -7,11 +7,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
 import java.util.Set;
 
 public class MedicinesSaxBuilderTest extends Assert {
     private MedicinesSaxBuilder medicinesSAXBuilder;
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     Set<Medicine> actualResult;
     Set<Medicine> expectedResult;
 
@@ -28,8 +31,8 @@ public class MedicinesSaxBuilderTest extends Assert {
         version.setManufacturer("Astellas Pharma Europe");
         Medicine.Certificate certificate = version.getCertificate();
         certificate.setNumber("a-32214");
-        certificate.setDateOfIssue("2021-01-30");
-        certificate.setExpiryDate("2025-01-30");
+        certificate.setDateOfIssue(LocalDate.parse("2021-01-30",formatter));
+        certificate.setExpiryDate(LocalDate.parse("2025-01-30",formatter));
         certificate.setRegistrationOrganisation("Minzdrav RB");
         Medicine.MedicinePackage medicinePackage = version.getMedicinePackage();
         medicinePackage.setPackageType("blister");
@@ -53,8 +56,8 @@ public class MedicinesSaxBuilderTest extends Assert {
         amoksiklavVersionOne.setManufacturer("Lekk d.d.");
         Medicine.Certificate certificate1 = amoksiklavVersionOne.getCertificate();
         certificate1.setNumber("a-322414");
-        certificate1.setDateOfIssue("2020-12-14");
-        certificate1.setExpiryDate("2024-12-14");
+        certificate1.setDateOfIssue(LocalDate.parse("2020-12-14",formatter));
+        certificate1.setExpiryDate(LocalDate.parse("2024-12-14",formatter));
         certificate1.setRegistrationOrganisation("Minzdrav RB");
         Medicine.MedicinePackage medicinePackage1 = amoksiklavVersionOne.getMedicinePackage();
         medicinePackage1.setPackageType("blister");
@@ -70,8 +73,8 @@ public class MedicinesSaxBuilderTest extends Assert {
         amoksiklavVersionTwo.setManufacturer("Lekk d.d.");
         Medicine.Certificate certificate2 = amoksiklavVersionTwo.getCertificate();
         certificate2.setNumber("a-322414");
-        certificate2.setDateOfIssue("2020-12-14");
-        certificate2.setExpiryDate("2024-12-14");
+        certificate2.setDateOfIssue(LocalDate.parse("2020-12-14",formatter));
+        certificate2.setExpiryDate(LocalDate.parse("2024-12-14",formatter));
         certificate2.setRegistrationOrganisation("Minzdrav RB");
         Medicine.MedicinePackage medicinePackage2 = amoksiklavVersionTwo.getMedicinePackage();
         medicinePackage2.setPackageType("blister");

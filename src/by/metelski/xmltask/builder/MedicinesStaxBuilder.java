@@ -13,11 +13,16 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
 import java.util.Set;
 
 public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
     public static final Logger logger = LogManager.getLogger();
+    public static final String HYPHEN="-";
+    public static final String UNDERSCORE="_";
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     private Set<Medicine> medicines;
     private XMLInputFactory inputFactory;
     public MedicinesStaxBuilder(){
@@ -63,7 +68,7 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
             switch (type){
                 case XMLStreamConstants.START_ELEMENT:
                     name = reader.getLocalName();
-                    switch(MedicineXmlTag.valueOf(name.toUpperCase().replaceAll("-","_"))){
+                    switch(MedicineXmlTag.valueOf(name.toUpperCase().replaceAll(HYPHEN,UNDERSCORE))){
                         case NAME:
                             medicine.setName(getXMLText(reader));
                             break;
@@ -79,7 +84,7 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
                     break;
                     case XMLStreamConstants.END_ELEMENT:
                         name = reader.getLocalName();
-                        if(MedicineXmlTag.valueOf(name.toUpperCase().replaceAll("-","_"))==MedicineXmlTag.MEDICINE){
+                        if(MedicineXmlTag.valueOf(name.toUpperCase().replaceAll(HYPHEN,UNDERSCORE))==MedicineXmlTag.MEDICINE){
                             return medicine;
                         }
             }
@@ -95,7 +100,7 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
             switch (type){
                 case XMLStreamConstants.START_ELEMENT:
                     name = reader.getLocalName();
-                    switch (MedicineXmlTag.valueOf(name.toUpperCase().replaceAll("-","_"))){
+                    switch (MedicineXmlTag.valueOf(name.toUpperCase().replaceAll(HYPHEN,UNDERSCORE))){
                         case MANUFACTURER:
                             version.setManufacturer(getXMLText(reader));
                             break;
@@ -112,7 +117,7 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
                     break;
                     case XMLStreamConstants.END_ELEMENT:
                         name = reader.getLocalName();
-                        if(MedicineXmlTag.valueOf(name.toUpperCase().replaceAll("-","_"))==MedicineXmlTag.VERSION){
+                        if(MedicineXmlTag.valueOf(name.toUpperCase().replaceAll(HYPHEN,UNDERSCORE))==MedicineXmlTag.VERSION){
                             return version;
                         }
             }
@@ -128,15 +133,15 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
             switch (type){
                 case XMLStreamConstants.START_ELEMENT:
                     name = reader.getLocalName();
-                    switch (MedicineXmlTag.valueOf(name.toUpperCase().replaceAll("-","_"))){
+                    switch (MedicineXmlTag.valueOf(name.toUpperCase().replaceAll(HYPHEN,UNDERSCORE))){
                         case NUMBER:
                             certificate.setNumber(getXMLText(reader));
                             break;
                         case DATE_OF_ISSUE:
-                            certificate.setDateOfIssue(getXMLText(reader));
+                            certificate.setDateOfIssue(LocalDate.parse(getXMLText(reader),formatter));
                             break;
                         case EXPIRY_DATE:
-                            certificate.setExpiryDate(getXMLText(reader));
+                            certificate.setExpiryDate(LocalDate.parse(getXMLText(reader),formatter));
                             break;
                         case REGISTRATION_ORGANISATION:
                             certificate.setRegistrationOrganisation(getXMLText(reader));
@@ -145,7 +150,7 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
                     break;
                 case XMLStreamConstants.END_ELEMENT:
                     name = reader.getLocalName();
-                    if(MedicineXmlTag.valueOf(name.toUpperCase().replaceAll("-","_"))==MedicineXmlTag.CERTIFICATE){
+                    if(MedicineXmlTag.valueOf(name.toUpperCase().replaceAll(HYPHEN,UNDERSCORE))==MedicineXmlTag.CERTIFICATE){
                         return certificate;
                     }
             }
@@ -162,7 +167,7 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
             switch (type){
                 case XMLStreamConstants.START_ELEMENT:
                     name = reader.getLocalName();
-                    switch (MedicineXmlTag.valueOf(name.toUpperCase().replaceAll("-","_"))){
+                    switch (MedicineXmlTag.valueOf(name.toUpperCase().replaceAll(HYPHEN,UNDERSCORE))){
                         case PACKAGE_TYPE:
                             medicinePackage.setPackageType(getXMLText(reader));
                             break;
@@ -176,7 +181,7 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
                     break;
                 case XMLStreamConstants.END_ELEMENT:
                     name = reader.getLocalName();
-                    if(MedicineXmlTag.valueOf(name.toUpperCase().replaceAll("-","_"))==MedicineXmlTag.PACKAGE){
+                    if(MedicineXmlTag.valueOf(name.toUpperCase().replaceAll(HYPHEN,UNDERSCORE))==MedicineXmlTag.PACKAGE){
                         return medicinePackage;
                     }
             }
@@ -194,7 +199,7 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
                 case XMLStreamConstants.START_ELEMENT:
                     name = reader.getLocalName();
 
-                    switch (MedicineXmlTag.valueOf(name.toUpperCase().replaceAll("-","_"))){
+                    switch (MedicineXmlTag.valueOf(name.toUpperCase().replaceAll(HYPHEN,UNDERSCORE))){
                         case DOSE:
                             dosage.setDose(Integer.parseInt(getXMLText(reader)));
                             break;
@@ -202,7 +207,7 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
                     break;
                 case XMLStreamConstants.END_ELEMENT:
                     name = reader.getLocalName();
-                    if(MedicineXmlTag.valueOf(name.toUpperCase().replaceAll("-","_"))==MedicineXmlTag.DOSAGE){
+                    if(MedicineXmlTag.valueOf(name.toUpperCase().replaceAll(HYPHEN,UNDERSCORE))==MedicineXmlTag.DOSAGE){
                         return dosage;
                     }
             }

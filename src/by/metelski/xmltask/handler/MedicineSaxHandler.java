@@ -6,6 +6,9 @@ import org.xml.sax.helpers.DefaultHandler;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.Set;
@@ -17,6 +20,7 @@ public class MedicineSaxHandler extends DefaultHandler {
     private MedicineXmlTag currentXmlTag;
     private EnumSet<MedicineXmlTag> withText;
     public static final Logger logger = LogManager.getLogger();
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public MedicineSaxHandler(){
         medicines=new HashSet<Medicine>();
@@ -51,7 +55,6 @@ public class MedicineSaxHandler extends DefaultHandler {
                 logger.log(Level.INFO, current.getName()+": setted frequency of medication : " + attributes.getValue(0));
             }
         }
-
         else {
             MedicineXmlTag temp = MedicineXmlTag.valueOf(qName.toUpperCase().replaceAll("-","_"));
             if(withText.contains(temp)){
@@ -85,11 +88,11 @@ public class MedicineSaxHandler extends DefaultHandler {
                 logger.log(Level.INFO,current.getName()+": setted certificate number: "+ data);
                 break;
             case DATE_OF_ISSUE:
-                currentVersion.getCertificate().setDateOfIssue(data);
+                currentVersion.getCertificate().setDateOfIssue(LocalDate.parse(data,formatter));
                 logger.log(Level.INFO,current.getName()+": setted date of issue: "+ data);
                 break;
             case EXPIRY_DATE:
-                currentVersion.getCertificate().setExpiryDate(data);
+                currentVersion.getCertificate().setExpiryDate(LocalDate.parse(data,formatter));
                 logger.log(Level.INFO,current.getName()+": setted expiry date: "+ data);
                 break;
             case REGISTRATION_ORGANISATION:

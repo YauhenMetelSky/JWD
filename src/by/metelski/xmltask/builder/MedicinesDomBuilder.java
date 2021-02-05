@@ -11,12 +11,15 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
 import java.util.Set;
 
 public class MedicinesDomBuilder extends AbstractMedicinesBuilder{
     private Set<Medicine> medicines;
     private DocumentBuilder docBuilder;
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public MedicinesDomBuilder(){
         medicines=new HashSet<Medicine>();
@@ -81,8 +84,8 @@ public class MedicinesDomBuilder extends AbstractMedicinesBuilder{
     private Medicine.Certificate buildCertificate(Element element, Medicine.Version version){
         Medicine.Certificate certificate = version.getCertificate();
         certificate.setNumber(getElementTextContext(element,"number"));
-        certificate.setDateOfIssue(getElementTextContext(element,"date-of-issue"));
-        certificate.setExpiryDate(getElementTextContext(element,"expiry-date"));
+        certificate.setDateOfIssue(LocalDate.parse(getElementTextContext(element,"date-of-issue"),formatter));
+        certificate.setExpiryDate(LocalDate.parse(getElementTextContext(element,"expiry-date"),formatter));
         certificate.setRegistrationOrganisation(getElementTextContext(element,"registration-organisation"));
         return certificate;
     }
