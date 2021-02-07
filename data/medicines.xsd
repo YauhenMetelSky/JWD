@@ -6,7 +6,7 @@
     <element name="medicines">
         <complexType>
             <sequence>
-                <element name="medicine" type="tns:Medicine" minOccurs="1" maxOccurs="unbounded"/>
+                <element name="medicine" type="tns:Medicine" minOccurs="16" maxOccurs="unbounded"/>
             </sequence>
         </complexType>
     </element>

@@ -17,7 +17,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class MedicinesDomBuilder extends AbstractMedicinesBuilder{
-    private Set<Medicine> medicines;
+   // private Set<Medicine> medicines;
     private DocumentBuilder docBuilder;
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
@@ -33,10 +33,10 @@ public class MedicinesDomBuilder extends AbstractMedicinesBuilder{
     public MedicinesDomBuilder(Set<Medicine> medicines){
         super(medicines);
     }
-    public Set<Medicine> getMedicines(){
-
-        return medicines;
-    }
+//    public Set<Medicine> getMedicines(){
+//
+//        return medicines;
+//    }
     @Override
     public void buildSetMedicines(String filename){
         Document doc;
