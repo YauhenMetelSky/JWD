@@ -1,6 +1,7 @@
 package by.metelski.xmltask.builder;
 
 import by.metelski.xmltask.entity.Medicine;
+import by.metelski.xmltask.exception.CustomXMLParseException;
 import by.metelski.xmltask.handler.MedicineSaxHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,13 +19,13 @@ public class MedicinesSaxBuilder extends AbstractMedicinesBuilder {
     private Set<Medicine> medicines;
     private MedicineSaxHandler handler=new MedicineSaxHandler();
     private XMLReader reader;
-    public MedicinesSaxBuilder(){
+    public MedicinesSaxBuilder() {
         SAXParserFactory factory = SAXParserFactory.newInstance();
         try{
             SAXParser saxParser=factory.newSAXParser();
             reader = saxParser.getXMLReader();
         }catch (ParserConfigurationException| SAXException e){
-            e.printStackTrace();
+            logger.log(Level.ERROR,"caught exception: "+e);
         }
         reader.setContentHandler(handler);
     }
@@ -36,13 +37,14 @@ public class MedicinesSaxBuilder extends AbstractMedicinesBuilder {
         return medicines;
     }
     @Override
-    public void buildSetMedicines(String filename){
+    public void buildSetMedicines(String filename) throws CustomXMLParseException {
         try {
             reader.parse(filename);
         }catch (IOException|SAXException e){
-            e.printStackTrace();
+            logger.log(Level.ERROR,"exception, invalid file: " +filename+"; "+e);
+            throw new CustomXMLParseException("Parser configuration exception or SAXExcetion ",e);
         }
         medicines=handler.getMedicines();
-        logger.log(Level.INFO,"build set medicines");
+        logger.log(Level.INFO,"built set medicines");
     }
 }

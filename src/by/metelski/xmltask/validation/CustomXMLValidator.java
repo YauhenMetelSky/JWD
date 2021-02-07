@@ -1,6 +1,5 @@
 package by.metelski.xmltask.validation;
 
-import by.metelski.xmltask.exception.CustomXMLParseException;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,9 +16,9 @@ import java.io.IOException;
 public class CustomXMLValidator {
     public static final Logger logger = LogManager.getLogger();
 
-    public static boolean isXMLValid(String fileName, String schemaName){
+    public static boolean isXMLValid(String filename, String schemaName){
         boolean isValid;
-        if(fileName==null||schemaName==null){
+        if(filename==null||schemaName==null){
             return false;
         }
         String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
@@ -28,14 +27,14 @@ public class CustomXMLValidator {
         try{
             Schema schema = factory.newSchema(schemaLocation);
             Validator validator = schema.newValidator();
-            Source source=new StreamSource(fileName);
+            Source source=new StreamSource(filename);
             validator.validate(source);
             isValid = true;
         }catch (SAXException| IOException e){
-            logger.log(Level.ERROR,"XML document " + fileName + "or xsd schema "+ schemaName +"is not correct or valid");
+            logger.log(Level.ERROR,"XML document " + filename + "or xsd schema "+ schemaName +"is not correct or valid");
             isValid=false;
         }
-        logger.log(Level.INFO,"XML document: "+ fileName +"-is valid, schema: " + schemaName);
+        logger.log(Level.INFO,"XML document: "+ filename +"-is valid, schema: " + schemaName);
         return isValid;
     }
 

@@ -13,12 +13,14 @@ import java.util.Set;
 
 public class MedicinesDomBuilderTest extends Assert {
     private MedicinesDomBuilder medicinesDomBuilder;
+    private String filename;
     Set<Medicine> actualResult;
     Set<Medicine> expectedResult;
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     @BeforeTest
     public void setUp() {
+        filename ="testdata/testmed.xml";
         expectedResult = new HashSet<>();
         medicinesDomBuilder = new MedicinesDomBuilder();
         Medicine flemoklav = new Medicine();
@@ -94,7 +96,7 @@ public class MedicinesDomBuilderTest extends Assert {
     }
     @Test
     public void testGetMedicines() {
-        medicinesDomBuilder.buildSetMedicines("testdata/testmed.xml");
+        medicinesDomBuilder.buildSetMedicines(filename);
         actualResult = medicinesDomBuilder.getMedicines();
         assertEquals(actualResult, expectedResult);
     }
