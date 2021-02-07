@@ -6,7 +6,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
@@ -86,15 +85,12 @@ public class MedicinesDomBuilderTest extends Assert {
         dosage1.setDose(500);
         amoksiklav.addVersion(amoksiklavVersionTwo);
         expectedResult.add(amoksiklav);
-
-
     }
 
     @AfterTest
     public void tearDown() {
         medicinesDomBuilder = null;
         actualResult = null;
-
     }
     @Test
     public void testGetMedicines() {
