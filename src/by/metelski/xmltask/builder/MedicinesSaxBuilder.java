@@ -41,7 +41,6 @@ public class MedicinesSaxBuilder extends AbstractMedicinesBuilder {
         try {
             reader.parse(filename);
         }catch (IOException|SAXException e){
-            logger.log(Level.ERROR,"exception, invalid file: " +filename+"; "+e);
             throw new CustomXMLParseException("Parser configuration exception or SAXExcetion ",e);
         }
         medicines=handler.getMedicines();

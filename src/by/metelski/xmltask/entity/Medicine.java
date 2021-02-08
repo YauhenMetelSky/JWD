@@ -10,7 +10,7 @@ public class Medicine {
     private String id;
     private String group;
     private String name;
-    private String pharm;
+    private String pharmaceuticalCompany;
     private List<String> analogs = new ArrayList<>();
     private List<Version> versions = new ArrayList<>();
 
@@ -38,12 +38,12 @@ public class Medicine {
         this.name = name;
     }
 
-    public String getPharm() {
-        return pharm;
+    public String getPharmaceuticalCompany() {
+        return pharmaceuticalCompany;
     }
 
-    public void setPharm(String pharm) {
-        this.pharm = pharm;
+    public void setPharmaceuticalCompany(String pharmaceuticalCompany) {
+        this.pharmaceuticalCompany = pharmaceuticalCompany;
     }
 
     public List<String> getAnalogs() {
@@ -311,14 +311,14 @@ public class Medicine {
         return Objects.equals(id, medicine.id) &&
                 Objects.equals(group, medicine.group) &&
                 Objects.equals(name, medicine.name) &&
-                Objects.equals(pharm, medicine.pharm) &&
+                Objects.equals(pharmaceuticalCompany, medicine.pharmaceuticalCompany) &&
                 Objects.equals(analogs, medicine.analogs) &&
                 Objects.equals(versions, medicine.versions);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, group, name, pharm, analogs, versions);
+        return Objects.hash(id, group, name, pharmaceuticalCompany, analogs, versions);
     }
 
     @Override
@@ -327,7 +327,7 @@ public class Medicine {
         sb.append("\nid='").append(id).append('\'');
         sb.append(",\ngroup='").append(group).append('\'');
         sb.append(",\nname='").append(name).append('\'');
-        sb.append(",\npharm='").append(pharm).append('\'');
+        sb.append(",\npharm='").append(pharmaceuticalCompany).append('\'');
         sb.append(",\nanalogs=").append(analogs);
         sb.append(",\nversions=").append(versions);
         sb.append('}');

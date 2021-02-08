@@ -13,7 +13,7 @@
     <complexType name="Medicine">
         <sequence>
             <element name="name" type="string"/>
-            <element name="pharm" type="string"/>
+            <element name="pharmaceutical-company" type="string"/>
             <element name="versions">
                 <complexType>
                     <sequence>

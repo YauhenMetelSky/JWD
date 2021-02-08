@@ -6,7 +6,6 @@ import org.xml.sax.helpers.DefaultHandler;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.EnumSet;
@@ -23,7 +22,7 @@ public class MedicineSaxHandler extends DefaultHandler {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public MedicineSaxHandler(){
-        medicines=new HashSet<Medicine>();
+        medicines=new HashSet<>();
         withText=EnumSet.range(MedicineXmlTag.NAME,MedicineXmlTag.DOSE);
     }
 
@@ -39,11 +38,11 @@ public class MedicineSaxHandler extends DefaultHandler {
                 switch (attributes.getQName(i)) {
                     case "group":
                         current.setGroup(attributes.getValue(i));
-                        logger.log(Level.INFO, "setted group: " + attributes.getValue(i));
+                        logger.log(Level.INFO, "set group: " + attributes.getValue(i));
                         break;
                     case "id":
                         current.setId(attributes.getValue(i));
-                        logger.log(Level.INFO, "setted id: " + attributes.getValue(i));
+                        logger.log(Level.INFO, "set id: " + attributes.getValue(i));
                         break;
                 }
             }
@@ -52,7 +51,7 @@ public class MedicineSaxHandler extends DefaultHandler {
         }if(MedicineXmlTag.DOSAGE.getValue().equals(qName)){
             for (int i = 0; i <attributes.getLength() ; i++) {
                 currentVersion.getDosage().setFrequencyOfMedication(attributes.getValue(0));
-                logger.log(Level.INFO, current.getName()+": setted frequency of medication : " + attributes.getValue(0));
+                logger.log(Level.INFO, current.getName()+": set frequency of medication : " + attributes.getValue(0));
             }
         }
         else {
@@ -64,20 +63,20 @@ public class MedicineSaxHandler extends DefaultHandler {
     }
     public void characters(char[] ch, int start, int length) {
     String data = new String(ch,start,length).strip();
-    logger.log(Level.INFO,"readed data: "+ data);
+    logger.log(Level.INFO,"read data: "+ data);
     if(currentXmlTag!=null){
             switch (currentXmlTag){
             case NAME:
                 current.setName(data);
-                logger.log(Level.INFO,current.getName()+": setted name: "+ data);
+                logger.log(Level.INFO,current.getName()+": set name: "+ data);
                 break;
-            case PHARM:
-                current.setPharm(data);
-                logger.log(Level.INFO,current.getName()+": setted pharm: "+ data);
+            case PHARMACEUTICAL_COMPANY:
+                current.setPharmaceuticalCompany(data);
+                logger.log(Level.INFO,current.getName()+": set pharmaceutical company: "+ data);
                 break;
             case MANUFACTURER:
                 currentVersion.setManufacturer(data);
-                logger.log(Level.INFO,current.getName()+": setted manufacturer: "+ data);
+                logger.log(Level.INFO,current.getName()+": set manufacturer: "+ data);
                 break;
             case ANALOG:
                 current.addAnalog(data);
@@ -85,35 +84,35 @@ public class MedicineSaxHandler extends DefaultHandler {
                 break;
             case NUMBER:
                 currentVersion.getCertificate().setNumber(data);
-                logger.log(Level.INFO,current.getName()+": setted certificate number: "+ data);
+                logger.log(Level.INFO,current.getName()+": set certificate number: "+ data);
                 break;
             case DATE_OF_ISSUE:
                 currentVersion.getCertificate().setDateOfIssue(LocalDate.parse(data,formatter));
-                logger.log(Level.INFO,current.getName()+": setted date of issue: "+ data);
+                logger.log(Level.INFO,current.getName()+": set date of issue: "+ data);
                 break;
             case EXPIRY_DATE:
                 currentVersion.getCertificate().setExpiryDate(LocalDate.parse(data,formatter));
-                logger.log(Level.INFO,current.getName()+": setted expiry date: "+ data);
+                logger.log(Level.INFO,current.getName()+": set expiry date: "+ data);
                 break;
             case REGISTRATION_ORGANISATION:
                 currentVersion.getCertificate().setRegistrationOrganisation(data);
-                logger.log(Level.INFO,current.getName()+": setted registration organisation: "+ data);
+                logger.log(Level.INFO,current.getName()+": set registration organisation: "+ data);
                 break;
             case PACKAGE_TYPE:
                 currentVersion.getMedicinePackage().setPackageType(data);
-                logger.log(Level.INFO,current.getName()+": setted package type: "+ data);
+                logger.log(Level.INFO,current.getName()+": set package type: "+ data);
                 break;
             case AMOUNT_IN_PACKAGE:
                 currentVersion.getMedicinePackage().setAmountInPackage(Integer.parseInt(data));
-                logger.log(Level.INFO,current.getName()+": setted amount in package: "+ data);
+                logger.log(Level.INFO,current.getName()+": set amount in package: "+ data);
                 break;
             case PRICE:
                 currentVersion.getMedicinePackage().setPrice(Double.parseDouble(data));
-                logger.log(Level.INFO,current.getName()+": setted price: "+ data);
+                logger.log(Level.INFO,current.getName()+": set price: "+ data);
                 break;
                 case DOSE:
                     currentVersion.getDosage().setDose(Integer.parseInt(data));
-                    logger.log(Level.INFO,current.getName()+": setted dose: "+ data);
+                    logger.log(Level.INFO,current.getName()+": set dose: "+ data);
                     break;
             default:
                 throw new EnumConstantNotPresentException(currentXmlTag.getDeclaringClass(),currentXmlTag.name());

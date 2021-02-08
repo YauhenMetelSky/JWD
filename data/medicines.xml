@@ -2,7 +2,7 @@
 <medicines xmlns="http://www.example.com/medicines">
     <medicine group="antibiotics" id="M-0123">
         <name>Флемоклав</name>
-        <pharm>Astellas Pharma</pharm>
+        <pharmaceutical-company>Astellas Pharma</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>Astellas Pharma Europe</manufacturer>
@@ -30,7 +30,7 @@
     </medicine>
     <medicine group="antibiotics" id="M-0124">
         <name>Амоксиклав</name>
-        <pharm>Sandoz</pharm>
+        <pharmaceutical-company>Sandoz</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>Lekk d.d.</manufacturer>
@@ -75,7 +75,7 @@
     </medicine>
     <medicine group="antibiotics" id="M-0125">
         <name>Хиконцил</name>
-        <pharm>KRKA d.d.</pharm>
+        <pharmaceutical-company>KRKA d.d.</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>KRKA</manufacturer>
@@ -103,7 +103,7 @@
     </medicine>
     <medicine group="antibiotics" id="M-0126">
         <name>Амоклав</name>
-        <pharm>Фармлэнд СП ООО</pharm>
+        <pharmaceutical-company>Фармлэнд СП ООО</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>Фармлэнд СП ООО</manufacturer>
@@ -131,7 +131,7 @@
     </medicine>
     <medicine group="ointment" id="M-0127">
         <name>Элоком</name>
-        <pharm>SCHERING-PLOUGH LABO, N.V.</pharm>
+        <pharmaceutical-company>SCHERING-PLOUGH LABO, N.V.</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>МСД Фармасьютикалс ООО</manufacturer>
@@ -158,7 +158,7 @@
     </medicine>
     <medicine group="ointment" id="M-0128">
         <name>Элоком</name>
-        <pharm>LEO Pharma, A/S</pharm>
+        <pharmaceutical-company>LEO Pharma, A/S</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>TEMMLER ITALIA, S.r.L.</manufacturer>
@@ -185,7 +185,7 @@
     </medicine>
     <medicine group="ointment" id="M-0129">
         <name>Адвантан</name>
-        <pharm>БАЙЕР, АО</pharm>
+        <pharmaceutical-company>БАЙЕР, АО</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>BAYER HealthCare Manufacturing, S.r.L.</manufacturer>
@@ -212,7 +212,7 @@
     </medicine>
     <medicine group="vitamins" id="M-0130">
         <name>Витрум</name>
-        <pharm>UNIPHARM, Inc.</pharm>
+        <pharmaceutical-company>UNIPHARM, Inc.</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>UNIPHARM, Inc.</manufacturer>
@@ -307,7 +307,7 @@
     </medicine>
     <medicine group="vitamins" id="M-0131">
         <name>Супрадин</name>
-        <pharm>БАЙЕР, АО</pharm>
+        <pharmaceutical-company>БАЙЕР, АО</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>DELPHARM GAILLARD</manufacturer>
@@ -351,7 +351,7 @@
     </medicine>
     <medicine group="vitamins" id="M-0132">
         <name>Супрадин</name>
-        <pharm>MERZ PHARMA, GmbH &amp; Co.KGaA</pharm>
+        <pharmaceutical-company>MERZ PHARMA, GmbH &amp; Co.KGaA</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>MERZ PHARMA, GmbH &amp; Co.KGaA</manufacturer>
@@ -378,7 +378,7 @@
     </medicine>
     <medicine group="antiviral" id="M-0133">
         <name>Гроприносин</name>
-        <pharm>GEDEON RICHTER, Plc.</pharm>
+        <pharmaceutical-company>GEDEON RICHTER, Plc.</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>GEDEON RICHTER POLAND, Co. Ltd.</manufacturer>
@@ -406,7 +406,7 @@
     </medicine>
     <medicine group="antiviral" id="M-0134">
         <name>Иммунозин</name>
-        <pharm>ФАРМТЕХНОЛОГИЯ, ООО</pharm>
+        <pharmaceutical-company>ФАРМТЕХНОЛОГИЯ, ООО</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>ФАРМТЕХНОЛОГИЯ, ООО</manufacturer>
@@ -434,7 +434,7 @@
     </medicine>
     <medicine group="antiviral" id="M-0135">
         <name>Арпетол</name>
-        <pharm>ЛЕКФАРМ, СООО</pharm>
+        <pharmaceutical-company>ЛЕКФАРМ, СООО</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>ЛЕКФАРМ, СООО</manufacturer>
@@ -462,7 +462,7 @@
     </medicine>
     <medicine group="antiviral" id="M-0136">
         <name>Арбидол</name>
-        <pharm>ОТИСИФАРМ, АО</pharm>
+        <pharmaceutical-company>ОТИСИФАРМ, АО</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>ФАРМСТАНДАРТ-ЛЕКСРЕДСТВА, ОАО</manufacturer>
@@ -490,7 +490,7 @@
     </medicine>
     <medicine group="anti-allergic" id="M-0137">
         <name>Лоратадин</name>
-        <pharm>СИНТЕЗ, ОАО</pharm>
+        <pharmaceutical-company>СИНТЕЗ, ОАО</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>СИНТЕЗ, ОАО</manufacturer>
@@ -517,7 +517,7 @@
     </medicine>
     <medicine group="antiviral" id="M-0138">
         <name>Зодак</name>
-        <pharm>САНОФИ РОССИЯ, АО</pharm>
+        <pharmaceutical-company>САНОФИ РОССИЯ, АО</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>ZENTIVA, k.s.</manufacturer>
@@ -544,7 +544,7 @@
     </medicine>
     <medicine group="antiviral" id="M-0139">
         <name>Эриус</name>
-        <pharm>БАЙЕР, АО</pharm>
+        <pharmaceutical-company>БАЙЕР, АО</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>SCHERING-PLOUGH LABO, N.V.</manufacturer>

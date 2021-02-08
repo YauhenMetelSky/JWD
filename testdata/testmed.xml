@@ -2,7 +2,7 @@
 <medicines xmlns="http://www.example.com/testMeds">
     <medicine group="antibiotics" id="M-0123">
         <name>Флемоклав</name>
-        <pharm>Astellas Pharma</pharm>
+        <pharmaceutical-company>Astellas Pharma</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>Astellas Pharma Europe</manufacturer>
@@ -30,7 +30,7 @@
     </medicine>
     <medicine group="antibiotics" id="M-0124">
         <name>Амоксиклав</name>
-        <pharm>Sandoz</pharm>
+        <pharmaceutical-company>Sandoz</pharmaceutical-company>
         <versions>
             <version>
                 <manufacturer>Lekk d.d.</manufacturer>

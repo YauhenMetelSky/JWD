@@ -2,6 +2,7 @@ package test.metelski.xmltask.builder;
 
 import by.metelski.xmltask.builder.MedicinesDomBuilder;
 import by.metelski.xmltask.entity.Medicine;
+import by.metelski.xmltask.exception.CustomXMLParseException;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -28,7 +29,7 @@ public class MedicinesDomBuilderTest extends Assert {
         flemoklav.setGroup("antibiotics");
         flemoklav.setId("M-0123");
         flemoklav.setName("Флемоклав");
-        flemoklav.setPharm("Astellas Pharma");
+        flemoklav.setPharmaceuticalCompany("Astellas Pharma");
         version.setManufacturer("Astellas Pharma Europe");
         Medicine.Certificate certificate = version.getCertificate();
         certificate.setNumber("a-32214");
@@ -53,7 +54,7 @@ public class MedicinesDomBuilderTest extends Assert {
         amoksiklav.setGroup("antibiotics");
         amoksiklav.setId("M-0124");
         amoksiklav.setName("Амоксиклав");
-        amoksiklav.setPharm("Sandoz");
+        amoksiklav.setPharmaceuticalCompany("Sandoz");
         amoksiklavVersionOne.setManufacturer("Lekk d.d.");
         Medicine.Certificate certificate1 = amoksiklavVersionOne.getCertificate();
         certificate1.setNumber("a-322414");
@@ -95,7 +96,7 @@ public class MedicinesDomBuilderTest extends Assert {
         actualResult = null;
     }
     @Test
-    public void testGetMedicines() {
+    public void testGetMedicines() throws CustomXMLParseException {
         medicinesDomBuilder.buildSetMedicines(filename);
         actualResult = medicinesDomBuilder.getMedicines();
         assertEquals(actualResult, expectedResult);
