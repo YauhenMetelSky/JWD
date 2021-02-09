@@ -84,23 +84,15 @@ public class MedicinesSaxBuilderTest extends Assert {
         amoksiklav.addVersion(amoksiklavVersionTwo);
         expectedResult.add(amoksiklav);
     }
-
     @AfterMethod
     public void tearDown() {
         medicinesSAXBuilder = null;
         actualResult = null;
     }
-
     @Test
     public void testGetMedicines() throws CustomXMLParseException {
         medicinesSAXBuilder.buildSetMedicines("testdata/testmed.xml");
         actualResult = medicinesSAXBuilder.getMedicines();
         assertEquals(actualResult, expectedResult);
     }
-//    @Test(enabled = true,expectedExceptions = IOException.class)
-//    public void testBuildSetMedicines(){
-//        medicinesSAXBuilder.buildSetMedicines(null);
-//
-//    }
-
 }

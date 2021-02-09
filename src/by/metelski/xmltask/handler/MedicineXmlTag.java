@@ -29,7 +29,6 @@ public enum MedicineXmlTag {
     MedicineXmlTag(String value) {
         this.value = value;
     }
-
     public String getValue() {
         return value;
     }

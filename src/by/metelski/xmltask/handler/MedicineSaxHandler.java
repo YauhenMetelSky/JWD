@@ -25,7 +25,6 @@ public class MedicineSaxHandler extends DefaultHandler {
         medicines=new HashSet<>();
         withText=EnumSet.range(MedicineXmlTag.NAME,MedicineXmlTag.DOSE);
     }
-
     public Set<Medicine> getMedicines() {
         return medicines;
     }

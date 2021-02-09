@@ -89,7 +89,6 @@ public class MedicinesDomBuilderTest extends Assert {
         amoksiklav.addVersion(amoksiklavVersionTwo);
         expectedResult.add(amoksiklav);
     }
-
     @AfterTest
     public void tearDown() {
         medicinesDomBuilder = null;

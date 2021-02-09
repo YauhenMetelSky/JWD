@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
 public class Medicine {
     private String id;
@@ -17,55 +16,42 @@ public class Medicine {
     public String getId() {
         return id;
     }
-
     public void setId(String id) {
         this.id = id;
     }
-
     public String getGroup() {
         return group;
     }
-
     public void setGroup(String group) {
         this.group = group;
     }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public String getPharmaceuticalCompany() {
         return pharmaceuticalCompany;
     }
-
     public void setPharmaceuticalCompany(String pharmaceuticalCompany) {
         this.pharmaceuticalCompany = pharmaceuticalCompany;
     }
-
     public List<String> getAnalogs() {
         return Collections.unmodifiableList(analogs);
     }
-
     public void setAnalogs(List<String> analogs) {
         this.analogs = analogs;
     }
-
     public void addAnalog(String medicine) {
         this.analogs.add(medicine);
     }
-
     public List<Version> getVersions() {
         return Collections.unmodifiableList(versions);
     }
-
     public void setVersions(List<Version> versions) {
         this.versions = versions;
     }
-
     public void addVersion(Version version) {
         this.versions.add(version);
     }
@@ -79,51 +65,68 @@ public class Medicine {
         public String getManufacturer() {
             return manufacturer;
         }
-
         public void setManufacturer(String manufacturer) {
             this.manufacturer = manufacturer;
         }
-
         public Certificate getCertificate() {
             return certificate;
         }
-
         public void setCertificate(Certificate certificate) {
             this.certificate = certificate;
         }
-
         public MedicinePackage getMedicinePackage() {
             return medicinePackage;
         }
-
         public void setMedicinePackage(MedicinePackage medicinePackage) {
             this.medicinePackage = medicinePackage;
         }
-
         public Dosage getDosage() {
             return dosage;
         }
-
         public void setDosage(Dosage dosage) {
             this.dosage = dosage;
         }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            Version version = (Version) o;
-            return Objects.equals(manufacturer, version.manufacturer) &&
-                    Objects.equals(certificate, version.certificate) &&
-                    Objects.equals(medicinePackage, version.medicinePackage) &&
-                    Objects.equals(dosage, version.dosage);
-        }
-
         @Override
         public int hashCode() {
-            return Objects.hash(manufacturer, certificate, medicinePackage, dosage);
+            final int prime = 31;
+            int result = 1;
+            result = prime * result + ((certificate == null) ? 0 : certificate.hashCode());
+            result = prime * result + ((dosage == null) ? 0 : dosage.hashCode());
+            result = prime * result + ((manufacturer == null) ? 0 : manufacturer.hashCode());
+            result = prime * result + ((medicinePackage == null) ? 0 : medicinePackage.hashCode());
+            return result;
         }
-
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj)
+                return true;
+            if (obj == null)
+                return false;
+            if (getClass() != obj.getClass())
+                return false;
+            Version other = (Version) obj;
+            if (certificate == null) {
+                if (other.certificate != null)
+                    return false;
+            } else if (!certificate.equals(other.certificate))
+                return false;
+            if (dosage == null) {
+                if (other.dosage != null)
+                    return false;
+            } else if (!dosage.equals(other.dosage))
+                return false;
+            if (manufacturer == null) {
+                if (other.manufacturer != null)
+                    return false;
+            } else if (!manufacturer.equals(other.manufacturer))
+                return false;
+            if (medicinePackage == null) {
+                if (other.medicinePackage != null)
+                    return false;
+            } else if (!medicinePackage.equals(other.medicinePackage))
+                return false;
+            return true;
+        }
         @Override
         public String toString() {
             final StringBuilder sb = new StringBuilder("Version{");
@@ -145,36 +148,27 @@ public class Medicine {
         public String getNumber() {
             return number;
         }
-
         public void setNumber(String number) {
             this.number = number;
         }
-
         public LocalDate getDateOfIssue() {
             return dateOfIssue;
         }
-
         public void setDateOfIssue(LocalDate dateOfIssue) {
-
             this.dateOfIssue = dateOfIssue;
         }
-
         public LocalDate getExpiryDate() {
             return expiryDate;
         }
-
         public void setExpiryDate(LocalDate expiryDate) {
             this.expiryDate = expiryDate;
         }
-
         public String getRegistrationOrganisation() {
             return registrationOrganisation;
         }
-
         public void setRegistrationOrganisation(String registrationOrganisation) {
             this.registrationOrganisation = registrationOrganisation;
         }
-
         @Override
         public String toString() {
             final StringBuilder sb = new StringBuilder("Certificate{");
@@ -185,21 +179,47 @@ public class Medicine {
             sb.append('}');
             return sb.toString();
         }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            Certificate that = (Certificate) o;
-            return Objects.equals(number, that.number) &&
-                    Objects.equals(dateOfIssue, that.dateOfIssue) &&
-                    Objects.equals(expiryDate, that.expiryDate) &&
-                    Objects.equals(registrationOrganisation, that.registrationOrganisation);
-        }
-
         @Override
         public int hashCode() {
-            return Objects.hash(number, dateOfIssue, expiryDate, registrationOrganisation);
+            final int prime = 31;
+            int result = 1;
+            result = prime * result + ((dateOfIssue == null) ? 0 : dateOfIssue.hashCode());
+            result = prime * result + ((expiryDate == null) ? 0 : expiryDate.hashCode());
+            result = prime * result + ((number == null) ? 0 : number.hashCode());
+            result = prime * result
+                    + ((registrationOrganisation == null) ? 0 : registrationOrganisation.hashCode());
+            return result;
+        }
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj)
+                return true;
+            if (obj == null)
+                return false;
+            if (getClass() != obj.getClass())
+                return false;
+            Certificate other = (Certificate) obj;
+            if (dateOfIssue == null) {
+                if (other.dateOfIssue != null)
+                    return false;
+            } else if (!dateOfIssue.equals(other.dateOfIssue))
+                return false;
+            if (expiryDate == null) {
+                if (other.expiryDate != null)
+                    return false;
+            } else if (!expiryDate.equals(other.expiryDate))
+                return false;
+            if (number == null) {
+                if (other.number != null)
+                    return false;
+            } else if (!number.equals(other.number))
+                return false;
+            if (registrationOrganisation == null) {
+                if (other.registrationOrganisation != null)
+                    return false;
+            } else if (!registrationOrganisation.equals(other.registrationOrganisation))
+                return false;
+            return true;
         }
     }
 
@@ -211,42 +231,52 @@ public class Medicine {
         public String getPackageType() {
             return packageType;
         }
-
         public void setPackageType(String packageType) {
             this.packageType = packageType;
         }
-
         public int getAmountInPackage() {
             return amountInPackage;
         }
-
         public void setAmountInPackage(int amountInPackage) {
             this.amountInPackage = amountInPackage;
         }
-
         public double getPrice() {
             return price;
         }
-
         public void setPrice(double price) {
             this.price = price;
         }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            MedicinePackage that = (MedicinePackage) o;
-            return amountInPackage == that.amountInPackage &&
-                    Double.compare(that.price, price) == 0 &&
-                    Objects.equals(packageType, that.packageType);
-        }
-
         @Override
         public int hashCode() {
-            return Objects.hash(packageType, amountInPackage, price);
+            final int prime = 31;
+            int result = 1;
+            result = prime * result + amountInPackage;
+            result = prime * result + ((packageType == null) ? 0 : packageType.hashCode());
+            long temp;
+            temp = Double.doubleToLongBits(price);
+            result = prime * result + (int) (temp ^ (temp >>> 32));
+            return result;
         }
-
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj)
+                return true;
+            if (obj == null)
+                return false;
+            if (getClass() != obj.getClass())
+                return false;
+            MedicinePackage other = (MedicinePackage) obj;
+            if (amountInPackage != other.amountInPackage)
+                return false;
+            if (packageType == null) {
+                if (other.packageType != null)
+                    return false;
+            } else if (!packageType.equals(other.packageType))
+                return false;
+            if (Double.doubleToLongBits(price) != Double.doubleToLongBits(other.price))
+                return false;
+            return true;
+        }
         @Override
         public String toString() {
             final StringBuilder sb = new StringBuilder("MedicinePackage{");
@@ -265,33 +295,41 @@ public class Medicine {
         public int getDose() {
             return dose;
         }
-
         public void setDose(int dose) {
             this.dose = dose;
         }
-
         public String getFrequencyOfMedication() {
             return frequencyOfMedication;
         }
-
         public void setFrequencyOfMedication(String frequencyOfMedication) {
             this.frequencyOfMedication = frequencyOfMedication;
         }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            Dosage dosage = (Dosage) o;
-            return dose == dosage.dose &&
-                    Objects.equals(frequencyOfMedication, dosage.frequencyOfMedication);
-        }
-
         @Override
         public int hashCode() {
-            return Objects.hash(frequencyOfMedication, dose);
+            final int prime = 31;
+            int result = 1;
+            result = prime * result + dose;
+            result = prime * result + ((frequencyOfMedication == null) ? 0 : frequencyOfMedication.hashCode());
+            return result;
         }
-
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj)
+                return true;
+            if (obj == null)
+                return false;
+            if (getClass() != obj.getClass())
+                return false;
+            Dosage other = (Dosage) obj;
+            if (dose != other.dose)
+                return false;
+            if (frequencyOfMedication == null) {
+                if (other.frequencyOfMedication != null)
+                    return false;
+            } else if (!frequencyOfMedication.equals(other.frequencyOfMedication))
+                return false;
+            return true;
+        }
         @Override
         public String toString() {
             final StringBuilder sb = new StringBuilder("Dosage{");
@@ -301,26 +339,59 @@ public class Medicine {
             return sb.toString();
         }
     }
-
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Medicine medicine = (Medicine) o;
-        return Objects.equals(id, medicine.id) &&
-                Objects.equals(group, medicine.group) &&
-                Objects.equals(name, medicine.name) &&
-                Objects.equals(pharmaceuticalCompany, medicine.pharmaceuticalCompany) &&
-                Objects.equals(analogs, medicine.analogs) &&
-                Objects.equals(versions, medicine.versions);
-    }
-
     @Override
     public int hashCode() {
-        return Objects.hash(id, group, name, pharmaceuticalCompany, analogs, versions);
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((analogs == null) ? 0 : analogs.hashCode());
+        result = prime * result + ((group == null) ? 0 : group.hashCode());
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + ((pharmaceuticalCompany == null) ? 0 : pharmaceuticalCompany.hashCode());
+        result = prime * result + ((versions == null) ? 0 : versions.hashCode());
+        return result;
     }
-
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Medicine other = (Medicine) obj;
+        if (analogs == null) {
+            if (other.analogs != null)
+                return false;
+        } else if (!analogs.equals(other.analogs))
+            return false;
+        if (group == null) {
+            if (other.group != null)
+                return false;
+        } else if (!group.equals(other.group))
+            return false;
+        if (id == null) {
+            if (other.id != null)
+                return false;
+        } else if (!id.equals(other.id))
+            return false;
+        if (name == null) {
+            if (other.name != null)
+                return false;
+        } else if (!name.equals(other.name))
+            return false;
+        if (pharmaceuticalCompany == null) {
+            if (other.pharmaceuticalCompany != null)
+                return false;
+        } else if (!pharmaceuticalCompany.equals(other.pharmaceuticalCompany))
+            return false;
+        if (versions == null) {
+            if (other.versions != null)
+                return false;
+        } else if (!versions.equals(other.versions))
+            return false;
+        return true;
+    }
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Medicine{");

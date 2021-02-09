@@ -87,14 +87,11 @@ public class MedicinesStaxBuilderTest extends Assert {
         amoksiklav.addVersion(amoksiklavVersionTwo);
         expectedResult.add(amoksiklav);
     }
-
     @AfterTest
     public void tearDown() {
         medicinesStaxBuilder = null;
         actualResult = null;
-
     }
-
     @Test
     public void testGetMedicines() throws CustomXMLParseException {
         medicinesStaxBuilder.buildSetMedicines("testdata/testmed.xml");

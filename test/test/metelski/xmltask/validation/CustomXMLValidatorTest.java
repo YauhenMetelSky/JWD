@@ -48,5 +48,4 @@ public class CustomXMLValidatorTest extends Assert {
         boolean actualResult = CustomXMLValidator.isXMLValid(filename, schemaNameEmpty);
         assertEquals(actualResult, expectedResult);
     }
-
 }

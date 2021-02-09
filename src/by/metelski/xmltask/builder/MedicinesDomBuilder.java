@@ -34,11 +34,9 @@ public class MedicinesDomBuilder extends AbstractMedicinesBuilder {
             logger.log(Level.ERROR, "caught exception: " + e);
         }
     }
-
     public MedicinesDomBuilder(Set<Medicine> medicines) {
         super(medicines);
     }
-
     @Override
     public void buildSetMedicines(String filename) throws CustomXMLParseException {
         Document doc;
@@ -56,7 +54,6 @@ public class MedicinesDomBuilder extends AbstractMedicinesBuilder {
             throw new CustomXMLParseException("Parser configuration exception or SAXExcetion ", e);
         }
     }
-
     private Medicine buildMedicine(Element medicineElement) {
         Medicine medicine = new Medicine();
         if (null != medicineElement) {
@@ -90,7 +87,6 @@ public class MedicinesDomBuilder extends AbstractMedicinesBuilder {
         }
         return medicine;
     }
-
     private Medicine.Certificate buildCertificate(Element element, Medicine.Version version) {
         Medicine.Certificate certificate = version.getCertificate();
         certificate.setNumber(getElementTextContext(element, "number"));
@@ -103,7 +99,6 @@ public class MedicinesDomBuilder extends AbstractMedicinesBuilder {
         logger.log(Level.INFO, "registration-organisation " + getElementTextContext(element, "registration-organisation") + "set");
         return certificate;
     }
-
     private Medicine.MedicinePackage buildPackage(Element element, Medicine.Version version) {
         Medicine.MedicinePackage medicinePackage = version.getMedicinePackage();
         medicinePackage.setPackageType(getElementTextContext(element, "package-type"));
@@ -114,7 +109,6 @@ public class MedicinesDomBuilder extends AbstractMedicinesBuilder {
         logger.log(Level.INFO, "price " + getElementTextContext(element, "price") + "set");
         return medicinePackage;
     }
-
     private Medicine.Dosage buildDosage(Element element, Medicine.Version version) {
         Medicine.Dosage dosage = version.getDosage();
         dosage.setDose(Integer.parseInt(getElementTextContext(element, "dose")));
@@ -124,7 +118,6 @@ public class MedicinesDomBuilder extends AbstractMedicinesBuilder {
         logger.log(Level.INFO, "frequency-of-medication " + tag.getAttribute("frequency-of-medication")+ "set");
         return dosage;
     }
-
     private String getElementTextContext(Element element, String elementName) {
         NodeList nList = element.getElementsByTagName(elementName);
         Node node = nList.item(0);

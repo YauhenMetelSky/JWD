@@ -32,16 +32,13 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
         medicines = new HashSet<Medicine>();
         logger.log(Level.INFO, "medicines empty set created");
     }
-
     public MedicinesStaxBuilder(Set<Medicine> medicines) {
         super(medicines);
     }
-
     public Set<Medicine> getMedicines() {
         logger.log(Level.INFO, "medicines set returned");
         return medicines;
     }
-
     @Override
     public void buildSetMedicines(String filename) throws CustomXMLParseException {
         XMLStreamReader reader;
@@ -67,7 +64,6 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
             throw new CustomXMLParseException("IOException generated ", e);
         }
     }
-
     private Medicine buildMedicine(XMLStreamReader reader) throws XMLStreamException {
         Medicine medicine = new Medicine();
         medicine.setId(reader.getAttributeValue(null, MedicineXmlTag.ID.getValue()));
@@ -105,7 +101,6 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
         }
         throw new XMLStreamException("Unknown element in tag <medicine>");
     }
-
     private Medicine.Version buildVersion(XMLStreamReader reader) throws XMLStreamException {
         Medicine.Version version = new Medicine().new Version();
         int type;
@@ -140,7 +135,6 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
         }
         throw new XMLStreamException("Unknown element in tag <version>");
     }
-
     private Medicine.Certificate buildCertificate(XMLStreamReader reader, Medicine.Version version) throws XMLStreamException {
         Medicine.Certificate certificate = version.getCertificate();
         int type;
@@ -178,7 +172,6 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
         }
         throw new XMLStreamException("Unknown element in tag <certificate>");
     }
-
     private Medicine.MedicinePackage buildMedicinePackage(XMLStreamReader reader, Medicine.Version version) throws XMLStreamException {
         Medicine.MedicinePackage medicinePackage = version.getMedicinePackage();
         int type;
@@ -212,7 +205,6 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
         }
         throw new XMLStreamException("Unknown element in tag <package>");
     }
-
     private Medicine.Dosage buildDosage(XMLStreamReader reader, Medicine.Version version) throws XMLStreamException {
         Medicine.Dosage dosage = version.getDosage();
         int type;
@@ -237,7 +229,6 @@ public class MedicinesStaxBuilder extends AbstractMedicinesBuilder {
         }
         throw new XMLStreamException("Unknown element in tag <certificate>");
     }
-
     private String getXMLText(XMLStreamReader reader) throws XMLStreamException {
         String text = null;
         if (reader.hasNext()) {
