@@ -2,7 +2,6 @@ package by.metelski.quadrangle.action;
 
 import by.metelski.quadrangle.entity.CustomPoint;
 import by.metelski.quadrangle.entity.Quadrangle;
-import by.metelski.quadrangle.exception.QuadrangleException;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
