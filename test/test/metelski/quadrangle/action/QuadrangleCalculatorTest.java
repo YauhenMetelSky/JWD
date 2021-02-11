@@ -22,13 +22,10 @@ public class QuadrangleCalculatorTest extends Assert {
         CustomPoint pointD = new CustomPoint(0,-3,"D");
         testQuadrangle=new Quadrangle(pointA,pointB,pointC,pointD,"shape");
         calculator=new QuadrangleCalculator();
-
-
     }
     @AfterTest
     public void tearDown() {
         testQuadrangle=null;
-
     }
     @Test
     public void testFindSides(){
@@ -54,7 +51,6 @@ public class QuadrangleCalculatorTest extends Assert {
         assertEquals(actualResult,expectedResult2,4);
 
     }
-
     @DataProvider(name = "findSquareData")
     public Object[][] sortCustomArrayData() {
         return new Object[][]{{new Quadrangle(new CustomPoint(1,4,"A"),new CustomPoint(3,7,"B"),new CustomPoint(5,2,"C"),new CustomPoint(0,-3,"D"),"shape"),22.9995},
