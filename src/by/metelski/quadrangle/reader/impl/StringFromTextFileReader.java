@@ -1,6 +1,7 @@
-package by.metelski.quadrangle.reader;
+package by.metelski.quadrangle.reader.impl;
 
 import by.metelski.quadrangle.exception.QuadrangleException;
+import by.metelski.quadrangle.reader.StringFromTextFileReaderInterface;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,7 +11,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class StringFromTextFileReader {
+public class StringFromTextFileReader implements StringFromTextFileReaderInterface {
     public final static Logger logger = LogManager.getLogger();
 
     public List<String> readStringsFromFile(String filePath) throws QuadrangleException {

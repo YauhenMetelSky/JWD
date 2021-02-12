@@ -1,9 +1,8 @@
 package test.metelski.quadrangle.action;
 
-import by.metelski.quadrangle.action.QuadrangleCalculator;
+import by.metelski.quadrangle.action.impl.QuadrangleCalculator;
 import by.metelski.quadrangle.entity.CustomPoint;
 import by.metelski.quadrangle.entity.Quadrangle;
-import by.metelski.quadrangle.exception.QuadrangleException;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -52,7 +51,7 @@ public class QuadrangleCalculatorTest extends Assert {
 
     }
     @DataProvider(name = "findSquareData")
-    public Object[][] sortCustomArrayData() {
+    public Object[][] findSquareData() {
         return new Object[][]{{new Quadrangle(new CustomPoint(1,4,"A"),new CustomPoint(3,7,"B"),new CustomPoint(5,2,"C"),new CustomPoint(0,-3,"D"),"shape"),22.9995},
                 {new Quadrangle(new CustomPoint(9,0,"A"),new CustomPoint(9,4,"B"),new CustomPoint(13,4,"C"),new CustomPoint(13,0,"D"),"shape"),16.0}
         };

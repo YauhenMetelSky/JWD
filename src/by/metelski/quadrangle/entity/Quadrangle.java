@@ -1,12 +1,13 @@
 package by.metelski.quadrangle.entity;
 
 import by.metelski.quadrangle.exception.QuadrangleException;
-import by.metelski.quadrangle.generator.IdGenerator;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-public class Quadrangle {
+public class Quadrangle extends CustomShape{
     private CustomPoint[] points;
-    private long id;
-    private String name;
+    public static final Logger logger = LogManager.getLogger();
 
     public Quadrangle(CustomPoint pointA, CustomPoint pointB, CustomPoint pointC,String name){
         points=new CustomPoint[4];
@@ -14,8 +15,8 @@ public class Quadrangle {
         points[1]=pointB;
         points[2]=pointC;
         points[3]=new CustomPoint();
-        this.name = name;
-        id = IdGenerator.getId();
+        setName(name);
+        logger.log(Level.INFO,"created Quadrangle name: \"" + name+"\", shape id: " + getId());
     }
      public Quadrangle(CustomPoint pointA, CustomPoint pointB, CustomPoint pointC, CustomPoint pointD,String name){
         points=new CustomPoint[4];
@@ -23,8 +24,8 @@ public class Quadrangle {
         points[1]=pointB;
         points[2]=pointC;
         points[3]=pointD;
-        this.name=name;
-        id = IdGenerator.getId();
+       setName(name);
+         logger.log(Level.INFO,"created Quadrangle name: \"" + name+"\", shape id: " + getId());
     }
 
     public CustomPoint[] getPoints() {
@@ -33,22 +34,6 @@ public class Quadrangle {
 
     public void setPoints(CustomPoint[] points) {
         this.points = points;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public CustomPoint getPoint(int index) throws QuadrangleException {

@@ -6,4 +6,9 @@
             <class name="test.metelski.quadrangle.action.QuadrangleCalculatorTest"/>
         </classes>
     </test>
+    <test name="ValidateTest">
+        <classes>
+            <class name="test.metelski.quadrangle.validate.CheckStringFromFileTest"/>
+        </classes>
+    </test>
 </suite>

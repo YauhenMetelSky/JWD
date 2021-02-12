@@ -1,5 +1,6 @@
-package by.metelski.quadrangle.action;
+package by.metelski.quadrangle.action.impl;
 
+import by.metelski.quadrangle.action.ShapeCalculator;
 import by.metelski.quadrangle.entity.CustomPoint;
 import by.metelski.quadrangle.entity.Quadrangle;
 import org.apache.logging.log4j.Level;
@@ -9,9 +10,10 @@ import org.apache.logging.log4j.Logger;
 import java.util.Arrays;
 
 
-public class QuadrangleCalculator {
+public class QuadrangleCalculator implements ShapeCalculator {
     public static final Logger logger = LogManager.getLogger();
 
+    @Override
     public double findArea(Quadrangle quadrangle) {
         double[]diagonals = findDiagonals(quadrangle);
         double square = 0.5 *diagonals[0]*diagonals[1]*Math.sin(findAngleBetweenDiagonals(quadrangle));
