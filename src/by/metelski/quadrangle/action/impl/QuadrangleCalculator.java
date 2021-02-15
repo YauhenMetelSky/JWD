@@ -6,21 +6,20 @@ import by.metelski.quadrangle.entity.Quadrangle;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.Arrays;
-
 
 public class QuadrangleCalculator implements ShapeCalculator {
     public static final Logger logger = LogManager.getLogger();
 
     @Override
     public double findArea(Quadrangle quadrangle) {
-        double[]diagonals = findDiagonals(quadrangle);
-        double square = 0.5 *diagonals[0]*diagonals[1]*Math.sin(findAngleBetweenDiagonals(quadrangle));
+        double[] diagonals = findDiagonals(quadrangle);
+        double square = 0.5 * diagonals[0] * diagonals[1] * Math.sin(findAngleBetweenDiagonals(quadrangle));
         logger.log(Level.INFO, "square is " + square);
         return square;
     }
 
+    @Override
     public double findPerimeter(Quadrangle quadrangle) {
         double perimeter = Arrays.stream(findSides(quadrangle))
                 .sum();
@@ -47,12 +46,12 @@ public class QuadrangleCalculator implements ShapeCalculator {
         double ay;
         double bx;
         double by;
-        ax = points[2].getxCoordinate() - points[0].getxCoordinate();
-        ay = points[2].getyCoordinate() - points[0].getyCoordinate();
-        bx = points[3].getxCoordinate() - points[1].getxCoordinate();
-        by = points[3].getyCoordinate() - points[1].getyCoordinate();
+        ax = points[2].getX() - points[0].getX();
+        ay = points[2].getY() - points[0].getY();
+        bx = points[3].getX() - points[1].getX();
+        by = points[3].getY() - points[1].getY();
         double multiplicationVectorsResult = ax * bx + ay * by;
-        angle =Math.acos(multiplicationVectorsResult / (diagonals[0] * diagonals[1]));
+        angle = Math.acos(multiplicationVectorsResult / (diagonals[0] * diagonals[1]));
         logger.log(Level.INFO, " angle: " + angle);
         return angle;
     }
@@ -72,7 +71,7 @@ public class QuadrangleCalculator implements ShapeCalculator {
     }
 
     private double findSide(CustomPoint pointOne, CustomPoint pointTwo) {
-        double side = Math.hypot(pointOne.getxCoordinate() - pointTwo.getxCoordinate(), pointOne.getyCoordinate() - pointTwo.getyCoordinate());
+        double side = Math.hypot(pointOne.getX() - pointTwo.getX(), pointOne.getY() - pointTwo.getY());
         return side;
     }
 }

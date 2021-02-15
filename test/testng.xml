@@ -6,9 +6,19 @@
             <class name="test.metelski.quadrangle.action.QuadrangleCalculatorTest"/>
         </classes>
     </test>
-    <test name="ValidateTest">
+    <test name="ValidateStringTest">
         <classes>
             <class name="test.metelski.quadrangle.validate.CheckStringFromFileTest"/>
+        </classes>
+    </test>
+    <test name="IsDiagonalTest">
+        <classes>
+            <class name="test.metelski.quadrangle.validate.IsDiagonalTest"/>
+        </classes>
+    </test>
+    <test name="CustomParserTest">
+        <classes>
+            <class name="test.metelski.quadrangle.parser.impl.CustomParserTest"/>
         </classes>
     </test>
 </suite>

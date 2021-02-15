@@ -12,7 +12,7 @@ public class CheckStringFromFile {
 
     public static boolean isStringValid(String stringToCheck) {
         boolean isValid = Pattern.matches(PATTERN_POINT, stringToCheck);
-        logger.log(Level.INFO, "string is valid : " + isValid);
+        logger.log(Level.INFO, "string \""+stringToCheck+"\" is valid : " + isValid);
         return isValid;
     }
 }

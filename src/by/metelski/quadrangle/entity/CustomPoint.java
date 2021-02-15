@@ -4,37 +4,26 @@ import by.metelski.quadrangle.generator.IdGenerator;
 
 public class CustomPoint {
     private final long pointId;
-    private String name;
-    private final int xCoordinate;
-    private final int yCoordinate;
+    private final int x;
+    private final int y;
 
     public CustomPoint() {
-        xCoordinate=0;
-        yCoordinate=0;
+        x =0;
+        y =0;
         pointId=IdGenerator.getId();
-        name="name";
     }
 
-    public CustomPoint(int xCoordinate, int yCoordinate,String name) {
-        this.xCoordinate = xCoordinate;
-        this.yCoordinate = yCoordinate;
-        this.name = name;
+    public CustomPoint(int x, int y) {
+        this.x = x;
+        this.y = y;
         this.pointId = IdGenerator.getId();
     }
 
-    public String getName() {
-        return name;
+    public int getX() {
+        return x;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getxCoordinate() {
-        return xCoordinate;
-    }
-
-    public int getyCoordinate() {
-        return yCoordinate;
+    public int getY() {
+        return y;
     }
 }

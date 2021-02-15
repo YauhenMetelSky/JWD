@@ -15,10 +15,10 @@ public class QuadrangleCalculatorTest extends Assert {
     QuadrangleCalculator calculator;
     @BeforeTest
     public void setUp() {
-        CustomPoint pointA = new CustomPoint(1,4,"A");
-        CustomPoint pointB = new CustomPoint(3,7,"B");
-        CustomPoint pointC = new CustomPoint(5,2,"C");
-        CustomPoint pointD = new CustomPoint(0,-3,"D");
+        CustomPoint pointA = new CustomPoint(1,4);
+        CustomPoint pointB = new CustomPoint(3,7);
+        CustomPoint pointC = new CustomPoint(5,2);
+        CustomPoint pointD = new CustomPoint(0,-3);
         testQuadrangle=new Quadrangle(pointA,pointB,pointC,pointD,"shape");
         calculator=new QuadrangleCalculator();
     }
@@ -52,8 +52,8 @@ public class QuadrangleCalculatorTest extends Assert {
     }
     @DataProvider(name = "findSquareData")
     public Object[][] findSquareData() {
-        return new Object[][]{{new Quadrangle(new CustomPoint(1,4,"A"),new CustomPoint(3,7,"B"),new CustomPoint(5,2,"C"),new CustomPoint(0,-3,"D"),"shape"),22.9995},
-                {new Quadrangle(new CustomPoint(9,0,"A"),new CustomPoint(9,4,"B"),new CustomPoint(13,4,"C"),new CustomPoint(13,0,"D"),"shape"),16.0}
+        return new Object[][]{{new Quadrangle(new CustomPoint(1,4),new CustomPoint(3,7),new CustomPoint(5,2),new CustomPoint(0,-3),"shape"),22.9995},
+                {new Quadrangle(new CustomPoint(9,0),new CustomPoint(9,4),new CustomPoint(13,4),new CustomPoint(13,0),"shape"),16.0}
         };
     }
 }
