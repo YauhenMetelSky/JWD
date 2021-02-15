@@ -34,6 +34,11 @@ public class Quadrangle extends CustomShape implements Observable {
        setName(name);
          logger.log(Level.INFO,"created Quadrangle name: \"" + name+"\", shape id: " + getId());
     }
+    public Quadrangle(CustomPoint[] points,String name){
+        this.points=points;
+        setName(name);
+        logger.log(Level.INFO,"created Quadrangle name: \"" + name+"\", shape id: " + getId());
+    }
 
     public CustomPoint[] getPoints() {
         return points.clone();

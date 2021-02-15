@@ -19,7 +19,8 @@ public class IsDiagonalTest extends Assert {
         return new Object[][]{{new CustomPoint[]{new CustomPoint(3,2),new CustomPoint(4,4),new CustomPoint(6,5),new CustomPoint(7,3)}, true},
                 {new CustomPoint[]{new CustomPoint(3,2),new CustomPoint(6,5),new CustomPoint(4,4),new CustomPoint(7,3)}, false},
                 {new CustomPoint[]{new CustomPoint(-3,2),new CustomPoint(-6,3),new CustomPoint(-6,1),new CustomPoint(-5,-1)}, true},
-                {new CustomPoint[]{new CustomPoint(6,0),new CustomPoint(10,4),new CustomPoint(4,6),new CustomPoint(1,3)}, true}
+                {new CustomPoint[]{new CustomPoint(6,0),new CustomPoint(10,4),new CustomPoint(4,6),new CustomPoint(1,3)}, true},
+                {new CustomPoint[]{new CustomPoint(9,3),new CustomPoint(12,5),new CustomPoint(11,3),new CustomPoint(13,1)}, true}
         };
     }
 }
