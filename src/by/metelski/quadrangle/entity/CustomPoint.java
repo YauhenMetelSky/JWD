@@ -1,17 +1,24 @@
 package by.metelski.quadrangle.entity;
 
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class CustomPoint {
     private final int x;
     private final int y;
+    public static final Logger logger = LogManager.getLogger();
 
     public CustomPoint() {
         x =0;
         y =0;
+        logger.log(Level.INFO,"created point x="+x+";y="+y);
     }
 
     public CustomPoint(int x, int y) {
         this.x = x;
         this.y = y;
+        logger.log(Level.INFO,"created point x="+x+";y="+y);
     }
 
     public int getX() {

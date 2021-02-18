@@ -23,12 +23,11 @@ public class Quadrangle extends AbstractShape implements Observable {
         points[1]=pointB;
         points[2]=pointC;
         points[3]=pointD;
-        logger.log(Level.INFO,"created Quadrangle, shape id: " + getId());
+        logger.log(Level.INFO,"created Quadrangle, id: " + getId());
     }
     public Quadrangle(CustomPoint[] points){
         this.points=points;
-
-        logger.log(Level.INFO,"created Quadrangle, shape id: " + getId());
+        logger.log(Level.INFO,"created Quadrangle, id: " + getId());
     }
 
     public CustomPoint[] getPoints() {
@@ -38,6 +37,14 @@ public class Quadrangle extends AbstractShape implements Observable {
     public void setPoints(CustomPoint[] points) {
         this.points = points;
         notifyObservers();
+    }
+    public void setPoint(CustomPoint point,int index) throws QuadrangleException {
+         if(index>=0&&index<points.length) {
+             points[index] = point;
+             notifyObservers();
+         }else {
+             throw new QuadrangleException("illegal argument index="+index+", less than 0 or greater than "+points.length);
+         }
     }
 
     public CustomPoint getPoint(int index) throws QuadrangleException {

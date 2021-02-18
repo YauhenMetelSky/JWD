@@ -84,3 +84,225 @@
 2021-02-18 09:48:23 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 9
 2021-02-18 09:48:23 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 10
 2021-02-18 09:48:23 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 11
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=4
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=7
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=5;y=2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=0;y=-3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 1
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 0 find side 4.47213595499958
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 1 find side 10.44030650891055
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 0 find side 3.605551275463989
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 1 find side 5.385164807134504
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 2 find side 7.0710678118654755
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 3 find side 7.0710678118654755
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 0 find side 4.47213595499958
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 1 find side 10.44030650891055
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator-  angle: 1.3986055122719576
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- perimeter is 23.132851706329443
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 0 find side 3.605551275463989
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 1 find side 5.385164807134504
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 2 find side 7.0710678118654755
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 3 find side 7.0710678118654755
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=4
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=7
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=5;y=2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=0;y=-3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=9;y=0
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=9;y=4
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=13;y=4
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=13;y=0
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 3
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 0 find side 4.47213595499958
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 1 find side 10.44030650891055
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 0 find side 4.47213595499958
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 1 find side 10.44030650891055
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator-  angle: 1.3986055122719576
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- square is 23.000000000000004
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 0 find side 5.656854249492381
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 1 find side 5.656854249492381
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 0 find side 5.656854249492381
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- position: 1 find side 5.656854249492381
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator-  angle: 1.5707963267948966
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- square is 16.000000000000004
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "1,1 2,2 3,-5 2,-7" is valid : true
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "1,1 -1,-1 -1,1 1,-1" is valid : true
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "1,1d -1f,-1 -1,1 1,-1" is valid : false
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "1,1 -1,-1 -1,1 1,-1 12,12" is valid : false
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "1,1 -1,-1 -1,11,-1" is valid : false
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "fffff" is valid : false
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "1235" is valid : false
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "" is valid : false
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=4
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=5
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=7;y=3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=5
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=4
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=7;y=3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-3;y=2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-6;y=3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-6;y=1
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-5;y=-1
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=0
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=10;y=4
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=6
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=9;y=3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=12;y=5
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=11;y=3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=13;y=1
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.parser.impl.CustomParser- return parsed points array[1, 1, 2, 2, 3, -5, 2, -7]
+2021-02-18 10:15:21 [main] INFO  metelski.quadrangle.parser.impl.CustomParser- return parsed points array[1, 1, -1, -1, -1, 1, 1, -1]
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-4;y=-2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-3;y=1
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-2;y=-2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 4
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=0;y=0
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=6
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=5
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=-7
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 5
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=0;y=-3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=5;y=2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=7
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=4
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 6
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=5
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=4
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=7;y=3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 7
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-4;y=-2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-3;y=1
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-2;y=-2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=0;y=0
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=6
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=5
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=-7
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=0;y=-3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=7
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=5;y=2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=4
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=5
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=2
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=4
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=7;y=3
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 8
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 9
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 10
+2021-02-18 10:15:21 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, shape id: 11
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=4
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=7
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=5;y=2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=0;y=-3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, id: 1
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- diagonal: 0 length: 4.47213595499958
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- diagonal: 1 length: 10.44030650891055
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- side: 0 length: 3.605551275463989
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- side: 1 length: 5.385164807134504
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- side: 2 length: 7.0710678118654755
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- side: 3 length: 7.0710678118654755
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- diagonal: 0 length: 4.47213595499958
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- diagonal: 1 length: 10.44030650891055
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator-  angle between diagonals: 1.3986055122719576
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- perimeter is 23.132851706329443
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- side: 0 length: 3.605551275463989
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- side: 1 length: 5.385164807134504
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- side: 2 length: 7.0710678118654755
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- side: 3 length: 7.0710678118654755
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=4
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=7
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=5;y=2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=0;y=-3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, id: 2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=9;y=0
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=9;y=4
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=13;y=4
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=13;y=0
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, id: 3
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- diagonal: 0 length: 4.47213595499958
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- diagonal: 1 length: 10.44030650891055
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- diagonal: 0 length: 4.47213595499958
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- diagonal: 1 length: 10.44030650891055
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator-  angle between diagonals: 1.3986055122719576
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- square is 23.000000000000004
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- diagonal: 0 length: 5.656854249492381
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- diagonal: 1 length: 5.656854249492381
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- diagonal: 0 length: 5.656854249492381
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- diagonal: 1 length: 5.656854249492381
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator-  angle between diagonals: 1.5707963267948966
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.action.impl.QuadrangleCalculator- square is 16.000000000000004
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "1,1 2,2 3,-5 2,-7" is valid : true
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "1,1 -1,-1 -1,1 1,-1" is valid : true
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "1,1d -1f,-1 -1,1 1,-1" is valid : false
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "1,1 -1,-1 -1,1 1,-1 12,12" is valid : false
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "1,1 -1,-1 -1,11,-1" is valid : false
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "fffff" is valid : false
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "1235" is valid : false
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.validate.CheckStringFromFile- string "" is valid : false
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=4
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=5
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=7;y=3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=5
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=4
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=7;y=3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-3;y=2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-6;y=3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-6;y=1
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-5;y=-1
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=0
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=10;y=4
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=6
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=9;y=3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=12;y=5
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=11;y=3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=13;y=1
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.parser.impl.CustomParser- return parsed points array[1, 1, 2, 2, 3, -5, 2, -7]
+2021-02-18 10:20:17 [main] INFO  metelski.quadrangle.parser.impl.CustomParser- return parsed points array[1, 1, -1, -1, -1, 1, 1, -1]
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-4;y=-2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-3;y=1
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-2;y=-2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, id: 4
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=0;y=0
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=6
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=5
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=-7
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, id: 5
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=0;y=-3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=5;y=2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=7
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=4
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, id: 6
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=5
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=4
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=7;y=3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, id: 7
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-4;y=-2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-3;y=1
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=-2;y=-2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=0;y=0
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=6
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=5
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=-7
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=0;y=-3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=7
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=5;y=2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=1;y=4
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=6;y=5
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=3;y=2
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=4;y=4
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.CustomPoint- created point x=7;y=3
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, id: 8
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, id: 9
+2021-02-18 10:20:17 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, id: 10
+2021-02-18 10:20:18 [main] INFO  by.metelski.quadrangle.entity.Quadrangle- created Quadrangle, id: 11

@@ -7,18 +7,23 @@ import by.metelski.quadrangle.entity.ShapeParametersStorage;
 import by.metelski.quadrangle.observer.Observer;
 import by.metelski.quadrangle.observer.QuadrangleEvent;
 import by.metelski.quadrangle.warehouse.Warehouse;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class QuadrangleObserver implements Observer {
     private Warehouse warehouse= Warehouse.getInstance();;
     private ShapeCalculator calculator=new QuadrangleCalculator();;
     private ShapeParametersStorage shapeParametersStorage;
     private Quadrangle quadrangle;
+    public static final Logger logger = LogManager.getLogger();
 
     @Override
     public void parameterChanged(QuadrangleEvent event) {
         double perimeter;
         double area;
         quadrangle= event.getSource();
+        logger.log(Level.INFO,"parameters changed; shape: " + quadrangle);
         perimeter=calculator.findPerimeter(quadrangle);
         area=calculator.findArea(quadrangle);
             shapeParametersStorage =warehouse.getShapeParameters(quadrangle.getId());

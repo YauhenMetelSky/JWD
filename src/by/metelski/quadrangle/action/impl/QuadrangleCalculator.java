@@ -13,7 +13,7 @@ public class QuadrangleCalculator implements ShapeCalculator {
 
     @Override
     public double findArea(Quadrangle quadrangle) {
-        double[] diagonals = findDiagonals(quadrangle);
+        double[] diagonals = findDiagonalsLength(quadrangle);
         double square = 0.5 * diagonals[0] * diagonals[1] * Math.sin(findAngleBetweenDiagonals(quadrangle));
         logger.log(Level.INFO, "square is " + square);
         return square;
@@ -28,18 +28,18 @@ public class QuadrangleCalculator implements ShapeCalculator {
         return perimeter;
     }
 
-    public double[] findDiagonals(Quadrangle quadrangle) {
-        double[] diagonals = new double[2];
+    public double[] findDiagonalsLength(Quadrangle quadrangle) {
+        double[] diagonalsLength = new double[2];
         CustomPoint[] points = quadrangle.getPoints();
         for (int i = 0; i < 2; i++) {
-            diagonals[i] = findSide(points[i], points[i + 2]);
-            logger.log(Level.INFO, "position: " + i + " find side " + diagonals[i]);
+            diagonalsLength[i] = findSegmentLength(points[i], points[i + 2]);
+            logger.log(Level.INFO, "diagonal: " + i + " length: " + diagonalsLength[i]);
         }
-        return diagonals;
+        return diagonalsLength;
     }
 
     private double findAngleBetweenDiagonals(Quadrangle quadrangle) {
-        double[] diagonals = findDiagonals(quadrangle);
+        double[] diagonals = findDiagonalsLength(quadrangle);
         CustomPoint[] points = quadrangle.getPoints();
         double angle;
         double ax;
@@ -52,7 +52,7 @@ public class QuadrangleCalculator implements ShapeCalculator {
         by = points[3].getY() - points[1].getY();
         double multiplicationVectorsResult = ax * bx + ay * by;
         angle = Math.acos(multiplicationVectorsResult / (diagonals[0] * diagonals[1]));
-        logger.log(Level.INFO, " angle: " + angle);
+        logger.log(Level.INFO, " angle between diagonals: " + angle);
         return angle;
     }
 
@@ -61,16 +61,16 @@ public class QuadrangleCalculator implements ShapeCalculator {
         CustomPoint[] points = quadrangle.getPoints();
         for (int i = 0; i < 4; i++) {
             if (i <= 2) {
-                sides[i] = findSide(points[i], points[i + 1]);
+                sides[i] = findSegmentLength(points[i], points[i + 1]);
             } else {
-                sides[i] = findSide(points[i], points[i - 3]);
+                sides[i] = findSegmentLength(points[i], points[i - 3]);
             }
-            logger.log(Level.INFO, "position: " + i + " find side " + sides[i]);
+            logger.log(Level.INFO, "side: " + i + " length: " + sides[i]);
         }
         return sides;
     }
 
-    private double findSide(CustomPoint pointOne, CustomPoint pointTwo) {
+    private double findSegmentLength(CustomPoint pointOne, CustomPoint pointTwo) {
         double side = Math.hypot(pointOne.getX() - pointTwo.getX(), pointOne.getY() - pointTwo.getY());
         return side;
     }

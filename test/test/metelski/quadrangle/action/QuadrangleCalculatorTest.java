@@ -41,7 +41,7 @@ public class QuadrangleCalculatorTest extends Assert {
     @Test
     public void testFindDiagonals(){
         double[] expectedResult={4.4721,10.4403};
-        double[] actualResult = calculator.findDiagonals(testQuadrangle);
+        double[] actualResult = calculator.findDiagonalsLength(testQuadrangle);
         assertEquals(actualResult,expectedResult,4);
     }
     @Test(dataProvider = "findSquareData")
