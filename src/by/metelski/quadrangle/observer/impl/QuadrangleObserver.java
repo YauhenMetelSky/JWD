@@ -24,10 +24,9 @@ public class QuadrangleObserver implements Observer {
             shapeParametersStorage =warehouse.getShapeParameters(quadrangle.getId());
         if(shapeParametersStorage!=null){
             shapeParametersStorage.setArea(area);
-            shapeParametersStorage.setName(quadrangle.getName());
             shapeParametersStorage.setPerimeter(perimeter);
         }else {
-            shapeParametersStorage= new ShapeParametersStorage(quadrangle.getName(),area,perimeter);
+            shapeParametersStorage= new ShapeParametersStorage(area,perimeter);
         }
         warehouse.putShapeParameters(quadrangle.getId(),shapeParametersStorage);
     }

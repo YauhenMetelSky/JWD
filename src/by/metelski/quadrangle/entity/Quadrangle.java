@@ -9,6 +9,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Quadrangle extends AbstractShape implements Observable {
@@ -16,28 +17,18 @@ public class Quadrangle extends AbstractShape implements Observable {
     public static final Logger logger = LogManager.getLogger();
     private List<Observer>observers = new ArrayList<>();
 
-//    public Quadrangle(CustomPoint pointA, CustomPoint pointB, CustomPoint pointC,String name){
-//        points=new CustomPoint[4];
-//        points[0] = pointA;
-//        points[1]=pointB;
-//        points[2]=pointC;
-//        points[3]=new CustomPoint();
-//        setName(name);
-//        logger.log(Level.INFO,"created Quadrangle name: \"" + name+"\", shape id: " + getId());
-//    }
-     public Quadrangle(CustomPoint pointA, CustomPoint pointB, CustomPoint pointC, CustomPoint pointD,String name){
+     public Quadrangle(CustomPoint pointA, CustomPoint pointB, CustomPoint pointC, CustomPoint pointD){
         points=new CustomPoint[4];
         points[0] = pointA;
         points[1]=pointB;
         points[2]=pointC;
         points[3]=pointD;
-       setName(name);
-         logger.log(Level.INFO,"created Quadrangle name: \"" + name+"\", shape id: " + getId());
+        logger.log(Level.INFO,"created Quadrangle, shape id: " + getId());
     }
-    public Quadrangle(CustomPoint[] points,String name){
+    public Quadrangle(CustomPoint[] points){
         this.points=points;
-        setName(name);
-        logger.log(Level.INFO,"created Quadrangle name: \"" + name+"\", shape id: " + getId());
+
+        logger.log(Level.INFO,"created Quadrangle, shape id: " + getId());
     }
 
     public CustomPoint[] getPoints() {
@@ -75,5 +66,34 @@ public class Quadrangle extends AbstractShape implements Observable {
         for (Observer observer:observers) {
             observer.parameterChanged(event);
         }
+    }
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = super.hashCode();
+        result = prime * result + Arrays.hashCode(points);
+        return result;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Quadrangle other = (Quadrangle) obj;
+        if (!Arrays.equals(points, other.points))
+            return false;
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Quadrangle{");
+        sb.append(super.toString());
+        sb.append("\npoints=").append(Arrays.toString(points));
+        sb.append('}');
+        return sb.toString();
     }
 }

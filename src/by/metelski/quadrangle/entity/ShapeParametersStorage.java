@@ -1,23 +1,14 @@
 package by.metelski.quadrangle.entity;
 
 public class ShapeParametersStorage {
-    private String name;
     private double area;
     private double perimeter;
 
-    public ShapeParametersStorage(String name, double area, double perimeter) {
-        this.name = name;
+    public ShapeParametersStorage(double area, double perimeter) {
         this.area = area;
         this.perimeter = perimeter;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public double getArea() {
         return area;
