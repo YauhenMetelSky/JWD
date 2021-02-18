@@ -31,9 +31,14 @@
             <class name="test.metelski.quadrangle.repository.RepositoryTest"/>
         </classes>
     </test>
-    <test name="FindByRangeCoordinate">
+    <test name="FindByRangeCoordinateTest">
         <classes>
             <class name="test.metelski.quadrangle.repository.impl.FindByRangeCoordinateTest"/>
+        </classes>
+    </test>
+    <test name="FindByAreaRangeTest">
+        <classes>
+            <class name="test.metelski.quadrangle.repository.impl.FindByAreaRangeTest"/>
         </classes>
     </test>
 </suite>
