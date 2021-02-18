@@ -4,5 +4,5 @@ import by.metelski.quadrangle.entity.AbstractShape;
 import by.metelski.quadrangle.entity.CustomPoint;
 
 public interface ShapeFactoryInterface {
-    AbstractShape createShape(String name, CustomPoint[] points);
+    AbstractShape createShape(CustomPoint[] points);
  }

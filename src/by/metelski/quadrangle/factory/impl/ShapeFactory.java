@@ -11,7 +11,7 @@ public class ShapeFactory implements ShapeFactoryInterface {
     private final static int DEFAULT_X = 0;
     private final static int DEFAULT_Y =0;
     @Override
-    public AbstractShape createShape(String name, CustomPoint[] points) {
+    public AbstractShape createShape(CustomPoint[] points) {
         CustomPoint[] tmpPoints=new CustomPoint[4];
         if(points.length==3){
             for (int i = 0; i < 3; i++) {
