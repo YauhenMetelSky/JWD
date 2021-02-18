@@ -51,4 +51,9 @@
             <class name="test.metelski.quadrangle.repository.impl.FindByPointTest"/>
         </classes>
     </test>
+    <test name="FindByPerimeterRangeTest">
+        <classes>
+            <class name="test.metelski.quadrangle.repository.impl.FindByPerimeterRangeTest"/>
+        </classes>
+    </test>
 </suite>
