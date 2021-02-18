@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Quadrangle extends CustomShape implements Observable {
+public class Quadrangle extends AbstractShape implements Observable {
     private CustomPoint[] points;
     public static final Logger logger = LogManager.getLogger();
     private List<Observer>observers = new ArrayList<>();

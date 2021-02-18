@@ -1,6 +1,6 @@
 package by.metelski.quadrangle.repository.impl;
 
-import by.metelski.quadrangle.entity.CustomShape;
+import by.metelski.quadrangle.entity.AbstractShape;
 import by.metelski.quadrangle.repository.Specification;
 
 public class FindByName implements Specification {
@@ -9,8 +9,8 @@ public class FindByName implements Specification {
     }
 
     @Override
-    public boolean specify(CustomShape customShape) {
-        boolean result = customShape.getName().equals(name);
+    public boolean specify(AbstractShape abstractShape) {
+        boolean result = abstractShape.getName().equals(name);
         return result;
     }
 }

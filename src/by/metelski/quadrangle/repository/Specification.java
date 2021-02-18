@@ -1,7 +1,7 @@
 package by.metelski.quadrangle.repository;
 
-import by.metelski.quadrangle.entity.CustomShape;
+import by.metelski.quadrangle.entity.AbstractShape;
 
 public interface Specification {
-    boolean specify(CustomShape customShape);
+    boolean specify(AbstractShape abstractShape);
 }

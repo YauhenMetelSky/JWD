@@ -2,11 +2,11 @@ package by.metelski.quadrangle.entity;
 
 import by.metelski.quadrangle.generator.IdGenerator;
 
-public abstract class CustomShape {
+public abstract class AbstractShape {
     private long id;
     private String name;
 
-    public CustomShape() {
+    public AbstractShape() {
         this.id = IdGenerator.getId();
     }
 
