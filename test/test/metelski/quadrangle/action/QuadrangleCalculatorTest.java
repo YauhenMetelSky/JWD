@@ -44,15 +44,15 @@ public class QuadrangleCalculatorTest extends Assert {
         double[] actualResult = calculator.findDiagonalsLength(testQuadrangle);
         assertEquals(actualResult,expectedResult,4);
     }
-    @Test(dataProvider = "findSquareData")
+    @Test(dataProvider = "findAreaData")
     public void testFindSquare(Quadrangle quadrangle,double expectedResult2){
         double actualResult = calculator.findArea(quadrangle);
         assertEquals(actualResult,expectedResult2,4);
-
     }
-    @DataProvider(name = "findSquareData")
-    public Object[][] findSquareData() {
-        return new Object[][]{{new Quadrangle(new CustomPoint(1,4),new CustomPoint(3,7),new CustomPoint(5,2),new CustomPoint(0,-3)),22.9995},
+    @DataProvider()
+    public Object[][] findAreaData() {
+        return new Object[][]{
+                {new Quadrangle(new CustomPoint(1,4),new CustomPoint(3,7),new CustomPoint(5,2),new CustomPoint(0,-3)),22.9995},
                 {new Quadrangle(new CustomPoint(9,0),new CustomPoint(9,4),new CustomPoint(13,4),new CustomPoint(13,0)),16.0}
         };
     }

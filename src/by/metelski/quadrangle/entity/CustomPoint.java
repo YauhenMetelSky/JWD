@@ -56,10 +56,10 @@ public class CustomPoint {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("CustomPoint{");
+        final StringBuilder sb = new StringBuilder("Point{");
         sb.append("\nx=").append(x);
         sb.append(",\ny=").append(y);
-        sb.append('}');
+        sb.append("}\n");
         return sb.toString();
     }
 }

@@ -14,9 +14,9 @@ public class QuadrangleCalculator implements ShapeCalculator {
     @Override
     public double findArea(Quadrangle quadrangle) {
         double[] diagonals = findDiagonalsLength(quadrangle);
-        double square = 0.5 * diagonals[0] * diagonals[1] * Math.sin(findAngleBetweenDiagonals(quadrangle));
-        logger.log(Level.INFO, "square is " + square);
-        return square;
+        double area = 0.5 * diagonals[0] * diagonals[1] * Math.sin(findAngleBetweenDiagonals(quadrangle));
+        logger.log(Level.INFO, "area is " + area);
+        return area;
     }
 
     @Override

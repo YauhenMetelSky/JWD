@@ -33,7 +33,7 @@ public class ShapeFactory implements ShapeFactoryInterface {
     private void sortPoints(CustomPoint[] points){
         for (int i = 1; i <4 ; i++) {
             if(IsDiagonal.isPointOneThreeDiagonal(points)){
-                logger.log(Level.INFO,"find diagonal between point: "+points[0].toString() +"and point: "+points[2].toString());
+                logger.log(Level.INFO,"find diagonal between point: "+points[0] +"and point: "+points[2]);
              break;
             } else {
                 swap(points,i,i+1);

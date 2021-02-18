@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 public class CheckStringFromFile {
     public final static String PATTERN_POINT = "((-*\\d+,-*\\d)\\s+){3}(-*\\d+,-*\\d)*";
-     public final static Logger logger = LogManager.getLogger();
+    public final static Logger logger = LogManager.getLogger();
 
     public static boolean isStringValid(String stringToCheck) {
         boolean isValid = Pattern.matches(PATTERN_POINT, stringToCheck);
