@@ -2,6 +2,7 @@ package test.metelski.quadrangle.factory.impl;
 
 import by.metelski.quadrangle.entity.CustomPoint;
 import by.metelski.quadrangle.entity.Quadrangle;
+import by.metelski.quadrangle.exception.QuadrangleException;
 import by.metelski.quadrangle.factory.impl.ShapeFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -36,7 +37,7 @@ public class ShapeFactoryTest extends Assert {
 
     }
     @Test(dataProvider = "createShapeData")
-    public void testCreateShape(CustomPoint[]points, Quadrangle expectedResult){
+    public void testCreateShape(CustomPoint[]points, Quadrangle expectedResult) throws QuadrangleException {
         actualResult = (Quadrangle) factory.createShape(points);
       expectedResult.setId(actualResult.getId());
       assertEquals(actualResult,expectedResult);

@@ -16,6 +16,11 @@
             <class name="test.metelski.quadrangle.validate.IsDiagonalTest"/>
         </classes>
     </test>
+    <test name="CreateValidatorTest">
+        <classes>
+            <class name="test.metelski.quadrangle.validate.CreateValidatorTest"/>
+        </classes>
+    </test>
     <test name="CustomParserTest">
         <classes>
             <class name="test.metelski.quadrangle.parser.impl.CustomParserTest"/>
@@ -39,6 +44,11 @@
     <test name="FindByAreaRangeTest">
         <classes>
             <class name="test.metelski.quadrangle.repository.impl.FindByAreaRangeTest"/>
+        </classes>
+    </test>
+    <test name="FindByPointTest">
+        <classes>
+            <class name="test.metelski.quadrangle.repository.impl.FindByPointTest"/>
         </classes>
     </test>
 </suite>

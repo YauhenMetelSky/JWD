@@ -3,11 +3,16 @@ package by.metelski.quadrangle.factory.impl;
 import by.metelski.quadrangle.entity.CustomPoint;
 import by.metelski.quadrangle.entity.AbstractShape;
 import by.metelski.quadrangle.entity.Quadrangle;
+import by.metelski.quadrangle.exception.QuadrangleException;
 import by.metelski.quadrangle.factory.ShapeFactoryInterface;
+import by.metelski.quadrangle.validate.CreateValidator;
 import by.metelski.quadrangle.validate.IsDiagonal;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import javax.xml.validation.Validator;
+import java.util.Arrays;
 
 public class ShapeFactory implements ShapeFactoryInterface {
     PointFactory pointFactory = new PointFactory();
@@ -15,8 +20,9 @@ public class ShapeFactory implements ShapeFactoryInterface {
     private final static int DEFAULT_Y =0;
     public static final Logger logger = LogManager.getLogger();
     @Override
-    public AbstractShape createShape(CustomPoint[] points) {
+    public AbstractShape createShape(CustomPoint[] points) throws QuadrangleException {
         CustomPoint[] tmpPoints=new CustomPoint[4];
+        Quadrangle quadrangle;
         if(points.length==3){
             for (int i = 0; i < 3; i++) {
                 tmpPoints[i] = points[i];
@@ -26,7 +32,11 @@ public class ShapeFactory implements ShapeFactoryInterface {
             tmpPoints = points;
         }
         sortPoints(tmpPoints);
-        Quadrangle quadrangle = new Quadrangle(tmpPoints);
+        if(!CreateValidator.isPossibleCreate(tmpPoints)){
+            throw new QuadrangleException("impossible to create quadrangle with this points" + Arrays.toString(tmpPoints));
+        } else {
+          quadrangle = new Quadrangle(tmpPoints);
+        }
         return quadrangle;
     }
 
