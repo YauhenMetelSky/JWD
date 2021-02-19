@@ -39,23 +39,31 @@ public class Quadrangle extends AbstractShape implements Observable {
         this.points = points;
         notifyObservers();
     }
-
-    public void setPoint(CustomPoint point, int index) throws QuadrangleException {
-        if (index >= 0 && index < points.length) {
-            points[index] = point;
-            notifyObservers();
-        } else {
-            throw new QuadrangleException("illegal argument index=" + index + ", less than 0 or greater than " + points.length);
-        }
+    public CustomPoint getPointA(){
+        return points[0];
+    }
+    public CustomPoint getPointB(){
+        return points[0];
+    }
+    public CustomPoint getPointC(){
+        return points[0];
+    }
+    public CustomPoint getPointD(){
+        return points[0];
+    }
+    public void setPointA(CustomPoint point){
+        points[0]=point;
+    }
+    public void setPointB(CustomPoint point){
+        points[0]=point;
+    }
+    public void setPointC(CustomPoint point){
+        points[0]=point;
+    }
+    public void setPointD(CustomPoint point){
+        points[0]=point;
     }
 
-    public CustomPoint getPoint(int index) throws QuadrangleException {
-        if (index < points.length) {
-            return points[index];
-        } else {
-            throw new QuadrangleException("Illegal point index : " + index);
-        }
-    }
 
     @Override
     public void attach(Observer observer) {

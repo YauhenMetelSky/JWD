@@ -56,4 +56,29 @@
             <class name="test.metelski.quadrangle.repository.impl.FindByPerimeterRangeTest"/>
         </classes>
     </test>
+    <test name="QuadrangleByAreaComparatorTest">
+        <classes>
+            <class name="test.metelski.quadrangle.comparator.QuadrangleByAreaComparatorTest"/>
+        </classes>
+    </test>
+    <test name="QuadrangleByFirstPointXComparatorTest">
+        <classes>
+            <class name="test.metelski.quadrangle.comparator.QuadrangleByFirstPointXComparatorTest"/>
+        </classes>
+    </test>
+    <test name="QuadrangleByFirstPointYComparatorTest">
+        <classes>
+            <class name="test.metelski.quadrangle.comparator.QuadrangleByFirstPointYComparatorTest"/>
+        </classes>
+    </test>
+    <test name="QuadrangleByIdComparatorTest">
+        <classes>
+            <class name="test.metelski.quadrangle.comparator.QuadrangleByIdComparatorTest"/>
+        </classes>
+    </test>
+    <test name="QuadrangleByPerimeterComparatorTest">
+        <classes>
+            <class name="test.metelski.quadrangle.comparator.QuadrangleByPerimeterComparatorTest"/>
+        </classes>
+    </test>
 </suite>
