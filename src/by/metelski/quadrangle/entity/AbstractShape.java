@@ -8,11 +8,9 @@ public abstract class AbstractShape {
     public AbstractShape() {
         this.id = IdGenerator.getId();
     }
-
     public long getId() {
         return id;
     }
-
     public void setId(long id) {
         this.id = id;
     }
@@ -23,7 +21,6 @@ public abstract class AbstractShape {
         result = prime * result + (int) (id ^ (id >>> 32));
         return result;
     }
-
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -37,7 +34,6 @@ public abstract class AbstractShape {
             return false;
         return true;
     }
-
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();

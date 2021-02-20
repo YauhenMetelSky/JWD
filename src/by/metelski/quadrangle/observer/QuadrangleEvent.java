@@ -1,7 +1,6 @@
 package by.metelski.quadrangle.observer;
 
 import by.metelski.quadrangle.entity.Quadrangle;
-
 import java.util.EventObject;
 
 public class QuadrangleEvent extends EventObject {

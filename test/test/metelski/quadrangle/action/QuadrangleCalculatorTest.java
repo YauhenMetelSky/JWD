@@ -52,7 +52,7 @@ public class QuadrangleCalculatorTest extends Assert {
     @DataProvider()
     public Object[][] findAreaData() {
         return new Object[][]{
-                {new Quadrangle(new CustomPoint(1,4),new CustomPoint(3,7),new CustomPoint(5,2),new CustomPoint(0,-3)),22.9995},
+                {new Quadrangle(new CustomPoint(1, 4), new CustomPoint(3, 7), new CustomPoint(5, 2), new CustomPoint(0, -3)),22.9995},
                 {new Quadrangle(new CustomPoint(9,0),new CustomPoint(9,4),new CustomPoint(13,4),new CustomPoint(13,0)),16.0}
         };
     }

@@ -25,7 +25,7 @@ public class FindByRangeCoordinateTest extends Assert {
     }
 
     @Test(dataProvider = "findByRangeCoordinateData")
-    public void testSpecify(int minX, int maxX, int minY, int maxY,boolean expectedResult) {
+    public void testSpecify(int minX, int maxX, int minY, int maxY, boolean expectedResult) {
         specification = new FindByRangeCoordinate(minX, maxX, minY, maxY);
         boolean actualResult = specification.specify(quadrangle);
         assertEquals(actualResult, expectedResult);
@@ -34,11 +34,11 @@ public class FindByRangeCoordinateTest extends Assert {
     @DataProvider()
     public Object[][] findByRangeCoordinateData() {
         return new Object[][]{
-                {-3, 3, -4, 4,false},
-                {-5, 0, -4, 4,false},
-                {-5, 3, -1, 4,false},
-                {-5, 3, -4, 2,false},
-                {-5, 3, -4, 4,true}
+                {-3, 3, -4, 4, false},
+                {-5, 0, -4, 4, false},
+                {-5, 3, -1, 4, false},
+                {-5, 3, -4, 2, false},
+                {-5, 3, -4, 4, true}
         };
     }
 }

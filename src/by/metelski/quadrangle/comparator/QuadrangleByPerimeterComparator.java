@@ -4,7 +4,6 @@ import by.metelski.quadrangle.action.ShapeCalculator;
 import by.metelski.quadrangle.action.impl.QuadrangleCalculator;
 import by.metelski.quadrangle.entity.Quadrangle;
 
-import java.util.Collections;
 import java.util.Comparator;
 
 public class QuadrangleByPerimeterComparator implements Comparator<Quadrangle> {

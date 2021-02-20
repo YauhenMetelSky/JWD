@@ -36,7 +36,7 @@ public class FindByAreaRangeTest extends Assert {
         return new Object[][]{
                 {12.5, 30.4, true},
                 {12.7, 22.2, false},
-                {23.0,23.0,false},
+                {23.0, 23.0, false},
                 {23.1, 30.2, false}
 
         };

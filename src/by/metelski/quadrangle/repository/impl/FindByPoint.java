@@ -15,9 +15,9 @@ public class FindByPoint implements Specification {
     @Override
     public boolean specify(AbstractShape abstractShape) {
         boolean result = false;
-        for (CustomPoint pointFromShape:((Quadrangle)abstractShape).getPoints()) {
-            if (point.equals(pointFromShape)){
-                result=true;
+        for (CustomPoint pointFromShape : ((Quadrangle) abstractShape).getPoints()) {
+            if (point.equals(pointFromShape)) {
+                result = true;
                 break;
             }
         }

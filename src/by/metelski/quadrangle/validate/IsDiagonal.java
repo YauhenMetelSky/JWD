@@ -4,7 +4,6 @@ import by.metelski.quadrangle.entity.CustomPoint;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.ArrayList;
 
 public class IsDiagonal {
@@ -16,7 +15,7 @@ public class IsDiagonal {
         results.add(calculateEquationStraightLine(coefficients, points[1]));
         results.add(calculateEquationStraightLine(coefficients, points[3]));
         boolean isDiagonal = results.get(0) < 0 && results.get(1) > 0 || results.get(0) > 0 && results.get(1) < 0;
-        logger.log(Level.DEBUG,"between point "+points[0]+" and point "+points[2]+" diagonal= "+ isDiagonal);
+        logger.log(Level.DEBUG, "between point " + points[0] + " and point " + points[2] + " diagonal= " + isDiagonal);
         return isDiagonal;
     }
 

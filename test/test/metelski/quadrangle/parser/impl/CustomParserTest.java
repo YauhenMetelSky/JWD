@@ -9,25 +9,27 @@ import org.testng.annotations.Test;
 
 public class CustomParserTest extends Assert {
     private CustomParser customParser;
+
     @BeforeTest
-    public void setUp(){
+    public void setUp() {
         customParser = new CustomParser();
-
     }
+
     @AfterTest
-    public void tearDown(){
+    public void tearDown() {
         customParser = null;
+    }
 
-    }
     @Test(dataProvider = "ParseArrayFromString")
-    public void testParseArrayFromString(String string,int[] expectedResult){
-        int[] actualResult=customParser.parseArrayFromString(string);
-        assertEquals(actualResult,expectedResult);
+    public void testParseArrayFromString(String string, int[] expectedResult) {
+        int[] actualResult = customParser.parseArrayFromString(string);
+        assertEquals(actualResult, expectedResult);
     }
+
     @DataProvider(name = "ParseArrayFromString")
     public Object[][] isStringValidData() {
-        return new Object[][]{{"1,1 2,2 3,-5 2,-7",new int[]{1,1,2,2,3,-5,2,-7}},
-                {"1,1 -1,-1 -1,1 1,-1",new int[]{1,1,-1,-1,-1,1,1,-1}}
+        return new Object[][]{{"1,1 2,2 3,-5 2,-7", new int[]{1, 1, 2, 2, 3, -5, 2, -7}},
+                {"1,1 -1,-1 -1,1 1,-1", new int[]{1, 1, -1, -1, -1, 1, 1, -1}}
         };
     }
 }

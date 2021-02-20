@@ -2,7 +2,6 @@ package by.metelski.quadrangle.comparator;
 
 import by.metelski.quadrangle.entity.CustomPoint;
 import by.metelski.quadrangle.entity.Quadrangle;
-
 import java.util.Comparator;
 
 public class QuadrangleByFirstPointXComparator implements Comparator<Quadrangle> {

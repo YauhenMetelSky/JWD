@@ -6,6 +6,7 @@ import by.metelski.quadrangle.entity.Quadrangle;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import java.util.Arrays;
 
 public class QuadrangleCalculator implements ShapeCalculator {
@@ -22,7 +23,7 @@ public class QuadrangleCalculator implements ShapeCalculator {
     @Override
     public double findPerimeter(Quadrangle quadrangle) {
         double perimeter = Arrays.stream(findSides(quadrangle))
-                .sum();
+                                 .sum();
         findAngleBetweenDiagonals(quadrangle);
         logger.log(Level.INFO, "perimeter is " + perimeter);
         return perimeter;

@@ -36,10 +36,8 @@ public class FindByPerimeterRangeTest extends Assert {
         return new Object[][]{
                 {12.5, 30.4, true},
                 {12.7, 22.2, false},
-                {24.0,30.0,false},
+                {24.0, 30.0, false},
                 {0, 0, false}
-
         };
-
     }
 }

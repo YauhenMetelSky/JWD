@@ -5,7 +5,6 @@ import by.metelski.quadrangle.entity.AbstractShape;
 import by.metelski.quadrangle.entity.Quadrangle;
 import by.metelski.quadrangle.repository.Specification;
 
-
 public class FindByPerimeterRange implements Specification {
     private double minPerimeter;
     private double maxPerimeter;
