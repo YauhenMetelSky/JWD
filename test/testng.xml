@@ -26,6 +26,11 @@
             <class name="test.metelski.quadrangle.parser.impl.CustomParserTest"/>
         </classes>
     </test>
+    <test name="StringFromTextFileReaderTest">
+        <classes>
+            <class name="test.metelski.quadrangle.reader.impl.StringFromTextFileReaderTest"/>
+        </classes>
+    </test>
     <test name="ShapeFactoryTest">
         <classes>
             <class name="test.metelski.quadrangle.factory.impl.ShapeFactoryTest"/>

@@ -18,7 +18,7 @@ public class StringFromTextFileReader implements StringFromTextFileReaderInterfa
         List<String> stringsFromFile;
         try {
             stringsFromFile= Files.lines(Paths.get(filePath))
-                    .collect(Collectors.toList());
+                                  .collect(Collectors.toList());
         } catch (IOException e) {
             throw new QuadrangleException("File input exception",e);
         }
