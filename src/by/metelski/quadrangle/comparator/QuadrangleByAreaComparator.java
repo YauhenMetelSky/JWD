@@ -6,7 +6,7 @@ import by.metelski.quadrangle.entity.Quadrangle;
 import java.util.Comparator;
 
 public class QuadrangleByAreaComparator implements Comparator<Quadrangle> {
-    ShapeCalculator calculator;
+    private ShapeCalculator calculator;
 
     @Override
     public int compare(Quadrangle o1, Quadrangle o2) {
