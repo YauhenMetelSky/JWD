@@ -1,8 +1,8 @@
 package by.metelski.compositechain.entity;
 
-public interface Component {
+public interface TextComponent {
 	void operation();
-	void add(Component component);
-	void remove(Component component);
-	Object getChild(int index);
+	void add(TextComponent component);
+	void remove(TextComponent component);
+	int countLeaf();
 }
