@@ -19,7 +19,7 @@ public class Leaf implements Component {
 	@Override
 	public void remove(Component c) {
 		throw new UnsupportedOperationException("undone");
-		
+		//ff
 	}
 
 	@Override
