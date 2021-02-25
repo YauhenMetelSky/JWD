@@ -5,14 +5,11 @@ import by.metelski.compositechain.entity.Component;
 public class Composite implements Component {
 
 	@Override
-	public void operation() {
-		
-		
+	public void operation() {		
 	}
 
 	@Override
-	public void add(Component c) {
-		
+	public void add(Component c) {		
 		
 	}
 
@@ -23,8 +20,7 @@ public class Composite implements Component {
 	}
 
 	@Override
-	public Object getChild(int index) {
-	
+	public Object getChild(int index) {	
 		return null;
 	}
 
