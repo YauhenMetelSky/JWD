@@ -1,5 +1,31 @@
 package by.metelski.compositechain.entity.impl;
 
-public class Leaf {
+import by.metelski.compositechain.entity.Component;
+
+public class Leaf implements Component {
+
+	@Override
+	public void operation() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void add(Component c) {
+		throw new UnsupportedOperationException("undone");
+		
+	}
+
+	@Override
+	public void remove(Component c) {
+		throw new UnsupportedOperationException("undone");
+		
+	}
+
+	@Override
+	public Object getChild(int index) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
