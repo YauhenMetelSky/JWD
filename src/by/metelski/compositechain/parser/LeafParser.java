@@ -3,12 +3,12 @@ package by.metelski.compositechain.parser;
 import java.util.Arrays;
 
 import by.metelski.compositechain.entity.ComponentType;
-import by.metelski.compositechain.entity.impl.Leaf;
-import by.metelski.compositechain.entity.impl.TextComposite;
+import by.metelski.compositechain.entity.Leaf;
+import by.metelski.compositechain.entity.TextComposite;
 
 public class LeafParser extends AbstractParser {
-	private static final String PUNCTUATION_MARK ="[?!.,;:\\-()“”]";
-
+	private static final String PUNCTUATION_MARK ="[?!.,;:\\-()]";
+	
 	public LeafParser(AbstractParser nextParser) {
 		super(nextParser);
 	}

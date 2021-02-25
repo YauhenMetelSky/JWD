@@ -4,10 +4,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import by.metelski.compositechain.entity.ComponentType;
-import by.metelski.compositechain.entity.impl.TextComposite;
+import by.metelski.compositechain.entity.TextComposite;
 
-public class ParagrafParser extends AbstractParser{
-	private static final String PARAGRAPH = "\t[A-Z0-9][\\w \\p{Punct}А-Яа-я“”\n]+";
+public class ParagrafParser extends AbstractParser {
+	private static final String PARAGRAPH = "\t[A-Z][^\\t]+";
 
 	public ParagrafParser(AbstractParser nextParser) {
 		super(nextParser);
@@ -17,7 +17,7 @@ public class ParagrafParser extends AbstractParser{
 	public void parse(String text, TextComposite textComposite) {
 		Pattern pattern = Pattern.compile(PARAGRAPH);
 		Matcher matcher = pattern.matcher(text);
-		while(matcher.find()) {
+		while (matcher.find()) {
 			TextComposite paragraphComposite = new TextComposite(ComponentType.PARAGRAF);
 			textComposite.add(paragraphComposite);
 			AbstractParser nextParser = super.getNextParser();

@@ -4,10 +4,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import by.metelski.compositechain.entity.ComponentType;
-import by.metelski.compositechain.entity.impl.TextComposite;
+import by.metelski.compositechain.entity.TextComposite;
 
 public class SentenceParser extends AbstractParser {
-	private static final String SENTENCE = "([A-Z0-9])(([\\w\\s]|[\\p{Punct}А-Яа-я“”](?!\\s[A-Z0-9]))+)([?!.])";
+	private static final String SENTENCE = "[A-Z0-9]\\S+.[^?!.]*";
 
 	public SentenceParser(AbstractParser nextParser) {
 		super(nextParser);
