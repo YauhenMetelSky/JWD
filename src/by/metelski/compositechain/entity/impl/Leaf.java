@@ -24,7 +24,7 @@ public class Leaf implements Component {
 
 	@Override
 	public Object getChild(int index) {
-		// TODO Auto-generated method stub
+	
 		return null;
 	}
 
