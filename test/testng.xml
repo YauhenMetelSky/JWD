@@ -3,7 +3,7 @@
 <suite name="Test" verbose="1">
     <test name="TestTextComposite">
         <classes>
-            <class name="test.metelski.compositechain.entity.impl.TestTextComposite"/>
+            <class name="test.metelski.compositechain.entity.TestTextComposite"/>
         </classes>
     </test>
 </suite>

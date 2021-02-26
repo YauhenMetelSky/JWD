@@ -8,10 +8,7 @@ import by.metelski.compositechain.entity.TextComposite;
 
 public class ParagrafParser extends AbstractParser {
 	private static final String PARAGRAPH = "\t[A-Z][^\\t]+";
-
-	public ParagrafParser(AbstractParser nextParser) {
-		super(nextParser);
-	}
+	private AbstractParser nextParser = new SentenceParser();
 
 	@Override
 	public void parse(String text, TextComposite textComposite) {
@@ -20,7 +17,6 @@ public class ParagrafParser extends AbstractParser {
 		while (matcher.find()) {
 			TextComposite paragraphComposite = new TextComposite(ComponentType.PARAGRAF);
 			textComposite.add(paragraphComposite);
-			AbstractParser nextParser = super.getNextParser();
 			String paragraph = matcher.group();
 			nextParser.parse(paragraph, paragraphComposite);
 		}

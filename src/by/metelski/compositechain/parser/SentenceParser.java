@@ -8,10 +8,7 @@ import by.metelski.compositechain.entity.TextComposite;
 
 public class SentenceParser extends AbstractParser {
 	private static final String SENTENCE = "[A-Z0-9]\\S+.[^?!.]*";
-
-	public SentenceParser(AbstractParser nextParser) {
-		super(nextParser);
-	}
+	private AbstractParser nextParser = new LexemeParser();
 
 	@Override
 	public void parse(String paragraph, TextComposite paragraphComposite) {
@@ -20,7 +17,6 @@ public class SentenceParser extends AbstractParser {
 		while (matcher.find()) {
 			TextComposite sentenceComposite = new TextComposite(ComponentType.SENTENCE);
 			paragraphComposite.add(sentenceComposite);
-			AbstractParser nextParser = super.getNextParser();
 			String sentence = matcher.group();
 			nextParser.parse(sentence, sentenceComposite);
 		}

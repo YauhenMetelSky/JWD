@@ -4,9 +4,10 @@ public enum ComponentType {
 	TEXT,
 	PARAGRAF,
 	SENTENCE,
-	WORD,
+	LEXEME,
 	SYMBOL,
-	PUNCTUATION_MARK,
-	SPACE;
+	PUNCTUATION_MARK;
+	
+	
 
 }

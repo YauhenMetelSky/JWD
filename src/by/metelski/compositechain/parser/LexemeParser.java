@@ -4,25 +4,21 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import by.metelski.compositechain.entity.ComponentType;
-import by.metelski.compositechain.entity.impl.TextComposite;
+import by.metelski.compositechain.entity.TextComposite;
 
 public class LexemeParser extends AbstractParser {
-	private static final String LEXEME = "[\\w\\p{Punct}А-Яа-я“”]+";
+	private static final String LEXEME = "\\S[^.,;:()<>!&?]+";// not correct RegEx
+	private AbstractParser nextParser = new SymbolParser();
 
-	public LexemeParser(AbstractParser nextParser) {
-		super(nextParser);
-	}
-	
 	@Override
 	public void parse(String sentence, TextComposite sentenceComposite) {
 		Pattern pattern = Pattern.compile(LEXEME);
 		Matcher matcher = pattern.matcher(sentence);
 		while (matcher.find()) {
-			TextComposite lexemeComposite = new TextComposite(ComponentType.WORD);
+			TextComposite lexemeComposite = new TextComposite(ComponentType.LEXEME);
 			sentenceComposite.add(lexemeComposite);
-			AbstractParser nextParser = super.getNextParser();
 			String word = matcher.group();
-			nextParser.parse(word, lexemeComposite);
+			 nextParser.parse(word, lexemeComposite);
 		}
 	}
 }
