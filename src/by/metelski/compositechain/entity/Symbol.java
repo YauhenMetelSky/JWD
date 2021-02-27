@@ -1,45 +1,62 @@
-package by.metelski.compositechain.entity.impl;
+package by.metelski.compositechain.entity;
 
-import by.metelski.compositechain.entity.ComponentType;
-import by.metelski.compositechain.entity.TextComponent;
-
-public class Leaf implements TextComponent {
+public class Symbol implements TextComponent {
     private static final int LEAF_COUNTER =1;
     private char value;
     private ComponentType componentType;
-    public Leaf() {
+    public Symbol() {
     	
     }
-    public Leaf(char value) {
+    public Symbol(char value) {
     	this.value = value;
     }
-    public Leaf(char value, ComponentType componentType) {
+    public Symbol(char value, ComponentType componentType) {
     	this.value = value;
     	this.componentType=componentType;
     }
-	@Override
-	public void operation() {				
-	}
-
+	
 	@Override
 	public void add(TextComponent c) {
-		throw new UnsupportedOperationException("undone");
+		throw new UnsupportedOperationException("Operation not supported for Symbol.class");
 	}
 
 	@Override
 	public void remove(TextComponent c) {
-		throw new UnsupportedOperationException("undone");
+		throw new UnsupportedOperationException("Operation not supported for Symbol.class");
 	}
 
 	@Override
-	public Object getChild(int index) {
-		return null;
-	}
-
-	@Override
-	public int countLeaf() {
+	public int countSymbols() {
 			return LEAF_COUNTER;
 	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((componentType == null) ? 0 : componentType.hashCode());
+		result = prime * result + value;
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Symbol other = (Symbol) obj;
+		if (componentType != other.componentType)
+			return false;
+		if (value != other.value)
+			return false;
+		return true;
+	}
+	@Override
+	public String toString() {
+		return "\nSymbol [value=" + value + "\ncomponentType=" + componentType + " ]\n";
+	}
+	
 	
 
 }

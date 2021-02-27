@@ -7,18 +7,23 @@ import org.testng.annotations.Test;
 import by.metelski.compositechain.entity.ComponentType;
 import by.metelski.compositechain.entity.Symbol;
 import by.metelski.compositechain.entity.TextComposite;
-import by.metelski.compositechain.parser.SymbolParser;
+import by.metelski.compositechain.parser.LexemeParser;
+import by.metelski.compositechain.parser.SentenceParser;
 
-public class SymbolParserTest extends Assert {
+public class SentenceParserTest extends Assert {
 	TextComposite expectedResult;
 	TextComposite actualResult;
-	SymbolParser parser;
+	SentenceParser parser;
 	String testText;
 
 	@BeforeTest
 	public void setUp() {
-		parser = new SymbolParser();
-		testText = "My cat, name -Fenix!";
+		parser = new SentenceParser();
+		TextComposite lexeme1 = new TextComposite(ComponentType.LEXEME);
+		TextComposite lexeme2 = new TextComposite(ComponentType.LEXEME);
+		TextComposite lexeme3 = new TextComposite(ComponentType.LEXEME);
+		TextComposite lexeme4 = new TextComposite(ComponentType.LEXEME);
+		testText = "   My cat, name -Fenix!";
 		expectedResult = new TextComposite();
 		Symbol l1 = new Symbol('M', ComponentType.SYMBOL);
 		Symbol l2 = new Symbol('y', ComponentType.SYMBOL);
@@ -37,30 +42,35 @@ public class SymbolParserTest extends Assert {
 		Symbol l15 = new Symbol('i', ComponentType.SYMBOL);
 		Symbol l16 = new Symbol('x', ComponentType.SYMBOL);
 		Symbol l17 = new Symbol('!', ComponentType.PUNCTUATION_MARK);
-		expectedResult.add(l1);
-		expectedResult.add(l2);
-		expectedResult.add(l3);
-		expectedResult.add(l4);
-		expectedResult.add(l5);
-		expectedResult.add(l6);
-		expectedResult.add(l7);
-		expectedResult.add(l8);
-		expectedResult.add(l9);
-		expectedResult.add(l10);
-		expectedResult.add(l11);
-		expectedResult.add(l12);
-		expectedResult.add(l13);
-		expectedResult.add(l14);
-		expectedResult.add(l15);
-		expectedResult.add(l16);
-		expectedResult.add(l17);
+		
+		lexeme1.add(l1);
+		lexeme1.add(l2);
+		lexeme2.add(l3);
+		lexeme2.add(l4);
+		lexeme2.add(l5);
+		lexeme2.add(l6);
+		lexeme3.add(l7);
+		lexeme3.add(l8);
+		lexeme3.add(l9);
+		lexeme3.add(l10);
+		lexeme4.add(l11);
+		lexeme4.add(l12);
+		lexeme4.add(l13);
+		lexeme4.add(l14);
+		lexeme4.add(l15);
+		lexeme4.add(l16);
+		lexeme4.add(l17);
+		expectedResult.add(lexeme1);
+		expectedResult.add(lexeme2);
+		expectedResult.add(lexeme3);
+		expectedResult.add(lexeme4);
 
 	}
-
 	@Test
-	public void parse() {
+	public void testParse() {
 		actualResult = new TextComposite();
 		parser.parse(testText, actualResult);
 		assertEquals(actualResult, expectedResult);
 	}
+
 }

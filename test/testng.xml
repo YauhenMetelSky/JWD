@@ -6,4 +6,14 @@
             <class name="test.metelski.compositechain.entity.TestTextComposite"/>
         </classes>
     </test>
+     <test name="TestSymbolParser">
+        <classes>
+            <class name="test.metelski.compositechain.parser.SymbolParserTest"/>
+        </classes>
+    </test>
+    <test name="TestSymbolParser">
+        <classes>
+            <class name="test.metelski.compositechain.parser.LexemeParserTest"/>
+        </classes>
+    </test>
 </suite>
