@@ -11,9 +11,24 @@
             <class name="test.metelski.compositechain.parser.SymbolParserTest"/>
         </classes>
     </test>
-    <test name="TestSymbolParser">
+    <test name="TestLexemeParser">
         <classes>
             <class name="test.metelski.compositechain.parser.LexemeParserTest"/>
+        </classes>
+    </test>
+     <test name="TestSentenceParser">
+        <classes>
+            <class name="test.metelski.compositechain.parser.SentenceParserTest"/>
+        </classes>
+    </test>
+    <test name="TestParagraphParser">
+        <classes>
+            <class name="test.metelski.compositechain.parser.ParagraphParserTest"/>
+        </classes>
+    </test>
+     <test name="TestTextCalculator">
+        <classes>
+            <class name="test.metelski.compositechain.action.TextCalculatorTest"/>
         </classes>
     </test>
 </suite>
