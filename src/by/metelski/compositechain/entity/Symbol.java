@@ -1,7 +1,7 @@
 package by.metelski.compositechain.entity;
 
 public class Symbol implements TextComponent {
-    private static final int LEAF_COUNTER =1;
+    private static final int SYMBOL_COUNTER =1;
     private char value;
     private ComponentType componentType;
     public Symbol() {
@@ -21,13 +21,21 @@ public class Symbol implements TextComponent {
 	}
 
 	@Override
+	public void addByIndex(int index, TextComponent component) {
+		throw new UnsupportedOperationException("Operation not supported for Symbol.class");		
+	}
+	@Override
+	public void removeByIndex(int index) {
+		throw new UnsupportedOperationException("Operation not supported for Symbol.class");	
+	}
+	@Override
 	public void remove(TextComponent c) {
 		throw new UnsupportedOperationException("Operation not supported for Symbol.class");
 	}
 
 	@Override
 	public int countSymbols() {
-			return LEAF_COUNTER;
+			return SYMBOL_COUNTER;
 	}
 	@Override
 	public int hashCode() {
