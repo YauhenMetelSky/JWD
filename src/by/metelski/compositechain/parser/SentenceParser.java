@@ -1,8 +1,5 @@
 package by.metelski.compositechain.parser;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import by.metelski.compositechain.entity.ComponentType;
 import by.metelski.compositechain.entity.TextComposite;
 

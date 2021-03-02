@@ -6,8 +6,5 @@ public enum ComponentType {
 	SENTENCE,
 	LEXEME,
 	SYMBOL,
-	PUNCTUATION_MARK;
-	
-	
-
+	PUNCTUATION_MARK
 }

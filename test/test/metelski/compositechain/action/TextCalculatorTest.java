@@ -15,6 +15,7 @@ public class TextCalculatorTest extends Assert {
 	int expectedResultWords;
 	int expectedResultSentences;
 	int expectedResultParagraphs;
+	int expectedResultSymbols;
 	int actualResult;
 	TextComposite testComposite;
 	TextCalculator calculator;
@@ -101,6 +102,7 @@ public class TextCalculatorTest extends Assert {
 		expectedResultWords = 7;
 		expectedResultSentences=3;
 		expectedResultParagraphs =2;
+		expectedResultSymbols = 25;
 	}
 
 	@Test(dataProvider = "findNumberOfData")
@@ -113,7 +115,9 @@ public class TextCalculatorTest extends Assert {
 		return new Object[][] {
 			{ComponentType.LEXEME,expectedResultWords},
 			{ComponentType.SENTENCE,expectedResultSentences},
-			{ComponentType.PARAGRAPH,expectedResultParagraphs}
+			{ComponentType.PARAGRAPH,expectedResultParagraphs},
+			{ComponentType.SYMBOL,expectedResultSymbols}
+			
 		};
 	}
 

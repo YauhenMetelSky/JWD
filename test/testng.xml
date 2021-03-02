@@ -31,4 +31,9 @@
             <class name="test.metelski.compositechain.action.TextCalculatorTest"/>
         </classes>
     </test>
+    <test name="TestTextCompositeSort">
+        <classes>
+            <class name="test.metelski.compositechain.action.TextCompositeSortTest"/>
+        </classes>
+    </test>
 </suite>

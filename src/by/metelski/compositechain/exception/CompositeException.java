@@ -17,5 +17,4 @@ public class CompositeException extends Exception {
 	public CompositeException(Throwable cause) {
 		super(cause);
 	}
-
 }

@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class TextComposite implements TextComponent {
+	public static final String SPACE = " ";
+	public static final String TAB = "\t";
 	private ComponentType type;
 	private List<TextComponent> components = new ArrayList<>();
 
@@ -93,11 +95,15 @@ public class TextComposite implements TextComponent {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("TextComposite\n [type=");
-		builder.append(type);
-		builder.append("\nlist=");
-		builder.append(components);
-		builder.append("]\n");
+		for(TextComponent component : components) {
+			builder.append(component.toString());
+			if(component.getType() == ComponentType.LEXEME) {
+				builder.append(SPACE);
+			}
+			if(component.getType()==ComponentType.PARAGRAPH) {
+				builder.append(TAB);
+			}
+		}
 		return builder.toString();
 	}
 

@@ -6,8 +6,8 @@ public class Symbol implements TextComponent {
     private static final int SYMBOL_COUNTER =1;
     private char value;
     private ComponentType componentType;
-    public Symbol() {
-    	
+    
+    public Symbol() {  	
     }
     public Symbol(char value) {
     	this.value = value;
