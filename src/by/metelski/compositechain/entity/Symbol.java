@@ -1,5 +1,7 @@
 package by.metelski.compositechain.entity;
 
+import java.util.List;
+
 public class Symbol implements TextComponent {
     private static final int SYMBOL_COUNTER =1;
     private char value;
@@ -32,7 +34,12 @@ public class Symbol implements TextComponent {
 	public void remove(TextComponent c) {
 		throw new UnsupportedOperationException("Operation not supported for Symbol.class");
 	}
+	
 
+	@Override
+	public List<TextComponent> getComponents() {
+		throw new UnsupportedOperationException("Operation not supported for Symbol.class");
+	}
 	@Override
 	public int countSymbols() {
 			return SYMBOL_COUNTER;
