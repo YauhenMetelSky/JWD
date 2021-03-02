@@ -1,8 +1,5 @@
 package by.metelski.compositechain.parser;
 
-import java.util.Arrays;
-import java.util.stream.Stream;
-
 import by.metelski.compositechain.entity.ComponentType;
 import by.metelski.compositechain.entity.Symbol;
 import by.metelski.compositechain.entity.TextComponent;
