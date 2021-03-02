@@ -22,13 +22,34 @@ public class TextComposite implements TextComponent {
 	public void setType(ComponentType type) {
 		this.type = type;
 	}
+	public ComponentType getType() {
+		return type;
+	}
+	@Override
 	public List<TextComponent> getComponents(){
-		return Collections.unmodifiableList(components);
+			return Collections.unmodifiableList(components);
+	}
+
+	public void setComponents(List<TextComponent> components){
+		this.components = components;
 	}
 
 	@Override
 	public void add(TextComponent component) {
 		components.add(component);
+	}
+	
+
+	@Override
+	public void addByIndex(int index,TextComponent component) {
+		components.add(index, component);
+		
+	}
+
+	@Override
+	public void removeByIndex(int index) {
+		components.remove(index);
+		
 	}
 
 	@Override
