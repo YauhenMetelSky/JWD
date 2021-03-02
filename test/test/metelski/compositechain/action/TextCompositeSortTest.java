@@ -96,7 +96,7 @@ public class TextCompositeSortTest extends Assert {
 		sentence3.add(lexeme6);
 		sentence3.add(lexeme7);
 		pargraph1.add(sentence1);
-		pargraph2.add(sentence2);
+		pargraph1.add(sentence2);
 		pargraph2.add(sentence3);
 		testComposite.add(pargraph1);
 		testComposite.add(pargraph2);
@@ -116,8 +116,6 @@ public class TextCompositeSortTest extends Assert {
 	public Object[][] findNumberOfData(){
 		return new Object[][] {
 			{ComponentType.SENTENCE,expectedResultSentence}
-		//	{ComponentType.LEXEME,expectedResultLexeme},
-		//	{ComponentType.SYMBOL,expectedResultSymbol}			
 		};
 	}
 }

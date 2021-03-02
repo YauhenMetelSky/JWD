@@ -5,7 +5,7 @@ import java.util.List;
 public class Symbol implements TextComponent {
     private static final int SYMBOL_COUNTER =1;
     private char value;
-    private ComponentType componentType;
+    private ComponentType type;
     
     public Symbol() {  	
     }
@@ -14,7 +14,7 @@ public class Symbol implements TextComponent {
     }
     public Symbol(char value, ComponentType componentType) {
     	this.value = value;
-    	this.componentType=componentType;
+    	this.type=componentType;
     }
 	
 	@Override
@@ -44,11 +44,12 @@ public class Symbol implements TextComponent {
 	public int countSymbols() {
 			return SYMBOL_COUNTER;
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((componentType == null) ? 0 : componentType.hashCode());
+		result = prime * result + ((type == null) ? 0 : type.hashCode());
 		result = prime * result + value;
 		return result;
 	}
@@ -61,7 +62,7 @@ public class Symbol implements TextComponent {
 		if (getClass() != obj.getClass())
 			return false;
 		Symbol other = (Symbol) obj;
-		if (componentType != other.componentType)
+		if (type != other.type)
 			return false;
 		if (value != other.value)
 			return false;
@@ -69,7 +70,11 @@ public class Symbol implements TextComponent {
 	}
 	@Override
 	public String toString() {
-		return "\nSymbol [value=" + value + "\ncomponentType=" + componentType + " ]\n";
+		return Character.toString(value);
+	}
+	@Override
+	public ComponentType getType() {
+		return type;
 	}
 	
 	

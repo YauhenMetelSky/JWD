@@ -1,44 +1,44 @@
-package metelski.compositechain.entity.impl;
+package test.metelski.compositechain.entity;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import by.metelski.compositechain.entity.ComponentType;
-import by.metelski.compositechain.entity.impl.Leaf;
-import by.metelski.compositechain.entity.impl.TextComposite;
+import by.metelski.compositechain.entity.Symbol;
+import by.metelski.compositechain.entity.TextComposite;
 
 public class TestTextComposite extends Assert {
 	TextComposite sentence;
 	@BeforeTest
 	public void setUp() {
-		Leaf l1 = new Leaf('M',ComponentType.SYMBOL);
-		Leaf l2 = new Leaf('y',ComponentType.SYMBOL);
-		Leaf l3 = new Leaf('c',ComponentType.SYMBOL);
-		Leaf l4 = new Leaf('a',ComponentType.SYMBOL);
-		Leaf l5 = new Leaf('t',ComponentType.SYMBOL);
-		Leaf l6 = new Leaf('n',ComponentType.SYMBOL);
-		Leaf l7 = new Leaf('a',ComponentType.SYMBOL);
-		Leaf l8 = new Leaf('m',ComponentType.SYMBOL);
-		Leaf l9 = new Leaf('e',ComponentType.SYMBOL);
-		Leaf l10 = new Leaf('F',ComponentType.SYMBOL);
-		Leaf l11 = new Leaf('e',ComponentType.SYMBOL);
-		Leaf l12 = new Leaf('n',ComponentType.SYMBOL);
-		Leaf l13 = new Leaf('i',ComponentType.SYMBOL);
-		Leaf l14 = new Leaf('x',ComponentType.SYMBOL);
-		TextComposite word1 = new TextComposite(ComponentType.WORD);
+		Symbol l1 = new Symbol('M',ComponentType.SYMBOL);
+		Symbol l2 = new Symbol('y',ComponentType.SYMBOL);
+		Symbol l3 = new Symbol('c',ComponentType.SYMBOL);
+		Symbol l4 = new Symbol('a',ComponentType.SYMBOL);
+		Symbol l5 = new Symbol('t',ComponentType.SYMBOL);
+		Symbol l6 = new Symbol('n',ComponentType.SYMBOL);
+		Symbol l7 = new Symbol('a',ComponentType.SYMBOL);
+		Symbol l8 = new Symbol('m',ComponentType.SYMBOL);
+		Symbol l9 = new Symbol('e',ComponentType.SYMBOL);
+		Symbol l10 = new Symbol('F',ComponentType.SYMBOL);
+		Symbol l11 = new Symbol('e',ComponentType.SYMBOL);
+		Symbol l12 = new Symbol('n',ComponentType.SYMBOL);
+		Symbol l13 = new Symbol('i',ComponentType.SYMBOL);
+		Symbol l14 = new Symbol('x',ComponentType.SYMBOL);
+		TextComposite word1 = new TextComposite(ComponentType.LEXEME);
 		word1.add(l1);
 		word1.add(l2);
-		TextComposite word2 = new TextComposite(ComponentType.WORD);
+		TextComposite word2 = new TextComposite(ComponentType.LEXEME);
 		word2.add(l3);
 		word2.add(l4);
 		word2.add(l5);
-		TextComposite word3 = new TextComposite(ComponentType.WORD);
+		TextComposite word3 = new TextComposite(ComponentType.LEXEME);
 		word3.add(l6);
 		word3.add(l7);
 		word3.add(l8);
 		word3.add(l9);
-		TextComposite word4 = new TextComposite(ComponentType.WORD);
+		TextComposite word4 = new TextComposite(ComponentType.LEXEME);
 		word4.add(l10);
 		word4.add(l11);
 		word4.add(l12);
@@ -53,7 +53,7 @@ public class TestTextComposite extends Assert {
 	@Test
 	public void testCountLeaf() {
 		int expectedResult =14;
-		int actualResult = sentence.countLeaf();
+		int actualResult = sentence.countSymbols();
 		assertEquals(actualResult, expectedResult);
 		
 	}

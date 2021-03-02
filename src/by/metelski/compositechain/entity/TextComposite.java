@@ -11,16 +11,13 @@ public class TextComposite implements TextComponent {
 	private List<TextComponent> components = new ArrayList<>();
 
 	public TextComposite() {
-
 	}
-
 	public TextComposite(ComponentType type) {
 		this.type = type;
 	}
 	public TextComposite(List<TextComponent> value,ComponentType type) {
 		this.type = type;
 	}
-
 	public void setType(ComponentType type) {
 		this.type = type;
 	}
@@ -31,38 +28,31 @@ public class TextComposite implements TextComponent {
 	public List<TextComponent> getComponents(){
 			return Collections.unmodifiableList(components);
 	}
-
 	public void setComponents(List<TextComponent> components){
 		this.components = components;
 	}
-
 	@Override
 	public void add(TextComponent component) {
 		components.add(component);
-	}
-	
-
+	}	
 	@Override
 	public void addByIndex(int index,TextComponent component) {
-		components.add(index, component);
-		
+		components.add(index, component);		
 	}
 
 	@Override
 	public void removeByIndex(int index) {
-		components.remove(index);
-		
+		components.remove(index);		
 	}
-
 	@Override
 	public void remove(TextComponent component) {
 		components.remove(component);
 	}
-
 	@Override
 	public int countSymbols() {
 		return components.stream().mapToInt(TextComponent::countSymbols).sum();
 	}
+
 
 	@Override
 	public int hashCode() {
@@ -72,7 +62,6 @@ public class TextComposite implements TextComponent {
 		result = prime * result + ((type == null) ? 0 : type.hashCode());
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -91,7 +80,6 @@ public class TextComposite implements TextComponent {
 			return false;
 		return true;
 	}
-
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();

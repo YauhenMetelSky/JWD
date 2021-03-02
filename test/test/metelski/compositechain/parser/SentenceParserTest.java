@@ -19,19 +19,21 @@ public class SentenceParserTest extends Assert {
 	@BeforeTest
 	public void setUp() {
 		parser = new SentenceParser();
+		TextComposite sentence1 = new TextComposite(ComponentType.SENTENCE);
+		TextComposite sentence2 = new TextComposite(ComponentType.SENTENCE);
 		TextComposite lexeme1 = new TextComposite(ComponentType.LEXEME);
 		TextComposite lexeme2 = new TextComposite(ComponentType.LEXEME);
 		TextComposite lexeme3 = new TextComposite(ComponentType.LEXEME);
 		TextComposite lexeme4 = new TextComposite(ComponentType.LEXEME);
-		testText = "   My cat, name -Fenix!";
+		testText = "   My cat. Name -Fenix!";
 		expectedResult = new TextComposite();
 		Symbol l1 = new Symbol('M', ComponentType.SYMBOL);
 		Symbol l2 = new Symbol('y', ComponentType.SYMBOL);
 		Symbol l3 = new Symbol('c', ComponentType.SYMBOL);
 		Symbol l4 = new Symbol('a', ComponentType.SYMBOL);
 		Symbol l5 = new Symbol('t', ComponentType.SYMBOL);
-		Symbol l6 = new Symbol(',', ComponentType.PUNCTUATION_MARK);
-		Symbol l7 = new Symbol('n', ComponentType.SYMBOL);
+		Symbol l6 = new Symbol('.', ComponentType.PUNCTUATION_MARK);
+		Symbol l7 = new Symbol('N', ComponentType.SYMBOL);
 		Symbol l8 = new Symbol('a', ComponentType.SYMBOL);
 		Symbol l9 = new Symbol('m', ComponentType.SYMBOL);
 		Symbol l10 = new Symbol('e', ComponentType.SYMBOL);
@@ -60,10 +62,13 @@ public class SentenceParserTest extends Assert {
 		lexeme4.add(l15);
 		lexeme4.add(l16);
 		lexeme4.add(l17);
-		expectedResult.add(lexeme1);
-		expectedResult.add(lexeme2);
-		expectedResult.add(lexeme3);
-		expectedResult.add(lexeme4);
+		sentence1.add(lexeme1);
+		sentence1.add(lexeme2);
+		sentence2.add(lexeme3);
+		sentence2.add(lexeme4);
+		expectedResult.add(sentence1);
+		expectedResult.add(sentence2);
+
 
 	}
 	@Test

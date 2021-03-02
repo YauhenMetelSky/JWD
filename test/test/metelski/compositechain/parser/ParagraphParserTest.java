@@ -19,8 +19,8 @@ public class ParagraphParserTest extends Assert {
 	@BeforeTest
 	public void setUp() {
 		parser = new ParagraphParser();
-		TextComposite pargraph1 = new TextComposite(ComponentType.PARAGRAF);
-		TextComposite pargraph2 = new TextComposite(ComponentType.PARAGRAF);
+		TextComposite pargraph1 = new TextComposite(ComponentType.PARAGRAPH);
+		TextComposite pargraph2 = new TextComposite(ComponentType.PARAGRAPH);
 		TextComposite sentence1 = new TextComposite(ComponentType.SENTENCE);
 		TextComposite sentence2 = new TextComposite(ComponentType.SENTENCE);
 		TextComposite sentence3 = new TextComposite(ComponentType.SENTENCE);
@@ -31,7 +31,7 @@ public class ParagraphParserTest extends Assert {
 		TextComposite lexeme5 = new TextComposite(ComponentType.LEXEME);
 		TextComposite lexeme6 = new TextComposite(ComponentType.LEXEME);
 		TextComposite lexeme7 = new TextComposite(ComponentType.LEXEME);
-		testText = "    My cat. Name -Fenix! \tIs he fat?";
+		testText = "\tMy cat. Name -Fenix!\tIs he fat?";
 		expectedResult = new TextComposite();
 		Symbol l1 = new Symbol('M', ComponentType.SYMBOL);
 		Symbol l2 = new Symbol('y', ComponentType.SYMBOL);

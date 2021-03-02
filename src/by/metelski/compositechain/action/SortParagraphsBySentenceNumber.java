@@ -19,9 +19,10 @@ public class SortParagraphsBySentenceNumber {
 	private static final Logger logger = LogManager.getLogger();
 	//private TextComposite component;
 
-	public void sortByParameter(TextComponent text) {
+	public void sortBySentencesNumber(TextComposite text) {
 		List<TextComponent> components = text.getComponents();
 		List<TextComponent> copyOfComponents = new ArrayList<TextComponent>(components);
-		Collections.sort(copyOfComponents,new ParagraphBySentencesNumberComparator());		
+		Collections.sort(copyOfComponents,new ParagraphBySentencesNumberComparator());	
+		text.setComponents(copyOfComponents);
 	}
 }
