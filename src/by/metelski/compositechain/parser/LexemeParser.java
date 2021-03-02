@@ -6,7 +6,6 @@ import by.metelski.compositechain.entity.TextComposite;
 public class LexemeParser extends AbstractParser {
 	private static final String LEXEME_REGEX ="\\s"; 
 	private AbstractParser nextParser = new SymbolParser();
-	
 	@Override
 	public void parse(String sentence, TextComposite textComposite) {
 		sentence = sentence.strip();

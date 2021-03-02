@@ -15,7 +15,6 @@ public class TextCalculator {
 		int counter = 0;
 		TextComposite tmpComponent;
 		TextComposite tmpText = (TextComposite) text;
-
 		if (ComponentType.SYMBOL == type) {
 			counter = tmpText.countSymbols();
 			logger.log(Level.INFO, "number of: " + type + " is: " + counter);
@@ -23,7 +22,6 @@ public class TextCalculator {
 		}
 		for (TextComponent component : tmpText.getComponents()) {
 			tmpComponent = (TextComposite) component;
-
 			if (tmpComponent.getType().compareTo(type) == 0) {
 				counter++;
 			}

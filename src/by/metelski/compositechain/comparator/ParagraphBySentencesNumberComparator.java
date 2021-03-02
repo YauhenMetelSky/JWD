@@ -6,10 +6,7 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import by.metelski.compositechain.action.TextCalculator;
-import by.metelski.compositechain.entity.ComponentType;
 import by.metelski.compositechain.entity.TextComponent;
-import by.metelski.compositechain.entity.TextComposite;
 
 public class ParagraphBySentencesNumberComparator implements Comparator<TextComponent> {
 	private static final Logger logger = LogManager.getLogger();

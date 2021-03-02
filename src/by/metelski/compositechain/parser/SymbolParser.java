@@ -9,10 +9,8 @@ import by.metelski.compositechain.entity.TextComponent;
 import by.metelski.compositechain.entity.TextComposite;
 
 public class SymbolParser extends AbstractParser {
-//	private static final String PUNCTUATION_MARK_REGEX = "[?!.,;:\\-()]";
 	private static final String PUNCTUATION_MARK_REGEX = "\\p{Punct}";
 	private static final String BLANK_REGEX = " ";
-
 	@Override
 	public void parse(String text, TextComposite textComposite) {
 		TextComponent symbol;

@@ -6,7 +6,7 @@ public class Symbol implements TextComponent {
     private static final int SYMBOL_COUNTER =1;
     private char value;
     private ComponentType type;
-    
+  
     public Symbol() {  	
     }
     public Symbol(char value) {
@@ -16,12 +16,10 @@ public class Symbol implements TextComponent {
     	this.value = value;
     	this.type=componentType;
     }
-	
 	@Override
 	public void add(TextComponent c) {
 		throw new UnsupportedOperationException("Operation not supported for Symbol.class");
 	}
-
 	@Override
 	public void addByIndex(int index, TextComponent component) {
 		throw new UnsupportedOperationException("Operation not supported for Symbol.class");		
@@ -34,8 +32,6 @@ public class Symbol implements TextComponent {
 	public void remove(TextComponent c) {
 		throw new UnsupportedOperationException("Operation not supported for Symbol.class");
 	}
-	
-
 	@Override
 	public List<TextComponent> getComponents() {
 		throw new UnsupportedOperationException("Operation not supported for Symbol.class");

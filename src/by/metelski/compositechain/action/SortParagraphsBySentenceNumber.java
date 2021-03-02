@@ -17,12 +17,12 @@ import by.metelski.compositechain.exception.CompositeException;
 
 public class SortParagraphsBySentenceNumber {
 	private static final Logger logger = LogManager.getLogger();
-	//private TextComposite component;
 
 	public void sortBySentencesNumber(TextComposite text) {
 		List<TextComponent> components = text.getComponents();
 		List<TextComponent> copyOfComponents = new ArrayList<TextComponent>(components);
 		Collections.sort(copyOfComponents,new ParagraphBySentencesNumberComparator());	
 		text.setComponents(copyOfComponents);
+		logger.log(Level.INFO,"composite sorted by sentence number: " + text );
 	}
 }

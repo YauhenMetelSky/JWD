@@ -39,7 +39,6 @@ public class TextComposite implements TextComponent {
 	public void addByIndex(int index,TextComponent component) {
 		components.add(index, component);		
 	}
-
 	@Override
 	public void removeByIndex(int index) {
 		components.remove(index);		
@@ -52,8 +51,6 @@ public class TextComposite implements TextComponent {
 	public int countSymbols() {
 		return components.stream().mapToInt(TextComponent::countSymbols).sum();
 	}
-
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
