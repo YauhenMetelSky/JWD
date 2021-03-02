@@ -18,5 +18,4 @@ public class ParagraphBySentencesNumberComparator implements Comparator<TextComp
 		logger.log(Level.DEBUG, "number of sentences second object: " + sentencesNumberParagraph2);
 		return sentencesNumberParagraph1 - sentencesNumberParagraph2;
 	}
-
 }

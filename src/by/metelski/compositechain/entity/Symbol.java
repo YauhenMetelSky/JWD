@@ -72,7 +72,4 @@ public class Symbol implements TextComponent {
 	public ComponentType getType() {
 		return type;
 	}
-	
-	
-
 }
