@@ -28,6 +28,7 @@ public class TextComposite implements TextComponent {
 	public List<TextComponent> getComponents(){
 			return Collections.unmodifiableList(components);
 	}
+	@Override
 	public void setComponents(List<TextComponent> components){
 		this.components = components;
 	}

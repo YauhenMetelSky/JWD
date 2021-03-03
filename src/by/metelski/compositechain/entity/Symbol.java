@@ -36,6 +36,11 @@ public class Symbol implements TextComponent {
 	public List<TextComponent> getComponents() {
 		throw new UnsupportedOperationException("Operation not supported for Symbol.class");
 	}
+	
+	@Override
+	public void setComponents(List<TextComponent> components) {
+		throw new UnsupportedOperationException("Operation not supported for Symbol.class");	
+	}
 	@Override
 	public int countSymbols() {
 			return SYMBOL_COUNTER;

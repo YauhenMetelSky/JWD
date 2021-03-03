@@ -7,7 +7,8 @@ public interface TextComponent {
 	void addByIndex(int index,TextComponent component);
 	void remove(TextComponent component);
 	void removeByIndex(int index);
-	ComponentType getType();
+	void setComponents(List<TextComponent> components);
 	List<TextComponent> getComponents();
+	ComponentType getType();
 	int countSymbols();
 }

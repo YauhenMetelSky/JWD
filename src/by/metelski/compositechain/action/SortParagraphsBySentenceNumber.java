@@ -20,7 +20,7 @@ public class SortParagraphsBySentenceNumber {
 
 	public void sortBySentencesNumber(TextComposite text) {
 		List<TextComponent> components = text.getComponents();
-		List<TextComponent> copyOfComponents = new ArrayList<TextComponent>(components);
+		List<TextComponent> copyOfComponents = new ArrayList<>(components);
 		Collections.sort(copyOfComponents,new ParagraphBySentencesNumberComparator());	
 		text.setComponents(copyOfComponents);
 		logger.log(Level.INFO,"composite sorted by sentence number: " + text );

@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 import by.metelski.compositechain.comparator.WordByLengthComparator;
 import by.metelski.compositechain.entity.ComponentType;
 import by.metelski.compositechain.entity.TextComponent;
-
+//TODO add method to find equals words, rename class
 public class FindSentenceWithLongestWord {
 	private static final Logger logger = LogManager.getLogger();
 	TextComponent sentenceWithLongestWord;

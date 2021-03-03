@@ -41,4 +41,9 @@
             <class name="test.metelski.compositechain.action.FindSentenceWithLongestWordTest"/>
         </classes>
     </test>
+    <test name="TestCompositeAction">
+        <classes>
+            <class name="test.metelski.compositechain.action.CompositeActionTest"/>
+        </classes>
+    </test>
 </suite>
