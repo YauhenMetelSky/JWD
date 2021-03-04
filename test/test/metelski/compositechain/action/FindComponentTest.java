@@ -138,8 +138,6 @@ public class FindComponentTest extends Assert {
 		expectedResult = new TextComposite(ComponentType.SENTENCE);
 		expectedResult.add(lexeme3);
 		expectedResult.add(lexeme4);
-		//TODO clean code
-//		expectedMap.put(lexeme8.toString().toLowerCase(), 2);
 		expectedMap.put(lexeme10.toString().toLowerCase(), 2);
 	}
 
