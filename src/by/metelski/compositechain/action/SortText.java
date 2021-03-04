@@ -15,7 +15,7 @@ import by.metelski.compositechain.entity.TextComponent;
 import by.metelski.compositechain.entity.TextComposite;
 import by.metelski.compositechain.exception.CompositeException;
 
-public class SortParagraphsBySentenceNumber {
+public class SortText {
 	private static final Logger logger = LogManager.getLogger();
 
 	public void sortBySentencesNumber(TextComposite text) {

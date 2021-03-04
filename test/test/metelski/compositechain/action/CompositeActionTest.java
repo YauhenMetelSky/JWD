@@ -109,12 +109,10 @@ public class CompositeActionTest extends Assert {
 		expectedResult.add(expParagraph1);
 		expectedResult.add(expParagraph2);
 	}
-
 	@Test
 	public void testDeleteAllSentencesWithWordLessThan() {
 		action.deleteAllSentencesWithWordLessThan(testComposite, 3);
 		actualResult = testComposite;
 		assertEquals(actualResult, expectedResult);
 	}
-
 }

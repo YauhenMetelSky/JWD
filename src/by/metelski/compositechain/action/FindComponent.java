@@ -1,7 +1,9 @@
 package by.metelski.compositechain.action;
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -10,20 +12,20 @@ import org.apache.logging.log4j.Logger;
 import by.metelski.compositechain.comparator.WordByLengthComparator;
 import by.metelski.compositechain.entity.ComponentType;
 import by.metelski.compositechain.entity.TextComponent;
-//TODO add method to find equals words, rename class
-public class FindSentenceWithLongestWord {
+
+public class FindComponent {
 	private static final Logger logger = LogManager.getLogger();
 	TextComponent sentenceWithLongestWord;
 	TextComponent longestWord;
 
-	public TextComponent findSentence(TextComponent text) {
+	public TextComponent findSentenceWithLongestWord(TextComponent text) {
 		logger.log(Level.INFO, "Text type: " + text.getType());
 		List<TextComponent> components;
 		if (text.getType().compareTo(ComponentType.SENTENCE) < -1) {
 			for (TextComponent component : text.getComponents()) {
-				sentenceWithLongestWord = findSentence(component);
+				sentenceWithLongestWord = findSentenceWithLongestWord(component);
 			}
-		}	
+		}
 		if (text.getType() == ComponentType.PARAGRAPH) {
 			components = text.getComponents();
 			if (sentenceWithLongestWord == null) {
@@ -37,8 +39,26 @@ public class FindSentenceWithLongestWord {
 					longestWord = tmpLongestWord;
 				}
 			}
-			logger.log(Level.INFO, "sentence with longest word: " + sentenceWithLongestWord +"longest word is: " +longestWord);
+			logger.log(Level.INFO,
+					"sentence with longest word: " + sentenceWithLongestWord + "longest word is: " + longestWord);
 		}
 		return sentenceWithLongestWord;
+	}
+
+	public Map<TextComponent, Integer> findIdenticalWords(TextComponent text) {
+		Map<TextComponent, Integer> identicalWords = new HashMap<>();
+		if (text.getType().compareTo(ComponentType.LEXEME) < -1) {
+			for (TextComponent component : text.getComponents()) {
+				identicalWords = findIdenticalWords(component);
+			}
+		}
+		for(TextComponent component : text.getComponents()) {
+			String lexeme = component.toString().toLowerCase();
+			
+			
+		}
+
+		// TODO realization,return result
+		return null;
 	}
 }

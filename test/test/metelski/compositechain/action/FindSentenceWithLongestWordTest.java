@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import by.metelski.compositechain.action.FindSentenceWithLongestWord;
+import by.metelski.compositechain.action.FindComponent;
 import by.metelski.compositechain.entity.ComponentType;
 import by.metelski.compositechain.entity.Symbol;
 import by.metelski.compositechain.entity.TextComponent;
@@ -15,11 +15,11 @@ public class FindSentenceWithLongestWordTest extends Assert {
     TextComponent expectedResult;
 	TextComponent actualResult;
 	TextComponent testComposite;
-	FindSentenceWithLongestWord finder;
+	FindComponent finder;
 
 	@BeforeTest
 	public void setUp() {
-		finder = new FindSentenceWithLongestWord();
+		finder = new FindComponent();
 		TextComponent pargraph1 = new TextComposite(ComponentType.PARAGRAPH);
 		TextComponent pargraph2 = new TextComposite(ComponentType.PARAGRAPH);
 		TextComponent sentence1 = new TextComposite(ComponentType.SENTENCE);
@@ -103,7 +103,7 @@ public class FindSentenceWithLongestWordTest extends Assert {
 
 	@Test
 	public void testFindSentence() {
-		actualResult = finder.findSentence(testComposite);
+		actualResult = finder.findSentenceWithLongestWord(testComposite);
 		assertEquals(actualResult,expectedResult);	
 	}
 }

@@ -13,7 +13,6 @@ import by.metelski.compositechain.entity.TextComponent;
 public class CompositeAction {
 	private static final Logger logger = LogManager.getLogger();
 
-//TODO concurrent modification
 	public void deleteAllSentencesWithWordLessThan(TextComponent text, int wordSize) {
 		List<TextComponent> sentences;
 		List<TextComponent> modificatebleList;

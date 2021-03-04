@@ -1,13 +1,11 @@
 package test.metelski.compositechain.action;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import by.metelski.compositechain.action.TextCalculator;
-import by.metelski.compositechain.action.SortParagraphsBySentenceNumber;
+import by.metelski.compositechain.action.SortText;
 import by.metelski.compositechain.entity.ComponentType;
 import by.metelski.compositechain.entity.Symbol;
 import by.metelski.compositechain.entity.TextComposite;
@@ -19,11 +17,11 @@ public class TextCompositeSortTest extends Assert {
 	TextComposite expectedResultSymbol;
 	TextComposite actualResult;
 	TextComposite testComposite;
-	SortParagraphsBySentenceNumber sorter;
+	SortText sorter;
 
 	@BeforeTest
 	public void setUp() {
-		sorter = new SortParagraphsBySentenceNumber();
+		sorter = new SortText();
 		TextComposite pargraph1 = new TextComposite(ComponentType.PARAGRAPH);
 		TextComposite pargraph2 = new TextComposite(ComponentType.PARAGRAPH);
 		TextComposite sentence1 = new TextComposite(ComponentType.SENTENCE);
@@ -107,7 +105,7 @@ public class TextCompositeSortTest extends Assert {
 	}
 
 	@Test(dataProvider = "findNumberOfData")
-	public void testSortByParameter(ComponentType type,TextComposite expectedResult) throws CompositeException {
+	public void testSortBySentencesNumber(ComponentType type,TextComposite expectedResult) throws CompositeException {
 		sorter.sortBySentencesNumber(testComposite);
 		actualResult = testComposite;
 		assertEquals(actualResult, expectedResult);

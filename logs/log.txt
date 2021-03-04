@@ -1,0 +1,41 @@
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.TextCalculator- number of: LEXEME is: 4
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.TextCalculator- number of: LEXEME is: 3
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.TextCalculator- number of: LEXEME is: 7
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.TextCalculator- number of: SENTENCE is: 3
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.TextCalculator- number of: PARAGRAPH is: 2
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.TextCalculator- number of: SYMBOL is: 25
+2021-03-04 09:11:39 [main] DEBUG by.metelski.compositechain.comparator.ParagraphBySentencesNumberComparator- number of sentences first object: 1
+2021-03-04 09:11:39 [main] DEBUG by.metelski.compositechain.comparator.ParagraphBySentencesNumberComparator- number of sentences second object: 2
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.SortText- composite sorted by sentence number: Is he fat? 	My cat. Name -Fenix! 	
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.FindSentenceWithLongestWord- Text type: TEXT
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.FindSentenceWithLongestWord- Text type: PARAGRAPH
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.FindSentenceWithLongestWord- sentence with longest word: My cat. longest word is: cat.
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.FindSentenceWithLongestWord- Text type: PARAGRAPH
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.FindSentenceWithLongestWord- sentence with longest word: Name -Fenix! longest word is: -Fenix!
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.CompositeAction- word size: 3 ,text to handle:
+ My cat. 	Name -Fenix! Is he fat? 	
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.CompositeAction- word size: 3 ,text to handle:
+ My cat. 
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.CompositeAction- word size: 3 ,text to handle:
+ My cat. 
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.CompositeAction- lexeme: My ,removed from text: My cat. 
+2021-03-04 09:11:39 [main] DEBUG by.metelski.compositechain.action.CompositeAction- text after correction
+cat. 
+2021-03-04 09:11:39 [main] DEBUG by.metelski.compositechain.action.CompositeAction- text after correction
+cat. 
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.CompositeAction- word size: 3 ,text to handle:
+ Name -Fenix! Is he fat? 
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.CompositeAction- word size: 3 ,text to handle:
+ Name -Fenix! 
+2021-03-04 09:11:39 [main] DEBUG by.metelski.compositechain.action.CompositeAction- text after correction
+Name -Fenix! 
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.CompositeAction- word size: 3 ,text to handle:
+ Is he fat? 
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.CompositeAction- lexeme: Is ,removed from text: Is he fat? 
+2021-03-04 09:11:39 [main] INFO  by.metelski.compositechain.action.CompositeAction- lexeme: he ,removed from text: Is he fat? 
+2021-03-04 09:11:39 [main] DEBUG by.metelski.compositechain.action.CompositeAction- text after correction
+fat? 
+2021-03-04 09:11:39 [main] DEBUG by.metelski.compositechain.action.CompositeAction- text after correction
+Name -Fenix! fat? 
+2021-03-04 09:11:39 [main] DEBUG by.metelski.compositechain.action.CompositeAction- text after correction
+cat. 	Name -Fenix! fat? 	
