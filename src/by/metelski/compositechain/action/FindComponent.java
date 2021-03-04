@@ -1,7 +1,9 @@
 package by.metelski.compositechain.action;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -45,20 +47,47 @@ public class FindComponent {
 		return sentenceWithLongestWord;
 	}
 
-	public Map<TextComponent, Integer> findIdenticalWords(TextComponent text) {
-		Map<TextComponent, Integer> identicalWords = new HashMap<>();
-		if (text.getType().compareTo(ComponentType.LEXEME) < -1) {
-			for (TextComponent component : text.getComponents()) {
-				identicalWords = findIdenticalWords(component);
+	public Map<String, Integer> findIdenticalWords(TextComponent text) {
+		Map<String, Integer> identicalWords = new HashMap<>();		
+		identicalWords = fillWordsMap(text, identicalWords);
+		logger.log(Level.INFO, "identical words before removing: " + Arrays.asList(identicalWords));
+		removeAllSingleWords(identicalWords);
+		logger.log(Level.INFO, "identical words: " + Arrays.asList(identicalWords));
+		return identicalWords;
+	}
+
+	private void removeAllSingleWords(Map<String, Integer> identicalWords) {
+		Iterator<Map.Entry<String, Integer>> iterator = identicalWords.entrySet().iterator();
+		while (iterator.hasNext()) {
+			Map.Entry<String, Integer> keyValueObject = iterator.next();
+			Integer counter = keyValueObject.getValue();
+			if (counter < 2) {
+				iterator.remove();
 			}
 		}
-		for(TextComponent component : text.getComponents()) {
-			String lexeme = component.toString().toLowerCase();
-			
-			
-		}
+	}
 
-		// TODO realization,return result
-		return null;
+	private Map<String, Integer> fillWordsMap(TextComponent text, Map<String, Integer> identicalWords) {
+		if (text.getType().compareTo(ComponentType.LEXEME) < -1) {
+			for (TextComponent component : text.getComponents()) {
+				identicalWords = fillWordsMap(component, identicalWords);
+			}
+		}
+		if (text.getType().compareTo(ComponentType.LEXEME) == -1) {
+			extracted(text, identicalWords);
+		}
+		return identicalWords;
+	}
+//TODO rename
+	private void extracted(TextComponent text, Map<String, Integer> identicalWords) {
+		for (TextComponent component : text.getComponents()) {
+			String lexeme = component.toString().toLowerCase();
+			if (identicalWords.containsKey(lexeme)) {
+				int counterValue = identicalWords.get(lexeme);
+				identicalWords.put(lexeme, ++counterValue);
+			} else {
+				identicalWords.put(lexeme, 1);
+			}
+		}
 	}
 }

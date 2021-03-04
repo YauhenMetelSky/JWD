@@ -36,9 +36,9 @@
             <class name="test.metelski.compositechain.action.TextCompositeSortTest"/>
         </classes>
     </test>
-      <test name="TestFindSentenceWithLongestWord">
+      <test name="TestFindComponent">
         <classes>
-            <class name="test.metelski.compositechain.action.FindSentenceWithLongestWordTest"/>
+            <class name="test.metelski.compositechain.action.FindComponentTest"/>
         </classes>
     </test>
     <test name="TestCompositeAction">
