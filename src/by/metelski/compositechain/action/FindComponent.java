@@ -1,5 +1,6 @@
 package by.metelski.compositechain.action;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
@@ -17,43 +18,38 @@ import by.metelski.compositechain.entity.TextComponent;
 
 public class FindComponent {
 	private static final Logger logger = LogManager.getLogger();
-	TextComponent sentenceWithLongestWord;
-	TextComponent longestWord;
-
-	public TextComponent findSentenceWithLongestWord(TextComponent text) {
-		logger.log(Level.INFO, "Text type: " + text.getType());
-		List<TextComponent> components;
-		if (text.getType().compareTo(ComponentType.SENTENCE) < -1) {
-			for (TextComponent component : text.getComponents()) {
-				sentenceWithLongestWord = findSentenceWithLongestWord(component);
-			}
-		}
-		if (text.getType() == ComponentType.PARAGRAPH) {
-			components = text.getComponents();
-			if (sentenceWithLongestWord == null) {
-				sentenceWithLongestWord = components.get(0);
-				longestWord = sentenceWithLongestWord.getComponents().get(0);
-			}
-			for (TextComponent component : components) {
-				TextComponent tmpLongestWord = Collections.max(component.getComponents(), new WordByLengthComparator());
-				if (tmpLongestWord.countSymbols() > longestWord.countSymbols()) {
-					sentenceWithLongestWord = component;
-					longestWord = tmpLongestWord;
-				}
-			}
-			logger.log(Level.INFO,
-					"sentence with longest word: " + sentenceWithLongestWord + "longest word is: " + longestWord);
-		}
-		return sentenceWithLongestWord;
+	
+	public List<TextComponent> findSentenceWithLongestWord(TextComponent text) {
+		List<TextComponent> sentencesWithLongestLexeme = new ArrayList<>();
+		List<TextComponent> components = findComponentsByType(text, ComponentType.SENTENCE);
+		TextComponent longestLexeme = findLongestLexeme(components);
+		logger.log(Level.INFO, "longest lexeme: " + longestLexeme);
+		sentencesWithLongestLexeme = fillSentencesListWithLongestLexeme(components, longestLexeme);
+		logger.log(Level.INFO, "sentences with longest lexemes: " + sentencesWithLongestLexeme);
+		return sentencesWithLongestLexeme;
 	}
 
-	public Map<String, Integer> findIdenticalWords(TextComponent text) {
-		Map<String, Integer> identicalWords = new HashMap<>();		
-		identicalWords = fillWordsMap(text, identicalWords);
-		logger.log(Level.INFO, "identical words before removing: " + Arrays.asList(identicalWords));
-		removeAllSingleWords(identicalWords);
-		logger.log(Level.INFO, "identical words: " + Arrays.asList(identicalWords));
-		return identicalWords;
+	public Map<String, Integer> findIdenticalLexemes(TextComponent text) {
+		List<TextComponent> lexemes = findComponentsByType(text, ComponentType.LEXEME);
+		Map<String, Integer> identicalLexemes = fillLexemesMap(lexemes);
+		logger.log(Level.INFO, "identical lexemes before removing: " + Arrays.asList(identicalLexemes));
+		removeAllSingleWords(identicalLexemes);
+		logger.log(Level.INFO, "identical lexemes: " + Arrays.asList(identicalLexemes));
+		return identicalLexemes;
+	}
+
+	private Map<String, Integer> fillLexemesMap(List<TextComponent> lexemes) {
+		Map<String, Integer> identicalLexemes = new HashMap<>();
+		for (TextComponent component : lexemes) {
+			String lexeme = component.toString().toLowerCase();
+			if (identicalLexemes.containsKey(lexeme)) {
+				int counterValue = identicalLexemes.get(lexeme);
+				identicalLexemes.put(lexeme, ++counterValue);
+			} else {
+				identicalLexemes.put(lexeme, 1);
+			}
+		}
+		return identicalLexemes;
 	}
 
 	private void removeAllSingleWords(Map<String, Integer> identicalWords) {
@@ -67,27 +63,38 @@ public class FindComponent {
 		}
 	}
 
-	private Map<String, Integer> fillWordsMap(TextComponent text, Map<String, Integer> identicalWords) {
-		if (text.getType().compareTo(ComponentType.LEXEME) < -1) {
-			for (TextComponent component : text.getComponents()) {
-				identicalWords = fillWordsMap(component, identicalWords);
+	private List<TextComponent> fillSentencesListWithLongestLexeme(List<TextComponent> components,
+			TextComponent longestLexeme) {
+		List<TextComponent> sentencesWithLongestLexeme = new ArrayList<>();
+		for (TextComponent sentence : components) {
+			if (sentence.getComponents().contains(longestLexeme)) {
+				sentencesWithLongestLexeme.add(sentence);
 			}
 		}
-		if (text.getType().compareTo(ComponentType.LEXEME) == -1) {
-			extracted(text, identicalWords);
-		}
-		return identicalWords;
+		return sentencesWithLongestLexeme;
 	}
-//TODO rename
-	private void extracted(TextComponent text, Map<String, Integer> identicalWords) {
-		for (TextComponent component : text.getComponents()) {
-			String lexeme = component.toString().toLowerCase();
-			if (identicalWords.containsKey(lexeme)) {
-				int counterValue = identicalWords.get(lexeme);
-				identicalWords.put(lexeme, ++counterValue);
-			} else {
-				identicalWords.put(lexeme, 1);
+
+	private TextComponent findLongestLexeme(List<TextComponent> components) {
+		TextComponent longestLexeme = components.get(0).getComponents().get(0);
+		for (TextComponent component : components) {
+			TextComponent tmpLongestLexeme = Collections.max(component.getComponents(), new WordByLengthComparator());
+			if (tmpLongestLexeme.countSymbols() > longestLexeme.countSymbols()) {
+				longestLexeme = tmpLongestLexeme;
 			}
 		}
+		return longestLexeme;
+	}
+
+	private List<TextComponent> findComponentsByType(TextComponent text, ComponentType type) {
+		List<TextComponent> sentences = new ArrayList<>();
+		if (text.getType().compareTo(type) < 0) {
+			for (TextComponent component : text.getComponents()) {
+				sentences.addAll(findComponentsByType(component, type));
+			}
+		}
+		if (text.getType().compareTo(type) == 0) {
+			sentences.add(text);
+		}
+		return sentences;
 	}
 }

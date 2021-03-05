@@ -20,8 +20,8 @@ import by.metelski.compositechain.entity.TextComponent;
 import by.metelski.compositechain.entity.TextComposite;
 
 public class FindComponentTest extends Assert {
-	TextComponent expectedResult;
-	TextComponent actualResult;
+	List<TextComponent> expectedResult;
+	List<TextComponent> actualResult;
 	TextComponent testComposite;
 	Map<String, Integer> expectedMap;
 	Map<String, Integer> actualMap;
@@ -32,6 +32,7 @@ public class FindComponentTest extends Assert {
 		finder = new FindComponent();
 		expectedMap = new HashMap<>();
 		actualMap = new HashMap<>();
+		expectedResult = new ArrayList<>();
 		TextComponent pargraph1 = new TextComposite(ComponentType.PARAGRAPH);
 		TextComponent pargraph2 = new TextComposite(ComponentType.PARAGRAPH);
 		TextComponent sentence1 = new TextComposite(ComponentType.SENTENCE);
@@ -135,9 +136,9 @@ public class FindComponentTest extends Assert {
 		pargraph2.add(sentence4);
 		testComposite.add(pargraph1);
 		testComposite.add(pargraph2);
-		expectedResult = new TextComposite(ComponentType.SENTENCE);
-		expectedResult.add(lexeme3);
-		expectedResult.add(lexeme4);
+//		expectedResult = new TextComposite(ComponentType.SENTENCE);
+		expectedResult.add(sentence2);
+//		expectedResult.add(lexeme4);
 		expectedMap.put(lexeme10.toString().toLowerCase(), 2);
 	}
 
@@ -159,7 +160,7 @@ public class FindComponentTest extends Assert {
 
 	@Test
 	public void testFindIdenticalWords() {
-		actualMap = finder.findIdenticalWords(testComposite);
+		actualMap = finder.findIdenticalLexemes(testComposite);
 		assertEquals(actualMap, expectedMap);
 	}
 }

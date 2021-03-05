@@ -46,4 +46,9 @@
             <class name="test.metelski.compositechain.action.CompositeActionTest"/>
         </classes>
     </test>
+    <test name="TestReader">
+        <classes>
+            <class name="test.metelski.compositechain.reader.impl.StringFromFileTextReaderTest"/>
+        </classes>
+    </test>
 </suite>

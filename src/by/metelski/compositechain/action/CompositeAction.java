@@ -14,7 +14,7 @@ public class CompositeAction {
 	private static final Logger logger = LogManager.getLogger();
 
 	public void deleteAllSentencesWithWordLessThan(TextComponent text, int wordSize) {
-		List<TextComponent> sentences;
+		List<TextComponent> lexemes;
 		List<TextComponent> modificatebleList;
 		logger.log(Level.INFO, "word size: " + wordSize + " ,text to handle:\n " + text);
 		if (text.getType().compareTo(ComponentType.LEXEME) < -1) {
@@ -23,9 +23,9 @@ public class CompositeAction {
 			}
 		}
 		if (text.getType() == ComponentType.SENTENCE) {
-			sentences = text.getComponents();
-			modificatebleList = new ArrayList<>(sentences);
-			for (TextComponent lexeme : sentences) {
+			lexemes = text.getComponents();
+			modificatebleList = new ArrayList<>(lexemes);
+			for (TextComponent lexeme : lexemes) {
 				if (lexeme.countSymbols() < wordSize) {
 					modificatebleList.remove(lexeme);
 					logger.log(Level.INFO, "lexeme: " + lexeme + " ,removed from text: " + text);
@@ -35,4 +35,5 @@ public class CompositeAction {
 		}
 		logger.log(Level.DEBUG, "text after correction\n" + text);
 	}
+	
 }
