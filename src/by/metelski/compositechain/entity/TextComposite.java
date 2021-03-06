@@ -37,14 +37,6 @@ public class TextComposite implements TextComponent {
 		components.add(component);
 	}	
 	@Override
-	public void addByIndex(int index,TextComponent component) {
-		components.add(index, component);		
-	}
-	@Override
-	public void removeByIndex(int index) {
-		components.remove(index);		
-	}
-	@Override
 	public void remove(TextComponent component) {
 		components.remove(component);
 	}

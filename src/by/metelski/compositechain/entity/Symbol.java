@@ -21,14 +21,6 @@ public class Symbol implements TextComponent {
 		throw new UnsupportedOperationException("Operation not supported for Symbol.class");
 	}
 	@Override
-	public void addByIndex(int index, TextComponent component) {
-		throw new UnsupportedOperationException("Operation not supported for Symbol.class");		
-	}
-	@Override
-	public void removeByIndex(int index) {
-		throw new UnsupportedOperationException("Operation not supported for Symbol.class");	
-	}
-	@Override
 	public void remove(TextComponent c) {
 		throw new UnsupportedOperationException("Operation not supported for Symbol.class");
 	}

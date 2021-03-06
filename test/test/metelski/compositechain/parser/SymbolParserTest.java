@@ -3,7 +3,6 @@ package test.metelski.compositechain.parser;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import by.metelski.compositechain.entity.ComponentType;
 import by.metelski.compositechain.entity.Symbol;
 import by.metelski.compositechain.entity.TextComposite;
@@ -54,9 +53,7 @@ public class SymbolParserTest extends Assert {
 		expectedResult.add(l15);
 		expectedResult.add(l16);
 		expectedResult.add(l17);
-
 	}
-
 	@Test
 	public void parse() {
 		actualResult = new TextComposite();

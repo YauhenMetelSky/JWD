@@ -12,7 +12,7 @@ public class StringFromFileTextReaderTest extends Assert {
 	String expectedResult;
 	String actualResult;
 	StringFromFileTextReader reader;
-
+	
 	@BeforeTest
 	public void setUp() {
 		filePath = "data/testData.txt";

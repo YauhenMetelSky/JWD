@@ -3,7 +3,6 @@ package test.metelski.compositechain.entity;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import by.metelski.compositechain.entity.ComponentType;
 import by.metelski.compositechain.entity.Symbol;
 import by.metelski.compositechain.entity.TextComposite;
@@ -54,9 +53,6 @@ public class TestTextComposite extends Assert {
 	public void testCountLeaf() {
 		int expectedResult =14;
 		int actualResult = sentence.countSymbols();
-		assertEquals(actualResult, expectedResult);
-		
-	}
-	
-
+		assertEquals(actualResult, expectedResult);		
+	}	
 }

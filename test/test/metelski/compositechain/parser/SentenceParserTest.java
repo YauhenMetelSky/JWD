@@ -3,11 +3,9 @@ package test.metelski.compositechain.parser;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import by.metelski.compositechain.entity.ComponentType;
 import by.metelski.compositechain.entity.Symbol;
 import by.metelski.compositechain.entity.TextComposite;
-import by.metelski.compositechain.parser.LexemeParser;
 import by.metelski.compositechain.parser.SentenceParser;
 
 public class SentenceParserTest extends Assert {
@@ -43,8 +41,7 @@ public class SentenceParserTest extends Assert {
 		Symbol l14 = new Symbol('n', ComponentType.SYMBOL);
 		Symbol l15 = new Symbol('i', ComponentType.SYMBOL);
 		Symbol l16 = new Symbol('x', ComponentType.SYMBOL);
-		Symbol l17 = new Symbol('!', ComponentType.PUNCTUATION_MARK);
-		
+		Symbol l17 = new Symbol('!', ComponentType.PUNCTUATION_MARK);		
 		lexeme1.add(l1);
 		lexeme1.add(l2);
 		lexeme2.add(l3);
@@ -68,8 +65,6 @@ public class SentenceParserTest extends Assert {
 		sentence2.add(lexeme4);
 		expectedResult.add(sentence1);
 		expectedResult.add(sentence2);
-
-
 	}
 	@Test
 	public void testParse() {
@@ -77,5 +72,4 @@ public class SentenceParserTest extends Assert {
 		parser.parse(testText, actualResult);
 		assertEquals(actualResult, expectedResult);
 	}
-
 }

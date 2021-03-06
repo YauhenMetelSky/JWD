@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import by.metelski.compositechain.action.SortText;
 import by.metelski.compositechain.entity.ComponentType;
 import by.metelski.compositechain.entity.Symbol;
@@ -60,7 +59,6 @@ public class TextCompositeSortTest extends Assert {
 		Symbol l23 = new Symbol('a', ComponentType.SYMBOL);
 		Symbol l24 = new Symbol('t', ComponentType.SYMBOL);
 		Symbol l25 = new Symbol('?', ComponentType.PUNCTUATION_MARK);
-
 		lexeme1.add(l1);
 		lexeme1.add(l2);
 		lexeme2.add(l3);
@@ -97,8 +95,7 @@ public class TextCompositeSortTest extends Assert {
 		pargraph1.add(sentence2);
 		pargraph2.add(sentence3);
 		testComposite.add(pargraph1);
-		testComposite.add(pargraph2);
-		
+		testComposite.add(pargraph2);		
 		expectedResultSentence = new TextComposite(ComponentType.TEXT);
 		expectedResultSentence.add(pargraph2);
 		expectedResultSentence.add(pargraph1);
