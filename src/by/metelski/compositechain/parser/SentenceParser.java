@@ -4,7 +4,7 @@ import by.metelski.compositechain.entity.ComponentType;
 import by.metelski.compositechain.entity.TextComposite;
 
 public class SentenceParser extends AbstractParser {
-	private static final String SENTENCE_REGEX = "(?<=([!?.{1,3}]))";
+	private static final String SENTENCE_REGEX = "(?<=([!?.{1,3}]\s))";
 	private AbstractParser nextParser = new LexemeParser();
 	@Override
 	public void parse(String paragraph, TextComposite textComposite) {
