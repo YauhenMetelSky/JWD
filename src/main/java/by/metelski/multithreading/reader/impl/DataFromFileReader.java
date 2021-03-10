@@ -16,7 +16,7 @@ import by.metelski.multithreading.exception.FerryException;
 import by.metelski.multithreading.reader.DataFromFileReaderInterface;
 
 public class DataFromFileReader implements DataFromFileReaderInterface {
-	public final static Logger logger = LogManager.getLogger();
+	public static final Logger logger = LogManager.getLogger();
 
 	@Override
     public List<String> readStringsFromFile(String filePath) throws FerryException {
