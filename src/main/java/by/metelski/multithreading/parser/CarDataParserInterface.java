@@ -1,5 +1,7 @@
 package by.metelski.multithreading.parser;
 
+import java.util.List;
+
 public interface CarDataParserInterface {
-	public int[] parseArrayFromString(String string);
+	public List<Integer> parseArrayFromString(String string);
 }
