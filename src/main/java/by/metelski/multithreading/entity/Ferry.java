@@ -1,8 +1,6 @@
 package by.metelski.multithreading.entity;
 
-import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -15,7 +13,7 @@ public class Ferry {
 	private static final int LOAD_CAPACITY = 150;
 	private static final int SQUARE = 150;
 	private static Ferry instance;
-	private State state;// TODO static like variant
+	private State state;
 	public static final Logger logger = LogManager.getLogger();
 	private static Lock locker = new ReentrantLock();
 	private final Condition condition = locker.newCondition();
@@ -54,7 +52,7 @@ public class Ferry {
 		} catch (InterruptedException e) {
 			throw new FerryException("Catched exception ", e);
 		}
-		state = state.DISCHARGING;
+		state = State.DISCHARGING;
 		condition.signalAll();
 	}
 
@@ -66,7 +64,7 @@ public class Ferry {
 				if (state != State.LOADING) {
 					condition.await();
 				} else if (checkFreeSpace(car)) {
-					logger.log(Level.INFO, emptyCapacity + ":" + emptySquare);
+					logger.log(Level.INFO, "empty capacity:" + emptyCapacity + "emptySquare:" + emptySquare);
 					emptyCapacity -= car.getWeight();
 					emptySquare -= car.getSize();
 					flag = false;
@@ -118,4 +116,21 @@ public class Ferry {
 		}
 		return result;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Ferry [state=");
+		builder.append(state);
+		builder.append(", Load capacity=");
+		builder.append(LOAD_CAPACITY);
+		builder.append(", Square=");
+		builder.append(SQUARE);
+		builder.append(", emptyCapacity=");
+		builder.append(emptyCapacity);
+		builder.append(", emptySquare=");
+		builder.append(emptySquare);
+		builder.append("]");
+		return builder.toString();
+	}	
 }

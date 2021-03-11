@@ -1,16 +1,37 @@
 package by.metelski.multithreading.main;
 
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
+import java.util.List;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import by.metelski.multithreading.entity.Car;
-import by.metelski.multithreading.entity.Ferry;
+import by.metelski.multithreading.entity.Car.CarType;
+import by.metelski.multithreading.exception.FerryException;
+import by.metelski.multithreading.factory.CarFactory;
+import by.metelski.multithreading.parser.CarDataParser;
+import by.metelski.multithreading.reader.DataFromFileReaderInterface;
+import by.metelski.multithreading.reader.impl.DataFromFileReader;
 
-public class Main {	
+public class Main {
+	public static final Logger logger = LogManager.getLogger();
+
 	public static void main(String[] args) {
-		for(int i =0; i<11;i++) {
-			new Car(new Random().nextInt(5),new Random().nextInt(50),Car.CarType.TRUCK).start();
-			new Car(new Random().nextInt(3),new Random().nextInt(15),Car.CarType.CAR).start();
-		}		
+		String filePath = "data/cars.txt";
+		DataFromFileReaderInterface reader = new DataFromFileReader();
+		CarDataParser parser = new CarDataParser();
+		CarFactory factory = CarFactory.getInstance();
+		List<String> carsData;
+		int[] carsSpecification;
+		CarType[] types = CarType.values();
+		try {
+			carsData = reader.readStringsFromFile(filePath);
+			for (String element : carsData) {
+				carsSpecification = parser.parseArrayFromString(element);	
+					Car car = factory.createCar(carsSpecification[0], carsSpecification[1], types[carsSpecification[2]]);
+					car.start();		
+			}
+		} catch (FerryException e) {
+			logger.log(Level.ERROR, "Exception in Main " + e.getMessage());
+		}
 	}
 }

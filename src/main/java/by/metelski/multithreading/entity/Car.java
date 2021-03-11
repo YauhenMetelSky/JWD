@@ -1,21 +1,17 @@
 package by.metelski.multithreading.entity;
 
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import by.metelski.multithreading.exception.FerryException;
 import by.metelski.multithreading.util.IdGenerator;
 
 public class Car extends Thread {
 	public static final Logger logger = LogManager.getLogger();
 	private long id;
-	private CarType type;
 	private int size;
 	private int weight;
+	private CarType type;
 
 	public enum CarType {
 		TRUCK, CAR
@@ -73,4 +69,51 @@ public class Car extends Thread {
 	public long getId() {
 		return id;
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (int) (id ^ (id >>> 32));
+		result = prime * result + size;
+		result = prime * result + ((type == null) ? 0 : type.hashCode());
+		result = prime * result + weight;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Car other = (Car) obj;
+		if (id != other.id)
+			return false;
+		if (size != other.size)
+			return false;
+		if (type != other.type)
+			return false;
+		if (weight != other.weight)
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Car [id=");
+		builder.append(id);
+		builder.append(", type=");
+		builder.append(type);
+		builder.append(", size=");
+		builder.append(size);
+		builder.append(", weight=");
+		builder.append(weight);
+		builder.append("]");
+		return builder.toString();
+	}
+
 }
