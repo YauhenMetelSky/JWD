@@ -115,5 +115,4 @@ public class Car extends Thread {
 		builder.append("]");
 		return builder.toString();
 	}
-
 }
