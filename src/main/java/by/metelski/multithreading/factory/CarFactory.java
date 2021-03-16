@@ -3,7 +3,6 @@ package by.metelski.multithreading.factory;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import by.metelski.multithreading.entity.Car;
 import by.metelski.multithreading.entity.Car.CarType;
 

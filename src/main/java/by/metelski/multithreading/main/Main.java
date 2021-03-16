@@ -27,7 +27,10 @@ public class Main {
 			carsData = reader.readStringsFromFile(filePath);
 			for (String element : carsData) {
 				carsSpecification = parser.parseArrayFromString(element);	
-					Car car = factory.createCar(carsSpecification.get(0), carsSpecification.get(1), types[carsSpecification.get(2)]);
+					int size = carsSpecification.get(0);
+					int weight = carsSpecification.get(1);
+					CarType type = types[carsSpecification.get(2)];
+					Car car = factory.createCar(size, weight, type);
 					car.start();		
 			}
 		} catch (FerryException e) {

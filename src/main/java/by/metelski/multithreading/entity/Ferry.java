@@ -10,13 +10,14 @@ import org.apache.logging.log4j.Logger;
 import by.metelski.multithreading.exception.FerryException;
 
 public class Ferry {
+	public static final Logger logger = LogManager.getLogger();
 	private static final int LOAD_CAPACITY = 150;
 	private static final int SQUARE = 150;
 	private static Ferry instance;
-	private State state;
-	public static final Logger logger = LogManager.getLogger();
-	private static Lock locker = new ReentrantLock();
+	private static Lock locker = new ReentrantLock(true);
+	private static boolean isCreated;
 	private final Condition condition = locker.newCondition();
+	private State state;
 	private int emptyCapacity;
 	private int emptySquare;
 
@@ -35,10 +36,11 @@ public class Ferry {
 	}
 
 	public static Ferry getInstance() {
-		if (instance == null) {
+		if (!isCreated) {
 			locker.lock();
 			if (instance == null) {
 				instance = new Ferry();
+				isCreated=true;
 			}
 			locker.unlock();
 		}
@@ -62,6 +64,7 @@ public class Ferry {
 			locker.lock();
 			while (flag) {
 				if (state != State.LOADING) {
+					logger.log(Level.INFO, car.getType() + ":" + car.getId() + " awaiting loading");
 					condition.await();
 				} else if (checkFreeSpace(car)) {
 					logger.log(Level.INFO, "empty capacity:" + emptyCapacity + "emptySquare:" + emptySquare);
